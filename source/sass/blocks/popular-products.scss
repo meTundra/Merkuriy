@@ -1,0 +1,22 @@
+.popular-products {
+  background-color: #ededed;
+}
+
+.popular-products__content {
+  @include mobile-content;
+  padding-top: 25px;
+  padding-bottom: 32px;
+}
+
+.popular-products__heading {
+  @include mobile-headings;
+  text-align: center;
+}
+
+.popular-products__list {
+  @include list-reset;
+}
+
+.popular-products__item {
+  margin-bottom: 29px;
+}

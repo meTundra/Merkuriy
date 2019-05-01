@@ -4,74 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Меркурий</title>
-    <link href="sass/style.scss" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
-    <header class="main-header">
-        <section class="main-header__info  main-info">
-          <div class="main-info__content">
-            <a class="main-info__logo">
-              <img src="img/logo.png" width="219" height="34" alt="логотип компании &laquo;Меркурий-Интер-Лаб&raquo;">
-            </a>
-            <p class="main-info__logo-description">Медицинская одежда, спецодежда и униформа</p>
-            <a class="main-info__order-callback" href="#">Заказать телефонный звонок</a>
-            <a class="main-info__phone" href="tel:+78002005843">8 (800) 200-58-43</a>
-            <a class="main-info__phone" href="tel:+78314196106">8 (800) 200-58-43</a>
-          </div>
-        </section>
+  <body class="page">
 
-        <nav class="main-header__nav main-nav">
-          <div class="main-nav__content">
-            <a class="main-nav__open-nav" href="#">
-              <span class="visually-hidden">Открыть меню</span>
+    <section class="main-header__info  main-info">
+      <div class="main-info__content">
+        <a class="main-info__logo  desktop-hidden" href="#">
+          <img src="img/logo.png" width="219" height="34" alt="логотип компании &laquo;Меркурий-Интер-Лаб&raquo;">
+          <p class="main-info__logo-description">Медицинская одежда, спецодежда и униформа</p>
+        </a>
+        <a class="main-info__order-callback" href="#"><span class="visually-hidden">Заказать телефонный звонок</span></a>
+        <div class="main-info__phone-number">
+          <a class="main-info__phone" href="tel:+78002005843">
+            8 (800) 200-58-43
+          </a>
+          <p class="mobile-hidden">
+            Бесплатный звонок по России
+          </p>
+        </div>
+        <div class="main-info__city-number">
+          <a class="main-info__phone" href="tel:+78314196106">
+            8 (800) 200-58-43
+          </a>
+          <p class="mobile-hidden">
+            Нижний Новгород
+          </p>
+          <a class="main-info__different-city  mobile-hidden" href="#">
+            Другой город?
+          </a>
+        </div>
+        <address class="main-info__address  mobile-hidden">
+          г. Нижний Новгород,
+          6003006, пер. Ткачева, д. 5
+          (в р-не пл. Свободы)
+        </address>
+        <ul class="main-info__social  mobile-hidden">
+          <li class="main-info__social-item">
+            <a href="#">
+              <span class="visually-hidden">Facebook</span>
             </a>
-            <ul class="main-nav__categories-list">
-
-            </ul>
-            <a class="main-nav__search" href="#">
-              <span class="visually-hidden">Поиск</span>
+          </li>
+          <li class="main-info__social-item">
+            <a href="#">
+              <span class="visually-hidden">Вконтакте</span>
             </a>
-            <a class="main-nav__sign-in" href="#">
-              <span class="visually-hidden">Вход или регистрация</span>
+          </li>
+          <li class="main-info__social-item">
+            <a href="#">
+              <span class="visually-hidden">Instagram</span>
             </a>
-            <a class="main-nav__cart" href="#">
-              <span class="visually-hidden">Корзина</span>
-            </a>
-          </div>
-        </nav>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-        <section class="main-header__popular  popular-sections">
-          <ul class="popular-sections__list">
-            <li class="popular-sections__item">
-              <a href="#">
-                Оптовым клиентам
-              </a>
-            </li>
-            <li class="popular-sections__item">
-              <a href="#">
-                Услуги
-              </a>
-            </li>
-            <li class="popular-sections__item">
-              <a href="#">
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </section>
+    <nav class="main-header__nav main-nav">
+      <div class="main-nav__content">
+        <a class="main-nav__logo  mobile-hidden" href="#">
+          <img src="" alt="логотип компании &laquo;Меркурий-Интер-Лаб&raquo;">
+          <p class="main-info__logo-description">Медицинская одежда, спецодежда и униформа</p>
+        </a>
+        <a class="main-nav__open-nav  desktop-hidden" href="#">
+          <span class="visually-hidden">Открыть меню</span>
+        </a>
+        <ul class="main-nav__categories-list">
 
-    </header>
+        </ul>
+        <a class="main-nav__search" href="#">
+          <span class="visually-hidden">Поиск</span>
+        </a>
+        <a class="main-nav__sign-in  desktop-hidden" href="#">
+          <span class="visually-hidden">Вход или регистрация</span>
+        </a>
+        <a class="main-nav__cart" href="#">
+          <span class="visually-hidden">Корзина</span>
+        </a>
+      </div>
+    </nav>
 
-    <main class="main-content">
+    <section class="main-header__popular  popular-sections">
+      <ul class="popular-sections__list">
+        <li class="popular-sections__item  mobile-hidden">
+          <a class="popular-sections__link" href="#">
+            О компании
+          </a>
+        </li>
+        <li class="popular-sections__item  mobile-hidden">
+          <a class="popular-sections__link" href="#">
+            Новости
+          </a>
+        </li>
+        <li class="popular-sections__item">
+          <a class="popular-sections__link" href="#">
+            Оптовым клиентам
+          </a>
+        </li>
+        <li class="popular-sections__item">
+          <a class="popular-sections__link" href="#">
+            Услуги
+          </a>
+        </li>
+        <li class="popular-sections__item  mobile-hidden">
+          <a class="popular-sections__link" href="#">
+            SALE
+          </a>
+        </li>
+        <li class="popular-sections__item  mobile-hidden">
+          <a class="popular-sections__link" href="#">
+            Цвета и размеры
+          </a>
+        </li>
+        <li class="popular-sections__item">
+          <a class="popular-sections__link" href="#">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <main class="page__main-content main-content">
       <section class="main-content__banner  banner">
         <div class="banner__content">
+          <h3 class="banner__heading">
+            Модельная одежда
+          </h3>
           <p class="banner__lead">
-            <span>Медицинская одежда</span> для медицинских учереждений на заказ!
+            для медицинских учереждений на заказ!
           </p>
           <p class="banner__description">
             Более 12 лет мы создаем модельную медицинскую одежду, которая учитывает современные тенденции в моде.
           </p>
-          <a class="banner__link" href="#">В каталог</a>
+          <a class="banner__link" href="#">
+            В каталог
+          </a>
           <img class="banner__image" src="img/banner-1-bg.png" width="138" height="152" alt="Пример медицинской одежды">
         </div>
       </section>
@@ -84,39 +150,39 @@
 
           <ul class="categories__list">
             <li>
-              <a class="categories__item">
-                <img class="categories__img" src="img/woman-1.png" width="78" height="191" alt="Пример одежды из категории &laquo;Медицина&raquo;">
-                Медицина
+              <a class="categories__item" href="#">
+                <img class="categories__img" src="img/woman-1.png" width="118" height="191" alt="Пример одежды из категории &laquo;Медицина&raquo;">
+                <span class="categories__name">Медицина</span>
               </a>
             </li>
             <li>
-              <a class="categories__item">
-                <img class="categories__img" src="img/woman-2.png" width="100" height="194"  alt="Пример одежды из категории &laquo;Детство&raquo;">
-                Детство
+              <a class="categories__item" href="#">
+                <img class="categories__img" src="img/woman-2.png" width="118" height="194" alt="Пример одежды из категории &laquo;Детство&raquo;">
+                <span class="categories__name">Детство</span>
               </a>
             </li>
             <li>
-              <a class="categories__item">
-                <img class="categories__img" src="img/woman-3.png" width="116" height="194" alt="Пример одежды из категории &laquo;Бьюти&raquo;">
-                Beauty
+              <a class="categories__item" href="#">
+                <img class="categories__img" src="img/woman-3.png" width="128" height="194" alt="Пример одежды из категории &laquo;Бьюти&raquo;">
+                <span class="categories__name">Beauty</span>
               </a>
             </li>
             <li>
-              <a class="categories__item">
-                <img class="categories__img" src="img/woman-4.png" width="91" height="206" alt="Пример одежды из категории &laquo;Сайз Плюс&raquo;">
-                Size+
+              <a class="categories__item" href="#">
+                <img class="categories__img" src="img/woman-4.png" width="104" height="206" alt="Пример одежды из категории &laquo;Сайз Плюс&raquo;">
+                <span class="categories__name">Size+</span>
               </a>
             </li>
             <li>
-              <a class="categories__item">
-                <img class="categories__img" src="img/woman-5.png" width="128" height="201" alt="Пример одежды из категории &laquo;Буду мамой&raquo;">
-                Буду мамой
+              <a class="categories__item" href="#">
+                <img class="categories__img" src="img/woman-5.png" width="130" height="201" alt="Пример одежды из категории &laquo;Буду мамой&raquo;">
+                <span class="categories__name">Буду мамой</span>
               </a>
             </li>
             <li>
-              <a class="categories__item">
-                <img class="categories__img" src="img/woman-6.png" width="101" height="197" alt="Пример одежды из категории &laquo;Спецодежда&raquo;">
-                Спецодежда
+              <a class="categories__item" href="#">
+                <img class="categories__img" src="img/woman-6.png" width="117" height="197" alt="Пример одежды из категории &laquo;Спецодежда&raquo;">
+                <span class="categories__name">Спецодежда</span>
               </a>
             </li>
           </ul>
@@ -125,48 +191,54 @@
 
       <section class="main-content__popular-products  popular-products">
         <div class="popular-products__content">
-          <h2 class="popular-product__heading">Популярные товары</h2>
+          <h2 class="popular-products__heading">Популярные товары</h2>
           <ul class="popular-products__list">
             <li class="popular-products__item  popular-product">
               <p class="popular-product__image">
                 <img src="img/popular-woman-1.png" width="95" height="330" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
               </p>
-              <p class="popular-product__description">
-                Костюм медицинский К-74 «Фаина»
-              </p>
-              <p class="popular-product__price">
-                900 руб
-              </p>
-              <button class="popular-product__like">Нравится</button>
-              <button class="popular-product__watch"></button>
+              <div class="popular-product__info">
+                <p class="popular-product__description">
+                  Костюм медицинский К-74 «Фаина»
+                </p>
+                <p class="popular-product__price">
+                  900 руб
+                </p>
+                <button class="popular-product__like"><span class="visually-hidden">Нравится</span></button>
+                <button class="popular-product__watch"></button>
+              </div>
             </li>
 
             <li class="popular-products__item  popular-product">
               <p class="popular-product__image">
                 <img src="img/popular-woman-2.png" width="89" height="329" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
               </p>
-              <p class="popular-product__description">
-                Костюм медицинский К-74 «Фаина»
-              </p>
-              <p class="popular-product__price">
-                900 руб
-              </p>
-              <button class="popular-product__like">Нравится</button>
-              <button class="popular-product__watch"></button>
+              <div class="popular-product__info">
+                <p class="popular-product__description">
+                  Костюм медицинский К-74 «Фаина»
+                </p>
+                <p class="popular-product__price">
+                  900 руб
+                </p>
+                <button class="popular-product__like"><span class="visually-hidden">Нравится</span></button>
+                <button class="popular-product__watch"></button>
+              </div>
             </li>
 
             <li class="popular-products__item  popular-product">
               <p class="popular-product__image">
                 <img src="img/popular-woman-3.png" width="94" height="332" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
               </p>
-              <p class="popular-product__description">
-                Костюм медицинский К-74 «Фаина»
-              </p>
-              <p class="popular-product__price">
-                900 руб
-              </p>
-              <button class="popular-product__like">Нравится</button>
-              <button class="popular-product__watch"></button>
+              <div class="popular-product__info">
+                <p class="popular-product__description">
+                  Костюм медицинский К-74 «Фаина»
+                </p>
+                <p class="popular-product__price">
+                  900 руб
+                </p>
+                <button class="popular-product__like"><span class="visually-hidden">Нравится</span></button>
+                <button class="popular-product__watch"></button>
+              </div>
             </li>
           </ul>
         </div>
@@ -174,34 +246,36 @@
 
       <address class="main-content__contacts contacts">
         <div class="contacts__content">
-          <p class="contacts__company-name">
-            «Меркурий-Интер-Лаб»
-          </p>
-          <a href="tel:88002005843">
-            8-800-200-58-43
-          </a>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <p class="contacts__address">
-                г. Нижний Новгород
-                603006, пер.Ткачева, д.5 (в р-не пл. "Свободы"). <a href="#">Показать на карте</a>
-              </p>
-              <a href="tel:+78314196106">+7 (831) 419-61-06</a>
-            </li>
-            <li class="contacts__item">
-              <p class="contacts__address">
-                г. Нижний Новгород
-                603006, пер.Ткачева, д.5 (в р-не пл. "Свободы"). <a href="#">Показать на карте</a>
-              </p>
-              <a href="tel:+78314196106">+7 (831) 419-61-06</a>
-            </li>
-          </ul>
+          <div class="contacts__wrapper">
+            <p class="contacts__company-name">
+              «Меркурий-Интер-Лаб»
+            </p>
+            <a class="contacts__company-phone" href="tel:88002005843">
+              8-800-200-58-43
+            </a>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <p class="contacts__address">
+                  г. Нижний Новгород <br>
+                  603006, пер.Ткачева, д.5 (в р-не пл. "Свободы"). <a class="contacts__link" href="#">Показать на карте</a>
+                </p>
+                <a class="contacts__phone" href="tel:+78314196106">+7 (831) 419-61-06</a>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__address">
+                  г. Нижний Новгород <br>
+                  603006, пер.Ткачева, д.5 (в р-не пл. "Свободы"). <a class="contacts__link" href="#">Показать на карте</a>
+                </p>
+                <a class="contacts__phone" href="tel:+78314196106">+7 (831) 419-61-06</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </address>
 
     </main>
 
-    <!--<footer class="main-footer">-->
+    <!--<footer class="page__footer main-footer">-->
       <!--<div class="main-footer__content">-->
         <!---->
       <!--</div>-->

@@ -1,0 +1,14 @@
+.popular-sections__list {
+  @include list-reset;
+  @include mobile-content;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.popular-sections__link {
+  text-decoration: none;
+  color: #000000;
+}

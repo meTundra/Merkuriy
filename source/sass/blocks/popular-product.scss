@@ -1,0 +1,63 @@
+.popular-product__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 290px;
+  height: 350px;
+  background-color: #c9dfeb;
+  background-image: url("../img/popular-card-bg.png");
+}
+
+.popular-product__info {
+  display: grid;
+  grid-template-columns: 200px 30px;
+  grid-template-rows: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 8px;
+  padding-top: 9px;
+  padding-left: 19px;
+  background-color: #ffffff;
+}
+
+.popular-product__description {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin: 0;
+  width: 150px;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.popular-product__price {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #0a5a7e;
+}
+
+
+.popular-product__like {
+  margin-top: auto;
+  margin-bottom: 5px;
+  margin-left: auto;
+  background: none;
+  background-color: #0a5a7e;
+  border: none;
+  width: 18px;
+  height: 16px;
+}
+
+.popular-product__watch {
+  margin-bottom: auto;
+  margin-left: auto;
+  background: none;
+  background-color: #0a5a7e;
+  border: none;
+  width: 23px;
+  height: 14px;
+}

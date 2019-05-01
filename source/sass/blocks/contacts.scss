@@ -1,0 +1,75 @@
+.contacts {
+  padding-top: 53px;
+  padding-bottom: 61px;
+  background-color: lightgray;
+}
+
+.contacts__content {
+  @include mobile-content;
+  width: 290px;
+
+  font-style: normal;
+}
+
+.contacts__wrapper {
+  padding-top: 25px;
+  width: 280px;
+  background-color: #ffffff;
+  box-shadow: 13px 17px 0 0 rgba(255, 255, 255, 0.4);
+}
+
+.contacts__company-name {
+  margin: 0;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #3199c7;
+  text-align: right;
+}
+
+.contacts__company-phone {
+  display: block;
+  margin: 0;
+  margin-right: 20px;
+  margin-bottom: 6px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #0a5a7e;
+  text-align: right;
+  text-decoration: none;
+}
+
+.contacts__list {
+  @include list-reset;
+}
+
+.contacts__item {
+  box-sizing: border-box;
+  padding-top: 27px;
+  padding-bottom: 35px;
+  padding-left: 60px;
+  padding-right: 20px;
+  width: 280px;
+  line-height: 17px;
+
+  &:last-child {
+    border-top: 1px solid #04235d;
+  }
+}
+
+.contacts__address {
+  margin: 0;
+  margin-bottom: 8px;
+  width: 190px;
+}
+
+.contacts__link {
+  color: #0a5a7e;
+  text-decoration-color: rgba(10, 90, 126, 0.25);
+}
+
+.contacts__phone {
+  color: #000000;
+  text-decoration: none;
+}

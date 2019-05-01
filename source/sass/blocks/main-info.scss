@@ -1,0 +1,37 @@
+.main-info__content {
+  @include mobile-content;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-info__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  //margin-right: auto;
+  text-decoration: none;
+}
+
+.main-info__logo-description {
+  width: 232px;
+
+  font-size: 10px;
+  color: #0a5a7e;
+}
+
+.main-info__phone {
+  color: black;
+}
+
+.main-info__order-callback {
+  margin-right: 10px;
+  width: 19px;
+  height: 18px;
+  background-color: #3199c7;
+}
+
+.main-info__phone-number {
+  margin-right: 10px;
+}
