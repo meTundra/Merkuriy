@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const pug = require('gulp-pug');
 const sass = require('gulp-sass');
 const plumber = require('gulp-plumber');
 const rename = require('gulp-rename');
@@ -12,8 +11,7 @@ const browserSync = require('browser-sync');
 const del = require('del');
 
 function html () {
-  return gulp.src('source/**/*.pug')
-    .pipe(pug())
+  return gulp.src('source/**/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build/'))
 }
@@ -60,7 +58,7 @@ function server () {
     ui: false
   });
 
-  gulp.watch("source/*.pug", gulp.series(html, refresh));
+  gulp.watch("source/*.html", gulp.series(html, refresh));
   gulp.watch("source/**/*.scss", gulp.series(css));
   gulp.watch("source/js/**/*.js", gulp.series(js, refresh));
 }
