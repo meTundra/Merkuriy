@@ -1,3 +1,7 @@
 .main-content__banner {
-  margin-bottom: 35px
+  margin-bottom: 35px;
+
+  @media (min-width: 760px) {
+    margin-bottom: 65px;
+  }
 }

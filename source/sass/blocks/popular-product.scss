@@ -1,23 +1,49 @@
+.popular-product {
+  display: none;
+
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3) {
+    display: block;
+  }
+  width: 290px;
+
+  @media (min-width: 760px) {
+    display: block;
+    width: 358px;
+  }
+}
+
 .popular-product__image {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
-  width: 290px;
   height: 350px;
   background-color: #c9dfeb;
   background-image: url("../img/popular-card-bg.png");
+
+  @media (min-width: 760px) {
+    height: 435px;
+    background-image: url("../img/popular-card-bg-desktop.png");
+  }
 }
 
 .popular-product__info {
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 200px 30px;
   grid-template-rows: auto auto;
   grid-column-gap: 20px;
   grid-row-gap: 8px;
   padding-top: 9px;
-  padding-left: 19px;
+  padding-left: 20px;
   background-color: #ffffff;
+
+  @media (min-width: 760px) {
+    grid-template-columns: 248px 30px;
+    grid-column-gap: 40px;
+  }
 }
 
 .popular-product__description {
@@ -27,6 +53,12 @@
   width: 150px;
   font-size: 15px;
   line-height: 17px;
+
+  @media (min-width: 760px) {
+    width: 185px;
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 .popular-product__price {
@@ -38,8 +70,11 @@
   line-height: 20px;
   font-weight: bold;
   color: #0a5a7e;
+  @media (min-width: 760px) {
+    font-size: 27px;
+    line-height: 26px;
+  }
 }
-
 
 .popular-product__like {
   margin-top: auto;
@@ -50,6 +85,9 @@
   border: none;
   width: 18px;
   height: 16px;
+  @media (min-width: 760px) {
+    margin-bottom: 10px;
+  }
 }
 
 .popular-product__watch {
@@ -60,4 +98,8 @@
   border: none;
   width: 23px;
   height: 14px;
+
+  @media (min-width: 760px) {
+    margin-top: 5px;
+  }
 }

@@ -10,21 +10,3 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.desktop-hidden {
-  display: block;
-}
-
-.mobile-hidden {
-  display: none;
-}
-
-@media (min-width: 760px) {
-  .desktop-hidden {
-    display: none;
-  }
-
-  .mobile-hidden {
-    display: block;
-  }
-}

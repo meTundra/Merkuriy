@@ -1,14 +1,27 @@
 .contacts {
-  padding-top: 53px;
-  padding-bottom: 61px;
   background-color: lightgray;
+
+  @media (min-width: 760px) {
+    background-image: url("../img/contacts-map-desktop.png");
+    background-position: center;
+    background-color: #2850a9;
+  }
 }
 
 .contacts__content {
   @include mobile-content;
+  padding-top: 52px;
+  padding-bottom: 61px;
   width: 290px;
 
   font-style: normal;
+  @media (min-width: 760px) {
+    @include tablet-content;
+  }
+
+  @media (min-width: 1170px) {
+    @include desktop-content;
+  }
 }
 
 .contacts__wrapper {
@@ -16,6 +29,11 @@
   width: 280px;
   background-color: #ffffff;
   box-shadow: 13px 17px 0 0 rgba(255, 255, 255, 0.4);
+
+  @media (min-width: 760px) {
+    padding-top: 45px;
+    width: 492px;
+  }
 }
 
 .contacts__company-name {
@@ -26,6 +44,13 @@
   line-height: 18px;
   color: #3199c7;
   text-align: right;
+
+  @media (min-width: 760px) {
+    margin-right: 44px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .contacts__company-phone {
@@ -34,10 +59,17 @@
   margin-right: 20px;
   margin-bottom: 6px;
   font-size: 18px;
+  font-weight: bold;
   line-height: 18px;
   color: #0a5a7e;
   text-align: right;
   text-decoration: none;
+
+  @media (min-width: 760px) {
+    margin-right: 44px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .contacts__list {
@@ -46,15 +78,21 @@
 
 .contacts__item {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   padding-top: 27px;
-  padding-bottom: 35px;
   padding-left: 60px;
-  padding-right: 20px;
   width: 280px;
   line-height: 17px;
 
   &:last-child {
     border-top: 1px solid #04235d;
+  }
+
+  @media (min-width: 760px) {
+    padding-top: 55px;
+    padding-left: 116px;
+    width: 492px;
   }
 }
 
@@ -62,14 +100,33 @@
   margin: 0;
   margin-bottom: 8px;
   width: 190px;
+
+  @media (min-width: 760px) {
+    margin-bottom: 12px;
+    width: 265px;
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .contacts__link {
   color: #0a5a7e;
   text-decoration-color: rgba(10, 90, 126, 0.25);
+
+  @media (min-width: 760px) {
+    display: none;
+  }
 }
 
 .contacts__phone {
+  display: block;
+  margin-bottom: 35px;
   color: #000000;
   text-decoration: none;
+
+  @media (min-width: 760px) {
+    margin-bottom: 62px;
+    font-size: 20px;
+    line-height: 37px;
+  }
 }
