@@ -50,15 +50,12 @@
   width: 442px;
   min-height: 70px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 66px;
-    height: 66px;
-    background-color: #005980;
+
+
+  &:nth-child(1) svg {
+    width: 62;
+    height: 76px;
+
   }
 }
 

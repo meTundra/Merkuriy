@@ -1,9 +1,12 @@
 .categories {
+  //background-image: url("../img/categories-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #eaf6fc;
+
   @media (min-width: 760px) {
-    background-image: url("../img/categories-bg-desktop.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #ffffff;
+    background-image: url("../img/categories-bg-desktop.jpg");
+    background-position: center top;
   }
 }
 
@@ -12,6 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
 
   @media (min-width: 760px) {
     @include tablet-content;
@@ -61,8 +65,59 @@
   align-items: flex-end;
   padding-right: 23px;
   background-color: #e9f3fd;
+  background-position: right;
+  background-repeat: no-repeat;
+
   width: 290px;
   height: 215px;
+
+  &:nth-child(1) {
+    background-image: url(../img/woman-1-bg.png);
+
+    @media (min-width: 1170px) {
+      background-image: url(../img/woman-1-desktop-bg.png);
+    }
+  }
+
+  &:nth-child(2) {
+    background-image: url(../img/woman-2-bg.png);
+
+    @media (min-width: 1170px) {
+      background-image: url(../img/woman-2-desktop-bg.png);
+    }
+  }
+
+  &:nth-child(3) {
+    background-image: url(../img/woman-3-bg.png);
+
+    @media (min-width: 1170px) {
+      background-image: url(../img/woman-3-desktop-bg.png);
+    }
+  }
+
+  &:nth-child(4) {
+    background-image: url(../img/woman-4-bg.png);
+
+    @media (min-width: 1170px) {
+      background-image: url(../img/woman-4-desktop-bg.png);
+    }
+  }
+
+  &:nth-child(5) {
+    background-image: url(../img/woman-5-bg.png);
+
+    @media (min-width: 1170px) {
+      background-image: url(../img/woman-5-desktop-bg.png);
+    }
+  }
+
+  &:nth-child(6) {
+    background-image: url(../img/woman-6-bg.png);
+
+    @media (min-width: 1170px) {
+      background-image: url(../img/woman-6-desktop-bg.png);
+    }
+  }
 
   @media (min-width: 760px) {
     margin-bottom: 20px;
@@ -93,6 +148,10 @@
   color: #0a5a7e;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: 1170px) {
+    font-size: 24px;
+  }
 }
 
 .categories__img {

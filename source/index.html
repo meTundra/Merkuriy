@@ -21,6 +21,9 @@
     </noscript>
   </head>
   <body class="page">
+    <div style="display: none">
+      <include src="build/img/svg/sprite.svg"></include>
+    </div>
 
     <header class="page__header  main-header">
       <section class="main-header__info  main-info">
@@ -30,6 +33,9 @@
             <p class="main-info__logo-description">Медицинская одежда, спецодежда и униформа</p>
           </a>
           <div class="main-info__phone-number">
+            <svg class="main-info__phone-pic">
+              <use xlink:href="#spr-phone"></use>
+            </svg>
             <a class="main-info__phone" href="tel:+78002005843">
               8 (800) 200-58-43
             </a>
@@ -54,24 +60,33 @@
             (в р-не пл. Свободы)
           </address>
           <ul class="main-info__social-list">
-            <li class="main-info__social-item">
-              <a href="#">
+            <li>
+              <a class="main-info__social-item" href="#">
+                <svg class="main-info__social-link  main-info__social-link--fb">
+                  <use xlink:href="#spr-facebook"></use>
+                </svg>
                 <span class="visually-hidden">Facebook</span>
               </a>
             </li>
-            <li class="main-info__social-item">
-              <a href="#">
+            <li>
+              <a class="main-info__social-item" href="#">
+                <svg class="main-info__social-link  main-info__social-link--vk">
+                  <use xlink:href="#spr-internet"></use>
+                </svg>
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
-            <li class="main-info__social-item">
-              <a href="#">
+            <li>
+              <a class="main-info__social-item" href="#">
+                <svg class="main-info__social-link  main-info__social-link--inst">
+                  <use xlink:href="#spr-instagram"></use>
+                </svg>
                 <span class="visually-hidden">Instagram</span>
               </a>
             </li>
           </ul>
           <a class="main-info__order-callback" href="#">Обратный звонок</a>
-          <a class="main-info__sign-in">Войти | Регистрация</a>
+          <a class="main-info__sign-in" href="#">Войти | Регистрация</a>
         </div>
       </section>
 
@@ -84,66 +99,156 @@
           <a class="main-nav__open-nav" href="#">
             <span class="visually-hidden">Открыть меню</span>
           </a>
-          <ul class="main-nav__categories nav-categories">
-            <li class="nav-categories__item">
-              <a class="nav-categories__link" href="#">Медицина</a>
-              <ul class="nav-categories__nested-list">
-                <li class="nav-categories__nested-item">
-
-                </li>
-              </ul>
-            </li>
-            <li class="nav-categories__item">
-              <a class="nav-categories__link" href="#">Детство</a>
-              <ul class="nav-categories__nested-list">
-                <li class="nav-categories__nested-item">
-
-                </li>
-              </ul>
-            </li>
-            <li class="nav-categories__item">
-              <a class="nav-categories__link" href="#">Beauty</a>
-              <ul class="nav-categories__nested-list">
-                <li class="nav-categories__nested-item">
-
-                </li>
-              </ul>
-            </li>
-            <li class="nav-categories__item">
-              <a class="nav-categories__link" href="#">Size+</a>
-              <ul class="nav-categories__nested-list">
-                <li class="nav-categories__nested-item">
-
-                </li>
-              </ul>
-            </li>
-            <li class="nav-categories__item">
-              <a class="nav-categories__link" href="#">Буду мамой!</a>
-
-              <ul class="nav-categories__nested-list">
-                <li class="nav-categories__nested-item">
-
-                </li>
-              </ul>
-            </li>
-            <li class="nav-categories__item">
-              <a class="nav-categories__link" href="#">Спецодежда</a>
-              <ul class="nav-categories__nested-list">
-                <li class="nav-categories__nested-item">
-
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <a class="main-nav__search-button" href="#"></a>
-          <input class="main-nav__search-input" type="search" placeholder="Поиск по сайту">
+          <a class="main-nav__search-button" href="#">
+            <svg>
+              <use xlink:href="#spr-search"></use>
+            </svg>
+          </a>
+          <p class="main-nav__search-container">
+            <input class="main-nav__search-input" type="search" placeholder="Поиск по сайту">
+            <svg>
+              <use xlink:href="#spr-search"></use>
+            </svg>
+          </p>
           <a class="main-nav__sign-in" href="#">
             <span class="visually-hidden">Вход или регистрация</span>
           </a>
           <a class="main-nav__cart" href="#">
+            <svg>
+              <use xlink:href="#spr-supermarket"></use>
+            </svg>
             <span class="main-nav__input-hint">0 товаров</span>
           </a>
         </div>
+
+        <ul class="main-nav__categories nav-categories">
+          <li class="nav-categories__item">
+            <a class="nav-categories__link" href="#">Медицина</a>
+            <ul class="nav-categories__nested-list">
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link  nav-categories__nested-link--heading" href="#">Мужская одежда</a>
+                <ul class="nav-categories__deep-list">
+                  <li class="nav-categories__deep-item">
+                    <a class="nav-categories__deep-link" href="#">Халаты</a>
+                  </li>
+                  <li class="nav-categories__deep-item">
+                    <a class="nav-categories__deep-link" href="#">Блузы</a>
+                  </li>
+                  <li class="nav-categories__deep-item">
+                    <a class="nav-categories__deep-link" href="#">Брюки</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link  nav-categories__nested-link--heading" href="#">Женская одежда</a>
+                <ul class="nav-categories__deep-list">
+                  <li class="nav-categories__deep-item">
+                    <a class="nav-categories__deep-link" href="#">Халаты</a>
+                  </li>
+                  <li class="nav-categories__deep-item">
+                    <a class="nav-categories__deep-link" href="#">Блузы</a>
+                  </li>
+                  <li class="nav-categories__deep-item">
+                    <a class="nav-categories__deep-link" href="#">Брюки</a>
+                  </li>
+                  <li class="nav-categories__deep-item">
+                    <a class="nav-categories__deep-link" href="#">Юбки</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link  nav-categories__nested-link--heading" href="#">Унисекс</a>
+                <ul class="nav-categories__deep-list">
+                  <li class="nav-categories__deep-item">
+                    <a class="nav-categories__deep-link" href="#">Халаты</a>
+                  </li>
+                  <li class="nav-categories__deep-item">
+                    <a class="nav-categories__deep-link" href="#">Колпаки</a>
+                  </li>
+                  <li class="nav-categories__deep-item">
+                    <a class="nav-categories__deep-link" href="#">Бахилы</a>
+                  </li>
+                  <li class="nav-categories__deep-item">
+                    <a class="nav-categories__deep-link" href="#">Фартуки</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-categories__item">
+            <a class="nav-categories__link" href="#">Детство</a>
+            <ul class="nav-categories__nested-list">
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Блузы</a>
+              </li>
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Брюки</a>
+              </li>
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Колпаки</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-categories__item">
+            <a class="nav-categories__link" href="#">Beauty</a>
+            <ul class="nav-categories__nested-list">
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Халаты</a>
+              </li>
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Сарафаны</a>
+              </li>
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Фартуки</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-categories__item">
+            <a class="nav-categories__link" href="#">Size+</a>
+            <ul class="nav-categories__nested-list">
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Халаты</a>
+              </li>
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Блузы</a>
+              </li>
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Колпаки</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-categories__item">
+            <a class="nav-categories__link" href="#">Буду мамой!</a>
+            <ul class="nav-categories__nested-list">
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Халаты</a>
+              </li>
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Блузы</a>
+              </li>
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Брюки</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-categories__item">
+            <a class="nav-categories__link" href="#">Спецодежда</a>
+            <ul class="nav-categories__nested-list">
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Жилеты</a>
+              </li>
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Куртки</a>
+              </li>
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Брюки</a>
+              </li>
+              <li class="nav-categories__nested-item">
+                <a class="nav-categories__nested-link" href="#">Фартуки</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </nav>
 
       <section class="main-header__popular  popular-sections">
@@ -271,38 +376,56 @@
           </h2>
 
           <ul class="categories__list">
-            <li class="categories__item" >
-              <img class="categories__img" src="img/woman-1.png" width="118" height="191" alt="Пример одежды из категории &laquo;Медицина&raquo;">
+            <li class="categories__item">
+              <picture>
+                <source srcset="img/woman-1-desktop.png" media="(min-width: 1170px)">
+                <img class="categories__img" src="img/woman-1.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
+              </picture>
               <a class="categories__link" href="#">
                 Медицина
               </a>
             </li>
             <li class="categories__item" >
-              <img class="categories__img" src="img/woman-2.png" width="118" height="194" alt="Пример одежды из категории &laquo;Медицина&raquo;">
+              <picture>
+                <source srcset="img/woman-2-desktop.png" media="(min-width: 1170px)">
+                <img class="categories__img" src="img/woman-2.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
+              </picture>
               <a class="categories__link" href="#">
                 Детство
               </a>
             </li>
             <li class="categories__item" >
-              <img class="categories__img" src="img/woman-3.png" width="128" height="194" alt="Пример одежды из категории &laquo;Медицина&raquo;">
+              <picture>
+                <source srcset="img/woman-3-desktop.png" media="(min-width: 1170px)">
+                <img class="categories__img" src="img/woman-3.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
+              </picture>
               <a class="categories__link" href="#">
                 Beauty
               </a>
             </li>
             <li class="categories__item" >
-              <img class="categories__img" src="img/woman-4.png" width="104" height="206" alt="Пример одежды из категории &laquo;Медицина&raquo;">
+              <picture>
+                <source srcset="img/woman-4-desktop.png" media="(min-width: 1170px)">
+                <img class="categories__img" src="img/woman-4.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
+              </picture>
               <a class="categories__link" href="#">
                 Size+
               </a>
             </li>
             <li class="categories__item" >
-              <img class="categories__img" src="img/woman-5.png" width="130" height="201" alt="Пример одежды из категории &laquo;Медицина&raquo;">
+              <picture>
+                <source srcset="img/woman-5-desktop.png" media="(min-width: 1170px)">
+                <img class="categories__img" src="img/woman-5.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
+              </picture>
               <a class="categories__link" href="#">
                 Буду мамой
               </a>
             </li>
             <li class="categories__item" >
-              <img class="categories__img" src="img/woman-6.png" width="117" height="197" alt="Пример одежды из категории &laquo;Медицина&raquo;">
+              <picture>
+                <source srcset="img/woman-6-desktop.png" media="(min-width: 1170px)">
+                <img class="categories__img" src="img/woman-6.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
+              </picture>
               <a class="categories__link" href="#">
                 Спецодежда
               </a>
@@ -316,13 +439,35 @@
           <h2 class="popular-products__heading">Популярные товары</h2>
           <ul class="popular-products__list">
             <li class="popular-products__item  popular-product">
-              <p class="popular-product__image">
-                <img src="img/popular-woman-1.png" width="95" height="330" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
-              </p>
+              <div class="popular-product__image">
+                <p class="popular-product__sticker  popular-product__sticker--new">Новинка</p>
+                <p class="popular-product__sticker  popular-product__sticker--sale">Sale</p>
+                <p class="popular-product__sticker  popular-product__sticker--hit">Хит</p>
+                <picture>
+                  <source srcset="img/popular-woman-1-desktop.png" media="(min-width: 760px)">
+                  <img src="img/popular-woman-1.png" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
+                </picture>
+
+                <div class="popular-product__overlay">
+                  <h4 class="popular-product__overlay-heading">Доступные размеры</h4>
+                  <ul class="popular-product__measurements-list">
+                    <li class="popular-product__measurements-item">42</li>
+                    <li class="popular-product__measurements-item">44</li>
+                    <li class="popular-product__measurements-item">46</li>
+                    <li class="popular-product__measurements-item">48</li>
+                    <li class="popular-product__measurements-item">50</li>
+                    <li class="popular-product__measurements-item">52</li>
+                    <li class="popular-product__measurements-item">54</li>
+                    <li class="popular-product__measurements-item">56</li>
+                    <li class="popular-product__measurements-item">58</li>
+                  </ul>
+                  <a class="popular-product__quick-view" href="#">Быстрый просмотр</a>
+                </div>
+              </div>
               <div class="popular-product__info">
-                <p class="popular-product__description">
+                <h3 class="popular-product__heading">
                   Костюм медицинский К-74 «Фаина»
-                </p>
+                </h3>
                 <p class="popular-product__price">
                   900 руб
                 </p>
@@ -332,13 +477,34 @@
             </li>
 
             <li class="popular-products__item  popular-product">
-              <p class="popular-product__image">
-                <img src="img/popular-woman-2.png" width="89" height="329" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
-              </p>
+              <div class="popular-product__image">
+                <p class="popular-product__sticker  popular-product__sticker--new">Новинка</p>
+                <p class="popular-product__sticker  popular-product__sticker--sale">Sale</p>
+                <p class="popular-product__sticker  popular-product__sticker--hit">Хит</p>
+                <picture>
+                  <source srcset="img/popular-woman-2-desktop.png" media="(min-width: 760px)">
+                  <img src="img/popular-woman-2.png" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
+                </picture>
+                <div class="popular-product__overlay">
+                  <h4 class="popular-product__overlay-heading">Доступные размеры</h4>
+                  <ul class="popular-product__measurements-list">
+                    <li class="popular-product__measurements-item">42</li>
+                    <li class="popular-product__measurements-item">44</li>
+                    <li class="popular-product__measurements-item">46</li>
+                    <li class="popular-product__measurements-item">48</li>
+                    <li class="popular-product__measurements-item">50</li>
+                    <li class="popular-product__measurements-item">52</li>
+                    <li class="popular-product__measurements-item">54</li>
+                    <li class="popular-product__measurements-item">56</li>
+                    <li class="popular-product__measurements-item">58</li>
+                  </ul>
+                  <a class="popular-product__quick-view" href="#">Быстрый просмотр</a>
+                </div>
+              </div>
               <div class="popular-product__info">
-                <p class="popular-product__description">
+                <h3 class="popular-product__heading">
                   Костюм медицинский К-74 «Фаина»
-                </p>
+                </h3>
                 <p class="popular-product__price">
                   900 руб
                 </p>
@@ -348,13 +514,34 @@
             </li>
 
             <li class="popular-products__item  popular-product">
-              <p class="popular-product__image">
-                <img src="img/popular-woman-3.png" width="94" height="332" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
-              </p>
+              <div class="popular-product__image">
+                <p class="popular-product__sticker  popular-product__sticker--new">Новинка</p>
+                <p class="popular-product__sticker  popular-product__sticker--sale">Sale</p>
+                <p class="popular-product__sticker  popular-product__sticker--hit">Хит</p>
+                <picture>
+                  <source srcset="img/popular-woman-3-desktop.png" media="(min-width: 760px)">
+                  <img src="img/popular-woman-3.png" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
+                </picture>
+                <div class="popular-product__overlay">
+                  <h4 class="popular-product__overlay-heading">Доступные размеры</h4>
+                  <ul class="popular-product__measurements-list">
+                    <li class="popular-product__measurements-item">42</li>
+                    <li class="popular-product__measurements-item">44</li>
+                    <li class="popular-product__measurements-item">46</li>
+                    <li class="popular-product__measurements-item">48</li>
+                    <li class="popular-product__measurements-item">50</li>
+                    <li class="popular-product__measurements-item">52</li>
+                    <li class="popular-product__measurements-item">54</li>
+                    <li class="popular-product__measurements-item">56</li>
+                    <li class="popular-product__measurements-item">58</li>
+                  </ul>
+                  <a class="popular-product__quick-view" href="#">Быстрый просмотр</a>
+                </div>
+              </div>
               <div class="popular-product__info">
-                <p class="popular-product__description">
+                <h3 class="popular-product__heading">
                   Костюм медицинский К-74 «Фаина»
-                </p>
+                </h3>
                 <p class="popular-product__price">
                   900 руб
                 </p>
@@ -364,13 +551,34 @@
             </li>
 
             <li class="popular-products__item  popular-product">
-              <p class="popular-product__image">
-                <img src="img/popular-woman-2.png" width="89" height="329" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
-              </p>
+              <div class="popular-product__image">
+                <p class="popular-product__sticker  popular-product__sticker--new">Новинка</p>
+                <p class="popular-product__sticker  popular-product__sticker--sale">Sale</p>
+                <p class="popular-product__sticker  popular-product__sticker--hit">Хит</p>
+                <picture>
+                  <source srcset="img/popular-woman-2-desktop.png" media="(min-width: 760px)">
+                  <img src="img/popular-woman-2.png" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
+                </picture>
+                <div class="popular-product__overlay">
+                  <h4 class="popular-product__overlay-heading">Доступные размеры</h4>
+                  <ul class="popular-product__measurements-list">
+                    <li class="popular-product__measurements-item">42</li>
+                    <li class="popular-product__measurements-item">44</li>
+                    <li class="popular-product__measurements-item">46</li>
+                    <li class="popular-product__measurements-item">48</li>
+                    <li class="popular-product__measurements-item">50</li>
+                    <li class="popular-product__measurements-item">52</li>
+                    <li class="popular-product__measurements-item">54</li>
+                    <li class="popular-product__measurements-item">56</li>
+                    <li class="popular-product__measurements-item">58</li>
+                  </ul>
+                  <a class="popular-product__quick-view" href="#">Быстрый просмотр</a>
+                </div>
+              </div>
               <div class="popular-product__info">
-                <p class="popular-product__description">
+                <h3 class="popular-product__heading">
                   Костюм медицинский К-74 «Фаина»
-                </p>
+                </h3>
                 <p class="popular-product__price">
                   900 руб
                 </p>
@@ -380,13 +588,34 @@
             </li>
 
             <li class="popular-products__item  popular-product">
-              <p class="popular-product__image">
-                <img src="img/popular-woman-3.png" width="94" height="332" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
-              </p>
+              <div class="popular-product__image">
+                <p class="popular-product__sticker  popular-product__sticker--new">Новинка</p>
+                <p class="popular-product__sticker  popular-product__sticker--sale">Sale</p>
+                <p class="popular-product__sticker  popular-product__sticker--hit">Хит</p>
+                <picture>
+                  <source srcset="img/popular-woman-3-desktop.png" media="(min-width: 760px)">
+                  <img src="img/popular-woman-3.png" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
+                </picture>
+                <div class="popular-product__overlay">
+                  <h4 class="popular-product__overlay-heading">Доступные размеры</h4>
+                  <ul class="popular-product__measurements-list">
+                    <li class="popular-product__measurements-item">42</li>
+                    <li class="popular-product__measurements-item">44</li>
+                    <li class="popular-product__measurements-item">46</li>
+                    <li class="popular-product__measurements-item">48</li>
+                    <li class="popular-product__measurements-item">50</li>
+                    <li class="popular-product__measurements-item">52</li>
+                    <li class="popular-product__measurements-item">54</li>
+                    <li class="popular-product__measurements-item">56</li>
+                    <li class="popular-product__measurements-item">58</li>
+                  </ul>
+                  <a class="popular-product__quick-view" href="#">Быстрый просмотр</a>
+                </div>
+              </div>
               <div class="popular-product__info">
-                <p class="popular-product__description">
+                <h3 class="popular-product__heading">
                   Костюм медицинский К-74 «Фаина»
-                </p>
+                </h3>
                 <p class="popular-product__price">
                   900 руб
                 </p>
@@ -396,13 +625,34 @@
             </li>
 
             <li class="popular-products__item  popular-product">
-              <p class="popular-product__image">
-                <img src="img/popular-woman-3.png" width="94" height="332" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
-              </p>
+              <div class="popular-product__image">
+                <p class="popular-product__sticker  popular-product__sticker--new">Новинка</p>
+                <p class="popular-product__sticker  popular-product__sticker--sale">Sale</p>
+                <p class="popular-product__sticker  popular-product__sticker--hit">Хит</p>
+                <picture>
+                  <source srcset="img/popular-woman-3-desktop.png" media="(min-width: 760px)">
+                  <img src="img/popular-woman-3.png" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
+                </picture>
+                <div class="popular-product__overlay">
+                  <h4 class="popular-product__overlay-heading">Доступные размеры</h4>
+                  <ul class="popular-product__measurements-list">
+                    <li class="popular-product__measurements-item">42</li>
+                    <li class="popular-product__measurements-item">44</li>
+                    <li class="popular-product__measurements-item">46</li>
+                    <li class="popular-product__measurements-item">48</li>
+                    <li class="popular-product__measurements-item">50</li>
+                    <li class="popular-product__measurements-item">52</li>
+                    <li class="popular-product__measurements-item">54</li>
+                    <li class="popular-product__measurements-item">56</li>
+                    <li class="popular-product__measurements-item">58</li>
+                  </ul>
+                  <a class="popular-product__quick-view" href="#">Быстрый просмотр</a>
+                </div>
+              </div>
               <div class="popular-product__info">
-                <p class="popular-product__description">
+                <h3 class="popular-product__heading">
                   Костюм медицинский К-74 «Фаина»
-                </p>
+                </h3>
                 <p class="popular-product__price">
                   900 руб
                 </p>
@@ -588,17 +838,32 @@
             <ul class="contacts__list">
               <li class="contacts__item">
                 <p class="contacts__address">
+                  <svg>
+                    <use xlink:href="#spr-map"></use>
+                  </svg>
                   г. Нижний Новгород <br>
                   603006, пер.Ткачева, д.5 (в р-не пл. "Свободы"). <a class="contacts__link" href="#">Показать на карте</a>
                 </p>
-                <a class="contacts__phone" href="tel:+78314196106">+7 (831) 419-61-06</a>
+                <a class="contacts__phone" href="tel:+78314196106">
+                  <svg>
+                    <use xlink:href="#spr-phone"></use>
+                  </svg>
+                  +7 (831) 419-61-06</a>
               </li>
               <li class="contacts__item">
                 <p class="contacts__address">
+                  <svg>
+                    <use xlink:href="#spr-map"></use>
+                  </svg>
                   г. Нижний Новгород <br>
                   603006, пер.Ткачева, д.5 (в р-не пл. "Свободы"). <a class="contacts__link" href="#">Показать на карте</a>
                 </p>
-                <a class="contacts__phone" href="tel:+78314196106">+7 (831) 419-61-06</a>
+                <a class="contacts__phone" href="tel:+78314196106">
+                  <svg>
+                    <use xlink:href="#spr-phone"></use>
+                  </svg>
+                  +7 (831) 419-61-06
+                </a>
               </li>
             </ul>
           </div>
@@ -815,16 +1080,25 @@
             <ul class="footer-info__social">
               <li>
                 <a class="footer-info__social-link">
+                  <svg class="footer-info__social-fb">
+                    <use xlink:href="#spr-facebook"></use>
+                  </svg>
                   <span class="visually-hidden">Facebook</span>
                 </a>
               </li>
               <li>
                 <a class="footer-info__social-link">
+                  <svg class="footer-info__social-vk">
+                    <use xlink:href="#spr-internet"></use>
+                  </svg>
                   <span class="visually-hidden">ВКонтакте</span>
                 </a>
               </li>
               <li>
                 <a class="footer-info__social-link">
+                  <svg class="footer-info__social-inst">
+                    <use xlink:href="#spr-instagram"></use>
+                  </svg>
                   <span class="visually-hidden">Instagram</span>
                 </a>
               </li>
@@ -843,9 +1117,15 @@
             <div class="footer-info__contacts">
               <p class="footer-info__phone">
                 8-800-200-58-43
+                <svg>
+                  <use xlink:href="#spr-phone"></use>
+                </svg>
               </p>
               <p class="footer-info__email">
                 Email@email.com
+                <svg>
+                  <use xlink:href="#spr-mail"></use>
+                </svg>
               </p>
             </div>
 
@@ -867,8 +1147,45 @@
           </div>
         </div>
       </section>
-
-
     </footer>
+
+    <!--<div class="popup  popup-city">-->
+      <!--<h2 class="popup-city__heading">Выберите город</h2>-->
+      <!--<ul class="popup-city__list">-->
+        <!--<li class="popup-city__item">Москва</li>-->
+        <!--<li class="popup-city__item">Санкт-Петербург</li>-->
+        <!--<li class="popup-city__item">Москва</li>-->
+        <!--<li class="popup-city__item">Санкт-Петербург</li>-->
+        <!--<li class="popup-city__item">Самара</li>-->
+        <!--<li class="popup-city__item">Тула</li>-->
+        <!--<li class="popup-city__item">Нижний Новгород</li>-->
+        <!--<li class="popup-city__item">Москва</li>-->
+        <!--<li class="popup-city__item">Санкт-Петербург</li>-->
+        <!--<li class="popup-city__item">Москва</li>-->
+        <!--<li class="popup-city__item">Санкт-Петербург</li>-->
+        <!--<li class="popup-city__item">Самара</li>-->
+        <!--<li class="popup-city__item">Тула</li>-->
+        <!--<li class="popup-city__item">Нижний Новгород</li>-->
+        <!--<li class="popup-city__item">Москва</li>-->
+        <!--<li class="popup-city__item">Санкт-Петербург</li>-->
+        <!--<li class="popup-city__item">Москва</li>-->
+        <!--<li class="popup-city__item">Санкт-Петербург</li>-->
+        <!--<li class="popup-city__item">Самара</li>-->
+        <!--<li class="popup-city__item">Тула</li>-->
+        <!--<li class="popup-city__item">Нижний Новгород</li>-->
+      <!--</ul>-->
+      <!--<button class="popup-city__close" type="button">-->
+        <!--<span class="visually-hidden">Закрыть окно</span>-->
+      <!--</button>-->
+    <!--</div>-->
+
+    <!--<div class="popup  popup-callback">-->
+
+    <!--</div>-->
+
+    <!--<div class="popup  popup-auth">-->
+
+    <!--</div>-->
+    <script src="js/script.js"></script>
   </body>
 </html>

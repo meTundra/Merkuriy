@@ -30,6 +30,7 @@
   @include list-reset;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   width: 96px;
 
@@ -43,11 +44,22 @@
 
 }
 
-.footer-info__social-link {
-  display: block;
-  width: 25px;
-  height: 25px;
-  background-color: #63b0d2;
+.footer-info__social-fb {
+  width: 21px;
+  height: 31px;
+  color: #000000;
+}
+
+.footer-info__social-vk {
+  width: 28px;
+  height: 26px;
+  color: #000000;
+}
+
+.footer-info__social-inst {
+  width: 23px;
+  height: 23px;
+  color: #000000;
 }
 
 .footer-info__pay-cards {
@@ -67,17 +79,20 @@
 }
 
 .footer-info__contacts {
-  display: flex;
   font-size: 16px;
   line-height: 18px;
 
   @media (min-width: 760px) {
+    display: flex;
     padding-top: 30px;
     width: 380px;
     justify-content: space-between;
   }
 
   @media (min-width: 1170px) {
+    margin-left: auto;
+    padding-top: 0;
+    width: auto;
     flex-direction: column;
   }
 }
@@ -91,33 +106,34 @@
 
 .footer-info__phone {
   position: relative;
+  display: flex;
   margin: 0;
   margin-bottom: 22px;
   padding-right: 54px;
 
-  &::before {
-    content: "";
+  & svg {
     position: absolute;
-    top: -8px;
     right: 0;
-    width: 25px;
-    height: 25px;
-    background-color: #63b0d2;
+    bottom: 0;
+    width: 23px;
+    height: 22px;
+    color: #3199c7;
   }
 }
 
 .footer-info__email {
   position: relative;
+  display: flex;
   margin: 0;
+  margin-bottom: 22px;
   padding-right: 54px;
 
-  &::before {
-    content: "";
+  & svg {
     position: absolute;
-    top: -8px;
     right: 0;
-    width: 25px;
-    height: 25px;
-    background-color: #63b0d2;
+    bottom: 0;
+    width: 24px;
+    height: 19px;
+    color: #3199c7;
   }
 }

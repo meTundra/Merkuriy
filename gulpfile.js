@@ -9,11 +9,24 @@ const htmlmin = require('gulp-htmlmin');
 const autoprefixer = require('autoprefixer');
 const browserSync = require('browser-sync');
 const del = require('del');
+const posthtml = require('gulp-posthtml');
+const include = require('posthtml-include');
+const svgstore = require('gulp-svgstore');
 
 function html () {
   return gulp.src('source/**/*.html')
+    .pipe(posthtml([include()]))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build/'))
+}
+
+function sprite () {
+  return gulp.src('source/img/svg/spr-*.svg')
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img/svg/'))
 }
 
 function css () {
@@ -68,5 +81,5 @@ function refresh (cb) {
   cb();
 }
 
-exports.build = gulp.series(clean, copy, html, css, js);
+exports.build = gulp.series(clean, copy, sprite, html, css, js);
 exports.start = gulp.series(exports.build, server);

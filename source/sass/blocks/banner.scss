@@ -1,6 +1,9 @@
 .banner {
+  background-image: url("../img/banner-bg.jpg");
+  background-position: center;
   background-color: #aad2e6;
   @media (min-width: 760px) {
+    background-image: none;
     height: 564px;
     box-shadow:
       0 18px 38px 0 rgba(0, 0, 0, 0.10)
