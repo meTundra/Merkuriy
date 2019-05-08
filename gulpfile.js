@@ -3,7 +3,7 @@ const sass = require('gulp-sass');
 const plumber = require('gulp-plumber');
 const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
-const csso = require('gulp-csso');
+// const csso = require('gulp-csso');
 const uglify = require('gulp-uglify');
 const htmlmin = require('gulp-htmlmin');
 const autoprefixer = require('autoprefixer');
@@ -33,7 +33,6 @@ function css () {
   return gulp.src('source/sass/style.scss')
     .pipe(plumber())
     .pipe(sass())
-    .pipe(csso())
     .pipe(postcss([
       autoprefixer()
     ]))
