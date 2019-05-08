@@ -1,6 +1,8 @@
 @import "normalize";
 @import "fonts";
 @import "vars-n-mixins";
+@import "blocks/button";
+@import "blocks/select";
 @import "blocks/page";
 @import "blocks/main-header";
 @import "blocks/main-info";
@@ -19,5 +21,9 @@
 @import "blocks/footer-categories";
 @import "blocks/schedule-table";
 @import "blocks/footer-info";
-@import "blocks/popup";
+@import "blocks/popups";
+@import "blocks/popup-city";
+@import "blocks/popup-callback";
+@import "blocks/popup-auth";
+@import "blocks/popup-quick-view.scss";
 @import "helpers";

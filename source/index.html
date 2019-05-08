@@ -85,8 +85,8 @@
               </a>
             </li>
           </ul>
-          <a class="main-info__order-callback" href="#">Обратный звонок</a>
-          <a class="main-info__sign-in" href="#">Войти | Регистрация</a>
+          <a class="main-info__order-callback  button" href="#">Обратный звонок</a>
+          <a class="main-info__sign-in  sign-in  button  button--inverted" href="#">Войти | Регистрация</a>
         </div>
       </section>
 
@@ -110,7 +110,10 @@
               <use xlink:href="#spr-search"></use>
             </svg>
           </p>
-          <a class="main-nav__sign-in" href="#">
+          <a class="main-nav__sign-in  sign-in" href="#">
+            <svg>
+              <use xlink:href="#spr-avatar"></use>
+            </svg>
             <span class="visually-hidden">Вход или регистрация</span>
           </a>
           <a class="main-nav__cart" href="#">
@@ -295,19 +298,28 @@
     <main class="page__main-content main-content">
       <section class="main-content__banner  banner">
         <div class="banner__content">
-          <h3 class="banner__heading">
-            Модельная одежда
-          </h3>
-          <p class="banner__lead">
-            для медицинских учереждений на заказ!
-          </p>
-          <p class="banner__description">
-            Более 12 лет мы создаем модельную медицинскую одежду, которая учитывает современные тенденции в моде.
-          </p>
-          <a class="banner__link" href="#">
-            В каталог
-          </a>
-          <img class="banner__image" src="img/banner-1-bg.png" width="138" height="152" alt="Пример медицинской одежды">
+          <button class="banner__button  banner__button--left"></button>
+          <div class="banner__text">
+            <h3 class="banner__heading">
+              Модельная одежда
+            </h3>
+            <p class="banner__lead">
+              для медицинских учереждений на заказ!
+            </p>
+            <p class="banner__description">
+              Более 12 лет мы создаем модельную медицинскую одежду, которая учитывает современные тенденции в моде.
+            </p>
+            <a class="banner__link" href="#">
+              В каталог
+            </a>
+          </div>
+          <picture>
+            <source srcset="img/banner-1-bg-desktop.png" media="(min-width: 1170px)">
+            <source srcset="img/banner-1-bg-tablet.png" media="(min-width: 760px)">
+            <img class="banner__image" src="img/banner-1-bg.png" alt="Пример медицинской одежды">
+          </picture>
+
+          <button class="banner__button  banner__button--right"></button>
         </div>
       </section>
 
@@ -319,7 +331,7 @@
               Высокое качество
             </h3>
             <p class="advantages__card-description">
-              Английских и японские ткани,
+              Английские и японские ткани, <br>
               немецкая фурнитура.
             </p>
           </li>
@@ -336,7 +348,7 @@
               Гарантии
             </h3>
             <p class="advantages__card-description">
-              Контроль качества готовой продукции
+              Контроль качества готовой продукции <br>
               по пяти показателям.
             </p>
           </li>
@@ -366,7 +378,7 @@
             </p>
           </li>
         </ul>
-        <a class="advantages__link" href="#">Бесплатная консультация</a>
+        <a class="advantages__link  button  button--inverted" href="#">Бесплатная консультация</a>
       </section>
 
       <section class="main-content__categories  categories">
@@ -384,8 +396,9 @@
               <a class="categories__link" href="#">
                 Медицина
               </a>
+              <a class="categories__to-catalog" href="#">В каталог</a>
             </li>
-            <li class="categories__item" >
+            <li class="categories__item">
               <picture>
                 <source srcset="img/woman-2-desktop.png" media="(min-width: 1170px)">
                 <img class="categories__img" src="img/woman-2.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
@@ -393,8 +406,9 @@
               <a class="categories__link" href="#">
                 Детство
               </a>
+              <a class="categories__to-catalog" href="#">В каталог</a>
             </li>
-            <li class="categories__item" >
+            <li class="categories__item">
               <picture>
                 <source srcset="img/woman-3-desktop.png" media="(min-width: 1170px)">
                 <img class="categories__img" src="img/woman-3.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
@@ -402,6 +416,7 @@
               <a class="categories__link" href="#">
                 Beauty
               </a>
+              <a class="categories__to-catalog" href="#">В каталог</a>
             </li>
             <li class="categories__item" >
               <picture>
@@ -411,8 +426,9 @@
               <a class="categories__link" href="#">
                 Size+
               </a>
+              <a class="categories__to-catalog" href="#">В каталог</a>
             </li>
-            <li class="categories__item" >
+            <li class="categories__item">
               <picture>
                 <source srcset="img/woman-5-desktop.png" media="(min-width: 1170px)">
                 <img class="categories__img" src="img/woman-5.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
@@ -420,8 +436,9 @@
               <a class="categories__link" href="#">
                 Буду мамой
               </a>
+              <a class="categories__to-catalog" href="#">В каталог</a>
             </li>
-            <li class="categories__item" >
+            <li class="categories__item">
               <picture>
                 <source srcset="img/woman-6-desktop.png" media="(min-width: 1170px)">
                 <img class="categories__img" src="img/woman-6.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
@@ -429,6 +446,7 @@
               <a class="categories__link" href="#">
                 Спецодежда
               </a>
+              <a class="categories__to-catalog" href="#">В каталог</a>
             </li>
           </ul>
         </div>
@@ -461,7 +479,12 @@
                     <li class="popular-product__measurements-item">56</li>
                     <li class="popular-product__measurements-item">58</li>
                   </ul>
-                  <a class="popular-product__quick-view" href="#">Быстрый просмотр</a>
+                  <a class="popular-product__quick-view" href="#">
+                    <svg>
+                      <use xlink:href="#spr-view"></use>
+                    </svg>
+                    Быстрый просмотр
+                  </a>
                 </div>
               </div>
               <div class="popular-product__info">
@@ -471,8 +494,11 @@
                 <p class="popular-product__price">
                   900 руб
                 </p>
-                <button class="popular-product__like"><span class="visually-hidden">Нравится</span></button>
-                <button class="popular-product__watch"></button>
+                <button class="popular-product__watch">
+                  <svg>
+                    <use xlink:href="#spr-view"></use>
+                  </svg>
+                </button>
               </div>
             </li>
 
@@ -498,7 +524,12 @@
                     <li class="popular-product__measurements-item">56</li>
                     <li class="popular-product__measurements-item">58</li>
                   </ul>
-                  <a class="popular-product__quick-view" href="#">Быстрый просмотр</a>
+                  <a class="popular-product__quick-view" href="#">
+                    <svg>
+                      <use xlink:href="#spr-view"></use>
+                    </svg>
+                    Быстрый просмотр
+                  </a>
                 </div>
               </div>
               <div class="popular-product__info">
@@ -508,8 +539,11 @@
                 <p class="popular-product__price">
                   900 руб
                 </p>
-                <button class="popular-product__like"><span class="visually-hidden">Нравится</span></button>
-                <button class="popular-product__watch"></button>
+                <button class="popular-product__watch">
+                  <svg>
+                    <use xlink:href="#spr-view"></use>
+                  </svg>
+                </button>
               </div>
             </li>
 
@@ -535,7 +569,12 @@
                     <li class="popular-product__measurements-item">56</li>
                     <li class="popular-product__measurements-item">58</li>
                   </ul>
-                  <a class="popular-product__quick-view" href="#">Быстрый просмотр</a>
+                  <a class="popular-product__quick-view" href="#">
+                    <svg>
+                      <use xlink:href="#spr-view"></use>
+                    </svg>
+                    Быстрый просмотр
+                  </a>
                 </div>
               </div>
               <div class="popular-product__info">
@@ -545,8 +584,11 @@
                 <p class="popular-product__price">
                   900 руб
                 </p>
-                <button class="popular-product__like"><span class="visually-hidden">Нравится</span></button>
-                <button class="popular-product__watch"></button>
+                <button class="popular-product__watch">
+                  <svg>
+                    <use xlink:href="#spr-view"></use>
+                  </svg>
+                </button>
               </div>
             </li>
 
@@ -572,7 +614,12 @@
                     <li class="popular-product__measurements-item">56</li>
                     <li class="popular-product__measurements-item">58</li>
                   </ul>
-                  <a class="popular-product__quick-view" href="#">Быстрый просмотр</a>
+                  <a class="popular-product__quick-view" href="#">
+                    <svg>
+                      <use xlink:href="#spr-view"></use>
+                    </svg>
+                    Быстрый просмотр
+                  </a>
                 </div>
               </div>
               <div class="popular-product__info">
@@ -582,8 +629,11 @@
                 <p class="popular-product__price">
                   900 руб
                 </p>
-                <button class="popular-product__like"><span class="visually-hidden">Нравится</span></button>
-                <button class="popular-product__watch"></button>
+                <button class="popular-product__watch">
+                  <svg>
+                    <use xlink:href="#spr-view"></use>
+                  </svg>
+                </button>
               </div>
             </li>
 
@@ -609,7 +659,12 @@
                     <li class="popular-product__measurements-item">56</li>
                     <li class="popular-product__measurements-item">58</li>
                   </ul>
-                  <a class="popular-product__quick-view" href="#">Быстрый просмотр</a>
+                  <a class="popular-product__quick-view" href="#">
+                    <svg>
+                      <use xlink:href="#spr-view"></use>
+                    </svg>
+                    Быстрый просмотр
+                  </a>
                 </div>
               </div>
               <div class="popular-product__info">
@@ -619,8 +674,11 @@
                 <p class="popular-product__price">
                   900 руб
                 </p>
-                <button class="popular-product__like"><span class="visually-hidden">Нравится</span></button>
-                <button class="popular-product__watch"></button>
+                <button class="popular-product__watch">
+                  <svg>
+                    <use xlink:href="#spr-view"></use>
+                  </svg>
+                </button>
               </div>
             </li>
 
@@ -646,7 +704,12 @@
                     <li class="popular-product__measurements-item">56</li>
                     <li class="popular-product__measurements-item">58</li>
                   </ul>
-                  <a class="popular-product__quick-view" href="#">Быстрый просмотр</a>
+                  <a class="popular-product__quick-view" href="#">
+                    <svg>
+                      <use xlink:href="#spr-view"></use>
+                    </svg>
+                    Быстрый просмотр
+                  </a>
                 </div>
               </div>
               <div class="popular-product__info">
@@ -656,8 +719,11 @@
                 <p class="popular-product__price">
                   900 руб
                 </p>
-                <button class="popular-product__like"><span class="visually-hidden">Нравится</span></button>
-                <button class="popular-product__watch"></button>
+                <button class="popular-product__watch">
+                  <svg>
+                    <use xlink:href="#spr-view"></use>
+                  </svg>
+                </button>
               </div>
             </li>
           </ul>
@@ -816,7 +882,7 @@
                 </table>
               </li>
             </ul>
-            <a class="representatives__link" href="#">
+            <a class="representatives__link  button" href="#">
               Хочешь стать нашим партнером?
             </a>
           </div>
@@ -1074,12 +1140,12 @@
           </ul>
 
           <div class="footer-categories__info  footer-info">
-            <p class="footer-info__logo">
+            <a class="footer-info__logo" href="#">
               <img src="img/logo-desktop.png" width="318" height="50" alt="Логотип компании &laquo;Меркурий-Интер-Лаб&raquo;">
-            </p>
+            </a>
             <ul class="footer-info__social">
               <li>
-                <a class="footer-info__social-link">
+                <a class="footer-info__social-link" href="#">
                   <svg class="footer-info__social-fb">
                     <use xlink:href="#spr-facebook"></use>
                   </svg>
@@ -1087,7 +1153,7 @@
                 </a>
               </li>
               <li>
-                <a class="footer-info__social-link">
+                <a class="footer-info__social-link" href="#">
                   <svg class="footer-info__social-vk">
                     <use xlink:href="#spr-internet"></use>
                   </svg>
@@ -1095,7 +1161,7 @@
                 </a>
               </li>
               <li>
-                <a class="footer-info__social-link">
+                <a class="footer-info__social-link" href="#">
                   <svg class="footer-info__social-inst">
                     <use xlink:href="#spr-instagram"></use>
                   </svg>
@@ -1149,43 +1215,304 @@
       </section>
     </footer>
 
-    <!--<div class="popup  popup-city">-->
-      <!--<h2 class="popup-city__heading">Выберите город</h2>-->
-      <!--<ul class="popup-city__list">-->
-        <!--<li class="popup-city__item">Москва</li>-->
-        <!--<li class="popup-city__item">Санкт-Петербург</li>-->
-        <!--<li class="popup-city__item">Москва</li>-->
-        <!--<li class="popup-city__item">Санкт-Петербург</li>-->
-        <!--<li class="popup-city__item">Самара</li>-->
-        <!--<li class="popup-city__item">Тула</li>-->
-        <!--<li class="popup-city__item">Нижний Новгород</li>-->
-        <!--<li class="popup-city__item">Москва</li>-->
-        <!--<li class="popup-city__item">Санкт-Петербург</li>-->
-        <!--<li class="popup-city__item">Москва</li>-->
-        <!--<li class="popup-city__item">Санкт-Петербург</li>-->
-        <!--<li class="popup-city__item">Самара</li>-->
-        <!--<li class="popup-city__item">Тула</li>-->
-        <!--<li class="popup-city__item">Нижний Новгород</li>-->
-        <!--<li class="popup-city__item">Москва</li>-->
-        <!--<li class="popup-city__item">Санкт-Петербург</li>-->
-        <!--<li class="popup-city__item">Москва</li>-->
-        <!--<li class="popup-city__item">Санкт-Петербург</li>-->
-        <!--<li class="popup-city__item">Самара</li>-->
-        <!--<li class="popup-city__item">Тула</li>-->
-        <!--<li class="popup-city__item">Нижний Новгород</li>-->
-      <!--</ul>-->
-      <!--<button class="popup-city__close" type="button">-->
-        <!--<span class="visually-hidden">Закрыть окно</span>-->
-      <!--</button>-->
-    <!--</div>-->
+    <div class="popups">
+      <div class="popups__popup-overlay  city__overlay">
+        <div class="popups__popup  popup-city">
+          <h2 class="popup-city__heading">Выберите город</h2>
+            <ul class="popup-city__list">
+              <li class="popup-city__item  active">Москва</li>
+              <li class="popup-city__item">Москва</li>
+              <li class="popup-city__item">Москва</li>
+              <li class="popup-city__item">Санкт-Петербург</li>
+              <li class="popup-city__item">Санкт-Петербург</li>
+              <li class="popup-city__item">Санкт-Петербург</li>
+              <li class="popup-city__item">Москва</li>
+              <li class="popup-city__item">Москва</li>
+              <li class="popup-city__item">Москва</li>
+              <li class="popup-city__item">Санкт-Петербург</li>
+              <li class="popup-city__item">Санкт-Петербург</li>
+              <li class="popup-city__item">Санкт-Петербург</li>
+              <li class="popup-city__item">Самара</li>
+              <li class="popup-city__item">Самара</li>
+              <li class="popup-city__item">Самара</li>
+              <li class="popup-city__item">Тула</li>
+              <li class="popup-city__item">Тула</li>
+              <li class="popup-city__item">Тула</li>
+              <li class="popup-city__item">Нижний Новгород</li>
+              <li class="popup-city__item">Нижний Новгород</li>
+              <li class="popup-city__item">Нижний Новгород</li>
+            </ul>
+          <button class="popup-city__close  closeButton" type="button">
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+        </div>
+      </div>
 
-    <!--<div class="popup  popup-callback">-->
+      <div class="popups__popup-overlay  callback__overlay">
+        <div class="popups__popup  popup-callback">
+          <h2 class="popup-callback__heading">
+            Оставьте заявку <br>
+            Мы перезвоним вам
+          </h2>
+          <form class="popup-callback__form">
+            <input class="popup-callback__input" type="text" placeholder="Ваше имя*">
+            <input class="popup-callback__input" type="tel" placeholder="Ваш телефон*">
+            <button class="popup-callback__submit" type="submit">Оставить заявку</button>
+          </form>
+          <button class="popup-callback__close  closeButton" type="button">
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+        </div>
+      </div>
 
-    <!--</div>-->
+      <div class="popups__popup-overlay  auth__overlay">
+        <div class="popups__popup  popup-auth">
+          <h2 class="popup-auth__heading">
+            Войти <span>Регистрация</span>
+          </h2>
+          <form class="popup-auth__form">
+            <input class="popup-auth__input" type="email" placeholder="Почта*">
+            <input class="popup-auth__input" type="number" placeholder="ИНН*">
+            <button class="popup-auth__submit" type="submit">Оставить заявку</button>
+          </form>
+          <p class="popup-auth__hint">Для юридических лиц*</p>
+          <button class="popup-auth__close  closeButton" type="button">
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+        </div>
+      </div>
 
-    <!--<div class="popup  popup-auth">-->
+      <div class="popups__popup-overlay  quick-view__overlay">
+        <div class="popups__popup  popup-quick-view">
+          <form class="popup-quick-view__form">
+            <div class="popup-quick-view__img-container">
+              <img class="popup-quick-view__main-img" src="img/quick-view-photo.jpg" width="259" height="355" alt="Пример одежды">
+              <img class="popup-quick-view__img-preview" src="img/quick-view-miniature-1.jpg" width="72" height="73" alt="Пример одежды">
+              <img class="popup-quick-view__img-preview" src="img/quick-view-miniature-2.jpg" width="72" height="73" alt="Пример одежды">
+              <img class="popup-quick-view__img-preview" src="img/quick-view-miniature-3.jpg" width="72" height="73" alt="Пример одежды">
+            </div>
+            <div class="popup-quick-view__inputs">
+              <fieldset class="popup-quick-view__fieldset">
+                <legend class="popup-quick-view__legend">1. Выберите параметры</legend>
+                <div class="popup-quick-view__fieldset-content">
+                  <label class="popup-quick-view__select-label">
+                    Размер
+                    <select class="select">
+                      <option>Тык</option>
+                      <option>Тык</option>
+                      <option>Тык</option>
+                    </select>
+                  </label>
+                  <label class="popup-quick-view__select-label">
+                    Рост
+                    <select class="select">
+                      <option>Тык</option>
+                      <option>Тык</option>
+                      <option>Тык</option>
+                    </select>
+                  </label>
+                  <label class="popup-quick-view__select-label">
+                    Длина рукава
+                    <select class="select">
+                      <option>Тык</option>
+                      <option>Тык</option>
+                      <option>Тык</option>
+                    </select>
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset class="popup-quick-view__fieldset">
+                <legend class="popup-quick-view__legend">2. Выберите ткань</legend>
+                <div class="popup-quick-view__fieldset-content">
+                  <label class="popup-quick-view__cloth">
+                    <input class="visually-hidden" type="radio" name="cloth" value="cloth-1" checked>
+                    <span>Ткань 1</span>
+                  </label>
+                  <label class="popup-quick-view__cloth">
+                    <input class="visually-hidden" type="radio" name="cloth" value="cloth-2">
+                    <span>Ткань 2</span>
+                  </label>
+                  <label class="popup-quick-view__cloth">
+                    <input class="visually-hidden" type="radio" name="cloth" value="cloth-3">
+                    <span>Ткань 3</span>
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset class="popup-quick-view__fieldset">
+                <legend class="popup-quick-view__legend">3. Выберите фурнитуру</legend>
+                <div class="popup-quick-view__fieldset-content">
+                  <select class="select">
+                    <option>Тык</option>
+                    <option>Тык</option>
+                    <option>Тык</option>
+                  </select>
+                </div>
+              </fieldset>
+              <fieldset class="popup-quick-view__fieldset">
+                <legend class="popup-quick-view__legend">4. Выберите основной цвет</legend>
+                <div class="popup-quick-view__fieldset-content  popup-quick-view__main-color">
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-1" checked>
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-2">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-3">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-4">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-5">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-6">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-7">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-8">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-9">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-10">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-11">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-12">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-13">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-14">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-15">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-16">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-16">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-18">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-19">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="main-color" value="color-20">
+                    <span></span>
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset class="popup-quick-view__fieldset">
+                <legend class="popup-quick-view__legend">5. Выберите цвет отделки</legend>
+                <div class="popup-quick-view__fieldset-content  popup-quick-view__color-finish">
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="color-finish" value="color-1" checked>
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="color-finish" value="color-2">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="color-finish" value="color-3">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="color-finish" value="color-4">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="color-finish" value="color-5">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="color-finish" value="color-6">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="color-finish" value="color-7">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="color-finish" value="color-8">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="color-finish" value="color-9">
+                    <span></span>
+                  </label>
+                  <label class="popup-quick-view__color-label">
+                    <input class="visually-hidden" type="radio" name="color-finish" value="color-10">
+                    <span></span>
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset class="popup-quick-view__fieldset">
+                <legend class="popup-quick-view__legend">6. Выберите количество</legend>
+                <div class="popup-quick-view__fieldset-content">
+                  <select class="select">
+                    <option>Тык</option>
+                    <option>Тык</option>
+                    <option>Тык</option>
+                  </select>
+                </div>
+              </fieldset>
+            </div>
 
-    <!--</div>-->
-    <script src="js/script.js"></script>
-  </body>
-</html>
+            <div class="popup-quick-view__total-container">
+              <table class="popup-quick-view__table">
+                <tbody class="popup-quick-view__table-body">
+                  <tr class="popup-quick-view__price-row">
+                    <td class="popup-quick-view__total-field">Итоговая сумма:</td>
+                    <td class="popup-quick-view__discount-field">2560 Р</td>
+                    <td class="popup-quick-view__price-field">2560 Р</td>
+                  </tr>
+                  <tr class="popup-quick-view__price-row">
+                    <td class="popup-quick-view__vendor-code-field">Артикул:</td>
+                    <td class="popup-quick-view__vendor-code-field">4585</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button class="popup-quick-view__submit  button" type="submit">В корзину</button>
+            </div>
+          </form>
+          <button class="popup-quick-view__close  closeButton" type="button">
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+        </div>
+      </div>
+      </div>
+      <script src="js/script.js"></script>
+    </body>
+  </html>

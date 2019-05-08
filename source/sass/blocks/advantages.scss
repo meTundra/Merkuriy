@@ -35,6 +35,7 @@
 
   @media (min-width: 1170px) {
     flex-direction: row;
+    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
   }
@@ -47,15 +48,41 @@
   justify-content: center;
   padding-left: 100px;
   margin-bottom: 76px;
-  width: 442px;
+  width: 425px;
   min-height: 70px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 75px;
+    height: 82px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
+  &:nth-child(1)::before {
+    background-image: url('../img/award.png');
+  }
 
-  &:nth-child(1) svg {
-    width: 62;
-    height: 76px;
+  &:nth-child(2)::before {
+    background-image: url('../img/order.png');
+  }
 
+  &:nth-child(3)::before {
+    background-image: url('../img/shield.png');
+  }
+
+  &:nth-child(4)::before {
+    background-image: url('../img/clock.png');
+  }
+
+  &:nth-child(5)::before {
+    background-image: url('../img/fashion.png');
+  }
+
+  &:nth-child(6)::before {
+    background-image: url('../img/truck.png');
   }
 }
 
@@ -79,18 +106,11 @@
 }
 
 .advantages__link {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 39px;
   width: 354px;
   height: 52px;
-  border: 1px solid #0a5a7e;
-  color: #0a5a7e;
   font-size: 16px;
   line-height: 23px;
   text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }

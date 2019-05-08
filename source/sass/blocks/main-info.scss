@@ -122,6 +122,15 @@
     padding-top: 7px;
     color: #3199c7;
     font-size: 15px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -155,7 +164,8 @@
 .main-info__social-link {
   color: #000000;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #3199c7;
   }
 
@@ -184,30 +194,19 @@
 
   @media (min-width: 760px) {
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-right: 23px;
     width: 184px;
     height: 39px;
-    background-color: #0a5a7e;
-    text-decoration: none;
     font-size: 14px;
-    color: #ffffff;
   }
 }
 
 .main-info__sign-in {
   display: none;
   @media (min-width: 760px) {
-    box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 182px;
     height: 39px;
-    border: 1px solid #0a597d;
     font-size: 14px;
-    color: #000000;
-    text-decoration: none;
   }
 }

@@ -15,7 +15,16 @@
 }
 
 .footer-info__logo {
-  margin: 0;
+  display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: 760px) {
     margin-right: auto;
@@ -42,6 +51,17 @@
     margin-right: 74px;
   }
 
+}
+
+.footer-info__social-link {
+  &:hover svg,
+  &:focus svg {
+    color: #3199c7;
+  }
+
+  &:active svg {
+    color: #0a5a7e;
+  }
 }
 
 .footer-info__social-fb {

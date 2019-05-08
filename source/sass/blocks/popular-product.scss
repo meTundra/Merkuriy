@@ -32,7 +32,9 @@
     background-image: url("../img/popular-card-bg-desktop.png");
 
     &:hover .popular-product__overlay {
-      display: flex;
+
+      padding-top: 19px;
+      height: 109px;
     }
   }
 }
@@ -92,14 +94,16 @@
 .popular-product__overlay {
   position: absolute;
   bottom: 0;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 19px;
+  padding-top: 0px;
   width: 358px;
+  height: 0;
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow:
     0 0 73px 0 rgba(0, 0, 0, 0.18);
+  transition-duration: 0.3s;
 
   &:hover {
     display: flex;
@@ -132,36 +136,51 @@
 }
 
 .popular-product__quick-view {
+  position: relative;
   margin-bottom: 18px;
+  padding-left: 30px;
   font-size: 19px;
   line-height: 20px;
   color: #0a5a7e;
   text-decoration-color: rgba(10, 90, 126, 0.4);
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  & svg {
+    position: absolute;
+    top: -4px;
+    left: -10px;
+    width: 34px;
+    height: 24px;
+    color: #0a5a7e;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .popular-product__info {
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 200px 30px;
-  grid-template-rows: auto auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   padding-top: 9px;
   padding-left: 20px;
   background-color: #ffffff;
 
   @media (min-width: 760px) {
-    grid-template-columns: 248px 30px;
-    grid-column-gap: 40px;
   }
 }
 
 .popular-product__heading {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
   margin: 0;
+  margin-bottom: 10px;
   width: 150px;
   font-size: 15px;
   font-weight: normal;
@@ -175,8 +194,6 @@
 }
 
 .popular-product__price {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
   margin: 0;
   margin-bottom: 10px;
   font-size: 22px;
@@ -189,30 +206,31 @@
   }
 }
 
-.popular-product__like {
-  margin-top: auto;
-  margin-bottom: 5px;
-  margin-left: auto;
-  background: none;
-  background-color: #0a5a7e;
-  border: none;
-  width: 18px;
-  height: 16px;
-  @media (min-width: 760px) {
-    margin-bottom: 10px;
-  }
-}
-
 .popular-product__watch {
-  margin-bottom: auto;
-  margin-left: auto;
+  position: absolute;
+  right: 23px;
+  bottom: 50%;
+  transform: translateY(50%);
+  padding: 0;
   background: none;
-  background-color: #0a5a7e;
   border: none;
   width: 23px;
   height: 14px;
 
+  & svg {
+    color: #43809c;
+    width: 34px;
+    height: 24px;
+  }
+
   @media (min-width: 760px) {
-    margin-top: 5px;
+    right: 30px;
+    width: 29px;
+    height: 17px;
+
+    & svg {
+      width: 50px;
+      height: 30px;
+    }
   }
 }
