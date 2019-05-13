@@ -17,6 +17,8 @@
 
   @media (min-width: 1170px) {
     @include desktop-content;
+    @include bg-lines;
+    position: relative;
     padding-top: 20px;
     padding-right: 15px;
     align-items: flex-end;
@@ -24,6 +26,7 @@
     background-repeat: no-repeat;
     background-clip: border-box;
     background-position: right bottom;
+    //z-index: 1;
   }
 }
 
@@ -31,6 +34,8 @@
   @include desktop-headings;
   @media (min-width: 1170px) {
     margin-right: auto;
+    text-shadow:
+      -10px 10px 0 rgba(40, 80, 169, 0.13);
   }
 }
 

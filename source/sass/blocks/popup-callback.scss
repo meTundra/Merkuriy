@@ -49,6 +49,8 @@
 
 .popup-callback__input {
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
   margin-bottom: 27px;
   padding-left: 23px;
   height: 51px;
@@ -56,7 +58,7 @@
 
   &::placeholder {
     font-size: 14px;
-    line-height: 11px;
+    line-height: 51px;
     color: #5d5d5d;
     text-transform: uppercase;
     letter-spacing: 1.5px;

@@ -1,5 +1,5 @@
 .categories {
-  //background-image: url("../img/categories-bg.jpg");
+  background-image: url("../img/categories-bg.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-color: #eaf6fc;
@@ -8,10 +8,25 @@
     background-image: url("../img/categories-bg-desktop.jpg");
     background-position: center top;
   }
+
+  @media (min-width: 1170px) {
+    position: relative;
+    &::after {
+      position: absolute;
+      bottom: -10px;
+      right: -930px;
+      content: "Меркурий-Интер-Лаб";
+      font-size: 160px;
+      line-height: 37px;
+      color: #0a5a7e;
+      opacity: 0.1;
+    }
+  }
 }
 
 .categories__content {
   @include mobile-content;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +39,8 @@
 
   @media (min-width: 1170px) {
     @include desktop-content;
-
+    @include bg-lines;
+    z-index: 2;
   }
 }
 
@@ -37,6 +53,8 @@
 
   @media (min-width: 1170px) {
     margin-right: auto;
+    text-shadow:
+      -10px 10px 0 rgba(40, 80, 169, 0.13);
   }
 }
 
@@ -70,7 +88,7 @@
   background-color: #e9f3fd;
   background-position: right;
   background-repeat: no-repeat;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
   transition-property: background-color, color;
 
   @media (min-width: 1170px) {
@@ -87,15 +105,26 @@
     @media (min-width: 1170px) {
       background-image: url(../img/woman-1-desktop-bg.png);
 
+      & picture {
+        padding-left: 76px;
+        width: 154px;
+        height: 384px;
+      }
+
+      & img {
+        width: 154px;
+      }
+
       &:hover picture,
       &:focus-within picture{
-        background-image: url("../img/woman-1-desktop-hover.png");
+        padding-left: 86px;
+        width: 282px;
+        height: 520px;
       }
 
       &:hover img,
       &:focus-within img {
-        width: 282px;
-        height: 530px;
+        width: 200px;
       }
     }
   }
@@ -106,15 +135,26 @@
     @media (min-width: 1170px) {
       background-image: url(../img/woman-2-desktop-bg.png);
 
+      & picture {
+        padding-left: 58px;
+        width: 162px;
+        height: 390px;
+      }
+
+      & img {
+        width: 162px;
+      }
+
       &:hover picture,
-      &:focus-within picture {
-        background-image: url("../img/woman-2-desktop-hover.png");
+      &:focus-within picture{
+        padding-left: 20px;
+        width: 246px;
+        height: 535px;
       }
 
       &:hover img,
       &:focus-within img {
-        width: 266px;
-        height: 528px;
+        width: 246px;
       }
     }
   }
@@ -124,15 +164,27 @@
 
     @media (min-width: 1170px) {
       background-image: url(../img/woman-3-desktop-bg.png);
+
+      & picture {
+        padding-left: 15px;
+        width: 146px;
+        height: 192px;
+      }
+
+      & img {
+        width: 146px;
+      }
+
       &:hover picture,
-      &:focus-within picture {
-        background-image: url("../img/woman-3-desktop-hover.png");
+      &:focus-within picture{
+        padding-left: 22px;
+        width: 172px;
+        height: 284px;
       }
 
       &:hover img,
       &:focus-within img {
-        width: 195px;
-        height: 280px;
+        width: 172px;
       }
     }
   }
@@ -143,15 +195,26 @@
     @media (min-width: 1170px) {
       background-image: url(../img/woman-4-desktop-bg.png);
 
+      & picture {
+        padding-left: 15px;
+        width: 113px;
+        height: 206px;
+      }
+
+      & img {
+        width: 113px;
+      }
+
       &:hover picture,
-      &:focus-within picture {
-        background-image: url("../img/woman-4-desktop-hover.png");
+      &:focus-within picture{
+        padding-left: 15px;
+        width: 136px;
+        height: 281px;
       }
 
       &:hover img,
       &:focus-within img {
-        width: 152px;
-        height: 276px;
+        width: 136px;
       }
     }
   }
@@ -162,17 +225,27 @@
     @media (min-width: 1170px) {
       background-image: url(../img/woman-5-desktop-bg.png);
 
+      & picture {
+        padding-left: 2px;
+        width: 160px;
+        height: 200px;
+      }
+
+      & img {
+        width: 160px;
+      }
+
       &:hover picture,
-      &:focus-within picture {
-        position: absolute;
-        left: -30px;
-        background-image: url("../img/woman-5-desktop-hover.png");
+      &:focus-within picture{
+        margin-left: -30px;
+        padding-left: 0;
+        width: 190px;
+        height: 280px;
       }
 
       &:hover img,
       &:focus-within img {
-        width: 189px;
-        height: 276px;
+        width: 190px;
       }
     }
   }
@@ -183,15 +256,26 @@
     @media (min-width: 1170px) {
       background-image: url(../img/woman-6-desktop-bg.png);
 
+      & picture {
+        padding-left: 86px;
+        width: 180px;
+        height: 202px;
+      }
+
+      & img {
+        width: 180px;
+      }
+
       &:hover picture,
-      &:focus-within picture {
-        background-image: url("../img/woman-6-desktop-hover.png");
+      &:focus-within picture{
+        padding-left: 102px;
+        width: 223px;
+        height: 358px;
       }
 
       &:hover img,
       &:focus-within img {
-        width: 310px;
-        height: 358px;
+        width: 223px;
       }
     }
   }
@@ -224,11 +308,6 @@
       display: flex;
     }
 
-    &:hover img,
-    &:focus-within img {
-      opacity: 0;
-    }
-
     &:nth-child(1),
     &:nth-child(2) {
       padding-right: 48px;
@@ -254,6 +333,15 @@
         right: 11px;
         bottom: 33px;
       }
+    }
+
+    & picture {
+      overflow: hidden;
+      transition: 0.2s;
+    }
+
+    & img {
+      transition: 0.2s;
     }
   }
 }

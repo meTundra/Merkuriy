@@ -14,56 +14,80 @@
   }
 }
 
-.popup-auth__heading {
+.popup-auth__buttons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   margin-bottom: 34px;
   padding-left: 10px;
+  width: 225px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 82px;
+    width: 3px;
+    height: 29px;
+    background-color: #0a5a7e;
+  }
+
+  @media (min-width: 760px) {
+    padding-left: 17px;
+    width: 258px;
+
+    &::before {
+      top: -14px;
+      left: 104px;
+      width: 2px;
+      height: 40px;
+    }
+  }
+}
+
+.popup-auth__button {
+  padding: 0;
+  background: none;
+  border: none;
   font-size: 18px;
-  font-weight: bold;
   line-height: 11px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.6px;
 
-  & span {
-    position: relative;
-    padding-left: 8px;
+  &:hover,
+  &:active {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &.js-active {
     color: #0a5a7e;
-    &::before {
-      content: "";
-      position: absolute;
-      top: -3px;
-      left: -1px;
-      width: 3px;
-      height: 29px;
-      background-color: #0a5a7e;
-    }
+    font-weight: bold;
   }
 
   @media (min-width: 760px) {
     font-weight: normal;
     letter-spacing: 3px;
-
-    & span {
-      padding-left: 17px;
-
-      &::before {
-        top: -8px;
-        left: 1px;
-        width: 2px;
-        height: 40px;
-      }
-    }
   }
 }
 
 .popup-auth__form {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin-right: 27px;
   margin-bottom: 12px;
   padding-left: 37px;
   width: 228px;
+
+  &.js-show {
+    display: flex;
+  }
 
   @media (min-width: 760px) {
     margin-bottom: 15px;
@@ -74,14 +98,19 @@
 
 .popup-auth__input {
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
   margin-bottom: 27px;
   padding-left: 23px;
+  width: 100%;
   height: 51px;
   border: 1px solid #636363;
+  font-size: 15px;
+  line-height: 11px;
 
   &::placeholder {
     font-size: 14px;
-    line-height: 11px;
+    line-height: 51px;
     color: #5d5d5d;
     text-transform: uppercase;
     letter-spacing: 1.5px;

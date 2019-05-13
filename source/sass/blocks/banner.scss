@@ -18,7 +18,7 @@
     @include tablet-content;
     justify-content: space-between;
     align-items: center;
-    padding-top: 120px;
+    padding-top: 80px;
   }
 
   @media (min-width: 1170px) {
@@ -31,6 +31,7 @@
   display: none;
 
   @media (min-width: 760px) {
+    position: relative;
     display: block;
     //margin-bottom: 102px;
     width: 30px;
@@ -40,6 +41,35 @@
     background-color: #ffffff;
     box-shadow:
       inset 0 3px 7px 0 rgba(0, 0, 0, 0.13);
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 9px;
+      top: 11px;
+      width: 9px;
+      height: 10px;
+      background-image: url("../img/button-arrow.png");
+    }
+
+    &--right {
+      &::before {
+        transform: rotate(180deg);
+        left: 12px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow:
+        inset 0 3px 7px 0 rgba(0, 0, 0, 0.23);
+    }
+
+    &:active {
+      box-shadow:
+        inset 0 3px 7px 0 rgba(0, 0, 0, 0.43);
+    }
   }
 
   @media (min-width: 1170px) {
@@ -48,9 +78,46 @@
     }
 
     &--right {
+      &::before {
+        transform: rotate(180deg);
+        left: 12px;
+      }
       margin-right: 20px;
     }
 
+  }
+}
+
+.banner__list {
+  @include list-reset;
+  display: flex;
+  width: 290px;
+  overflow: hidden;
+
+  @media (min-width: 760px) {
+    width: 675px;
+  }
+
+  @media (min-width: 1170px) {
+    width: 1005px;
+    min-height: 455px;
+  }
+}
+
+.banner__item {
+  flex-shrink: 0;
+  width: 290px;
+
+  transform: translateX(0);
+
+  transition-duration: 1s;
+
+  @media (min-width: 760px) {
+    width: 675px;
+  }
+
+  @media (min-width: 1170px) {
+    width: 1005px;
   }
 }
 
@@ -71,13 +138,14 @@
   letter-spacing: 1.5px;
 
   @media (min-width: 760px) {
+    padding-top: 38px;
     width: 302px;
     font-size: 28px;
     line-height: 36px;
   }
 
   @media (min-width: 1170px) {
-    padding-top: 38px;
+    padding-top: 20px;
     width: 510px;
     font-size: 48px;
     line-height: 61px;
@@ -154,11 +222,14 @@
 
     &:hover,
     &:focus {
-      opacity: 0.6;
+      box-shadow:
+        0 0 8px 0 rgba(0, 0, 0, 0.23);
+      text-shadow:
+        0 0 8px rgba(0, 0, 0, 0.23);
     }
 
     &:active {
-      opacity: 0.3;
+      border-width: 2px;
     }
   }
 
@@ -178,12 +249,13 @@
   height: 152px;
 
   @media (min-width: 760px) {
-    right: 100px;
+    right: 50px;
     width: 270px;
     height: 272px;
   }
 
   @media (min-width: 1170px) {
+    right: 100px;
     width: 451px;
     height: 456px;
   }

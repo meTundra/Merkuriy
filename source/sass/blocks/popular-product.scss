@@ -13,8 +13,36 @@
   }
 
   @media (min-width: 760px) {
+    position: relative;
     display: block;
     width: 358px;
+
+    &:hover .popular-product__overlay {
+      padding-top: 19px;
+      height: 109px;
+    }
+  }
+
+  @media (min-width: 1170px) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 99%;
+      height: 99%;
+      border: 1px solid #3392bc;
+      transition-duration: 0.2s;
+    }
+
+    &:hover {
+      &::before {
+        top: 46px;
+        left: 19px;
+        width: 353px;
+        height: 513px;
+      }
+    }
   }
 }
 
@@ -30,12 +58,6 @@
   @media (min-width: 760px) {
     height: 435px;
     background-image: url("../img/popular-card-bg-desktop.png");
-
-    &:hover .popular-product__overlay {
-
-      padding-top: 19px;
-      height: 109px;
-    }
   }
 }
 
@@ -94,7 +116,7 @@
 .popular-product__overlay {
   position: absolute;
   bottom: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   padding-top: 0px;
@@ -106,6 +128,10 @@
   transition-duration: 0.3s;
 
   &:hover {
+    display: flex;
+  }
+
+  @media (min-width: 760px) {
     display: flex;
   }
 }

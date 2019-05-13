@@ -1,8 +1,11 @@
 .advantages {
+  position: relative;
   display: none;
+  z-index: 2;
 
   @media (min-width: 760px) {
     @include tablet-content;
+    padding-top: 65px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,10 +14,23 @@
 
   @media (min-width: 1170px) {
     @include desktop-content;
+    @include bg-lines;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: -700px;
+      width: 676px;
+      height: 1329px;
+      background-image: url("../img/total-desktop-bg.png");
+    }
+
   }
 }
 
 .advantages__heading {
+  position: relative;
   margin: 0;
   margin-bottom: 85px;
   font-size: 24px;
@@ -23,6 +39,22 @@
   color: #0a5a7e;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+
+  @media (min-width: 1170px) {
+    &::before {
+      content: "Меркурий-Интер-Лаб";
+      position: absolute;
+      left: -150px;
+      width: 1200px;
+      font-size: 100px;
+      font-weight: 100;
+      text-transform: none;
+      letter-spacing: 5px;
+      opacity: 0.12;
+    }
+  }
+
 }
 
 .advantages__list {
@@ -35,7 +67,7 @@
 
   @media (min-width: 1170px) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-start;
     flex-wrap: wrap;
   }

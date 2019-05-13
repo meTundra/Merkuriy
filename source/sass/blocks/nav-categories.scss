@@ -84,6 +84,7 @@
   letter-spacing: 1.5px;
 
   @media (min-width: 760px) {
+    position: relative;
     display: flex;
     align-items: center;
     margin: 0;
@@ -95,6 +96,16 @@
     font-weight: normal;
     line-height: 16px;
     color: #000000;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: 0;
+      width: 7px;
+      height: 6px;
+      background-image: url("../img/categories-arrow.png");
+    }
 
     &:hover,
     &:focus {
@@ -193,6 +204,17 @@
 
 .nav-categories__nested-link--heading {
   text-transform: uppercase;
+  @media (min-width: 760px) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      right: 14px;
+      width: 5px;
+      height: 10px;
+      background-image: url("../img/categories-arrow-nested.png");
+    }
+  }
 }
 
 .nav-categories__deep-list {

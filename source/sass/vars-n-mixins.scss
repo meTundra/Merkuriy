@@ -44,3 +44,20 @@ $desktop-width: 1145px;
   color: #0a5a7e;
   letter-spacing: 2px;
 }
+
+@mixin bg-lines {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 1px;
+    height: 100%;
+    background-color: #e7ebf5;
+    box-shadow:
+      1152px 0 0 0 #e7ebf5,
+      774px 0 0 0 #e7ebf5,
+      382px 0 0 0 #e7ebf5;
+    z-index: -1;
+  }
+}

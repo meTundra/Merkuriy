@@ -122,11 +122,80 @@ quickViewButton.forEach(function (item) {
   });
 });
 
+//Смена изображения в быстром просмотре
 
+var mainImg = document.querySelector('.popup-quick-view__main-img');
+var miniatures = document.querySelectorAll('.popup-quick-view__img-preview');
+var srcs = ['quick-view-photo.jpg', 'quick-view-2.png', 'quick-view-3.png'];
+
+console.log(mainImg);
+
+miniatures.forEach(function (item, index) {
+  item.addEventListener('click', function () {
+    mainImg.src = 'img/' + srcs[index];
+  })
+});
+
+//Параллакс
 var banner = document.querySelector('.banner');
-
 window.addEventListener("scroll", function () {
   if (window.innerWidth > 760) {
     banner.style.backgroundPosition = '50%' + window.scrollY / -4 + 'px';
   }
+});
+
+//Смена полей входа и регистрации
+var formButtons = document.querySelectorAll('.popup-auth__button');
+var forms = document.querySelectorAll('.popup-auth__form');
+
+formButtons.forEach(function (item, index) {
+  item.addEventListener('click', function () {
+    if (!item.classList.contains('js-active')) {
+      formButtons.forEach(function (item, index) {
+        item.classList.remove('js-active');
+        forms[index].classList.remove('js-show');
+      });
+      item.classList.add('js-active');
+      forms[index].classList.add('js-show');
+    }
+  })
+});
+
+//Слайдер
+var bannerList = document.querySelector('.banner__list');
+var bannerItems = document.querySelectorAll('.banner__item');
+var bannerContent = document.querySelector('.banner__content');
+var translate = 0;
+var counter = 1;
+
+bannerContent.addEventListener('click', function (evt) {
+  if (evt.target.classList.contains('banner__button--right')) {
+    counter++;
+    translate -= bannerList.clientWidth;
+  } else if (evt.target.classList.contains('banner__button--left')) {
+    counter--;
+    translate += bannerList.clientWidth;
+  }
+
+  if (counter > bannerItems.length) {
+    counter = 1;
+    translate = 0;
+    bannerItems.forEach(function (item) {
+      item.style.transform = 'translateX(' + translate + ')';
+    });
+  } else if (counter < 1) {
+    counter = 3;
+    translate = bannerList.clientWidth * (bannerItems.length - 1) * -1;
+
+    bannerItems.forEach(function (item) {
+      item.style.transform = 'translateX(' + translate + 'px)';
+    });
+  } else {
+    bannerItems.forEach(function (item) {
+      item.style.transform = 'translateX(' + translate + 'px)';
+      console.log(bannerList.clientWidth);
+    })
+  }
+
+
 });
