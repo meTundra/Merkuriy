@@ -1,0 +1,10 @@
+.catalog {
+  position: relative;
+  overflow: hidden;
+  background-color: #fafafa;
+  @media (min-width: 1800px) {
+    background-image: url("../img/catalog-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 36%;
+  }
+}

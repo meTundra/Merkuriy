@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Меркурий</title>
+    <title>Меркурий-Интер-Лаб</title>
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
+    <link href="img/favicon.png" rel="icon">
     <noscript>
       <style>
         .main-nav {
@@ -106,9 +107,11 @@
           </a>
           <p class="main-nav__search-container">
             <input class="main-nav__search-input" type="search" placeholder="Поиск по сайту">
-            <svg>
-              <use xlink:href="#spr-search"></use>
-            </svg>
+            <button>
+              <svg>
+                <use xlink:href="#spr-search"></use>
+              </svg>
+            </button>
           </p>
           <a class="main-nav__sign-in  sign-in" href="#">
             <svg>
@@ -126,7 +129,7 @@
 
         <ul class="main-nav__categories nav-categories">
           <li class="nav-categories__item">
-            <a class="nav-categories__link" href="#">Медицина</a>
+            <a class="nav-categories__link" href="catalog.html">Медицина</a>
             <ul class="nav-categories__nested-list">
               <li class="nav-categories__nested-item">
                 <a class="nav-categories__nested-link  nav-categories__nested-link--heading" href="#">Мужская одежда</a>
@@ -143,13 +146,13 @@
                 </ul>
               </li>
               <li class="nav-categories__nested-item">
-                <a class="nav-categories__nested-link  nav-categories__nested-link--heading" href="#">Женская одежда</a>
+                <a class="nav-categories__nested-link  nav-categories__nested-link--heading" href="catalog.html">Женская одежда</a>
                 <ul class="nav-categories__deep-list">
                   <li class="nav-categories__deep-item">
                     <a class="nav-categories__deep-link" href="#">Халаты</a>
                   </li>
                   <li class="nav-categories__deep-item">
-                    <a class="nav-categories__deep-link" href="#">Блузы</a>
+                    <a class="nav-categories__deep-link" href="catalog.html">Блузы</a>
                   </li>
                   <li class="nav-categories__deep-item">
                     <a class="nav-categories__deep-link" href="#">Брюки</a>
@@ -311,7 +314,7 @@
                 <p class="banner__description">
                   Более 12 лет мы создаем модельную медицинскую одежду, которая учитывает современные тенденции в моде.
                 </p>
-                <a class="banner__link" href="#">
+                <a class="banner__link" href="catalog.html">
                   В каталог
                 </a>
               </div>
@@ -332,7 +335,7 @@
                 <p class="banner__description">
                   Более 12 лет мы создаем модельную медицинскую одежду, которая учитывает современные тенденции в моде.
                 </p>
-                <a class="banner__link" href="#">
+                <a class="banner__link" href="catalog.html">
                   В каталог
                 </a>
               </div>
@@ -353,7 +356,7 @@
                 <p class="banner__description">
                   Более 12 лет мы создаем модельную медицинскую одежду, которая учитывает современные тенденции в моде.
                 </p>
-                <a class="banner__link" href="#">
+                <a class="banner__link" href="catalog.html">
                   В каталог
                 </a>
               </div>
@@ -439,10 +442,10 @@
                 <source srcset="img/w1test.png" media="(min-width: 1170px)">
                 <img class="categories__img" src="img/woman-1.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
               </picture>
-              <a class="categories__link" href="#">
+              <a class="categories__link" href="catalog.html">
                 Медицина
               </a>
-              <a class="categories__to-catalog" href="#">В каталог</a>
+              <a class="categories__to-catalog" href="catalog.html">В каталог</a>
             </li>
             <li class="categories__item">
               <picture>
@@ -462,7 +465,7 @@
               <a class="categories__link" href="#">
                 Beauty
               </a>
-              <a class="categories__to-catalog" href="#">В каталог</a>
+              <a class="categories__to-catalog" href="catalog.html">В каталог</a>
             </li>
             <li class="categories__item" >
               <picture>
@@ -472,7 +475,7 @@
               <a class="categories__link" href="#">
                 Size+
               </a>
-              <a class="categories__to-catalog" href="#">В каталог</a>
+              <a class="categories__to-catalog" href="catalog.html">В каталог</a>
             </li>
             <li class="categories__item">
               <picture>
@@ -482,7 +485,7 @@
               <a class="categories__link" href="#">
                 Буду мамой
               </a>
-              <a class="categories__to-catalog" href="#">В каталог</a>
+              <a class="categories__to-catalog" href="catalog.html">В каталог</a>
             </li>
             <li class="categories__item">
               <picture>
@@ -492,7 +495,7 @@
               <a class="categories__link" href="#">
                 Спецодежда
               </a>
-              <a class="categories__to-catalog" href="#">В каталог</a>
+              <a class="categories__to-catalog" href="catalog.html">В каталог</a>
             </li>
           </ul>
         </div>
@@ -540,11 +543,11 @@
                 <p class="popular-product__price">
                   900 руб
                 </p>
-                <button class="popular-product__watch">
+                <a class="popular-product__watch" href="#">
                   <svg>
                     <use xlink:href="#spr-view"></use>
                   </svg>
-                </button>
+                </a>
               </div>
             </li>
 
@@ -585,11 +588,11 @@
                 <p class="popular-product__price">
                   900 руб
                 </p>
-                <button class="popular-product__watch">
+                <a class="popular-product__watch" href="#">
                   <svg>
                     <use xlink:href="#spr-view"></use>
                   </svg>
-                </button>
+                </a>
               </div>
             </li>
 
@@ -630,15 +633,15 @@
                 <p class="popular-product__price">
                   900 руб
                 </p>
-                <button class="popular-product__watch">
+                <a class="popular-product__watch" href="#">
                   <svg>
                     <use xlink:href="#spr-view"></use>
                   </svg>
-                </button>
+                </a>
               </div>
             </li>
 
-            <li class="popular-products__item  popular-product">
+            <li class="popular-products__item  popular-product  mobile-hidden">
               <div class="popular-product__image">
                 <p class="popular-product__sticker  popular-product__sticker--new">Новинка</p>
                 <p class="popular-product__sticker  popular-product__sticker--sale">Sale</p>
@@ -675,15 +678,15 @@
                 <p class="popular-product__price">
                   900 руб
                 </p>
-                <button class="popular-product__watch">
+                <a class="popular-product__watch" href="#">
                   <svg>
                     <use xlink:href="#spr-view"></use>
                   </svg>
-                </button>
+                </a>
               </div>
             </li>
 
-            <li class="popular-products__item  popular-product">
+            <li class="popular-products__item  popular-product  mobile-hidden">
               <div class="popular-product__image">
                 <p class="popular-product__sticker  popular-product__sticker--new">Новинка</p>
                 <p class="popular-product__sticker  popular-product__sticker--sale">Sale</p>
@@ -720,15 +723,15 @@
                 <p class="popular-product__price">
                   900 руб
                 </p>
-                <button class="popular-product__watch">
+                <a class="popular-product__watch" href="#">
                   <svg>
                     <use xlink:href="#spr-view"></use>
                   </svg>
-                </button>
+                </a>
               </div>
             </li>
 
-            <li class="popular-products__item  popular-product">
+            <li class="popular-products__item  popular-product  mobile-hidden">
               <div class="popular-product__image">
                 <p class="popular-product__sticker  popular-product__sticker--new">Новинка</p>
                 <p class="popular-product__sticker  popular-product__sticker--sale">Sale</p>
@@ -765,11 +768,11 @@
                 <p class="popular-product__price">
                   900 руб
                 </p>
-                <button class="popular-product__watch">
+                <a class="popular-product__watch" href="#">
                   <svg>
                     <use xlink:href="#spr-view"></use>
                   </svg>
-                </button>
+                </a>
               </div>
             </li>
           </ul>
@@ -1227,18 +1230,18 @@
               </li>
             </ul>
             <div class="footer-info__contacts">
-              <p class="footer-info__phone">
+              <a class="footer-info__phone" href="tel:88002005843">
                 8-800-200-58-43
                 <svg>
                   <use xlink:href="#spr-phone"></use>
                 </svg>
-              </p>
-              <p class="footer-info__email">
+              </a>
+              <a class="footer-info__email" href="mailto:Email@email.com">
                 Email@email.com
                 <svg>
                   <use xlink:href="#spr-mail"></use>
                 </svg>
-              </p>
+              </a>
             </div>
 
             <div class="footer-info__schedule-container">
@@ -1567,7 +1570,7 @@
           </button>
         </div>
       </div>
-      </div>
-      <script src="js/script.js"></script>
+    </div>
+    <script src="js/script.js"></script>
     </body>
   </html>

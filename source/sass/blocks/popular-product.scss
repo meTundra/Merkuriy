@@ -1,15 +1,12 @@
 .popular-product {
-  display: none;
 
   width: 290px;
 
   box-shadow:
     7px 11px 59px 0 rgba(99, 99, 99, 0.2);
 
-  &:nth-child(1),
-  &:nth-child(2),
-  &:nth-child(3) {
-    display: block;
+  &.mobile-hidden {
+    display: none;
   }
 
   @media (min-width: 760px) {
@@ -242,6 +239,15 @@
   border: none;
   width: 23px;
   height: 14px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   & svg {
     color: #43809c;

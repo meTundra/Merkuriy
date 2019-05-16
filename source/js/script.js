@@ -128,8 +128,6 @@ var mainImg = document.querySelector('.popup-quick-view__main-img');
 var miniatures = document.querySelectorAll('.popup-quick-view__img-preview');
 var srcs = ['quick-view-photo.jpg', 'quick-view-2.png', 'quick-view-3.png'];
 
-console.log(mainImg);
-
 miniatures.forEach(function (item, index) {
   item.addEventListener('click', function () {
     mainImg.src = 'img/' + srcs[index];
@@ -140,7 +138,7 @@ miniatures.forEach(function (item, index) {
 var banner = document.querySelector('.banner');
 window.addEventListener("scroll", function () {
   if (window.innerWidth > 760) {
-    banner.style.backgroundPosition = '50%' + window.scrollY / -4 + 'px';
+    banner.style.backgroundPositionY = window.scrollY / -4 + 'px';
   }
 });
 
@@ -193,9 +191,26 @@ bannerContent.addEventListener('click', function (evt) {
   } else {
     bannerItems.forEach(function (item) {
       item.style.transform = 'translateX(' + translate + 'px)';
-      console.log(bannerList.clientWidth);
     })
   }
-
-
 });
+
+//Липкая навигация
+
+var mainNav = document.querySelector('.main-nav');
+var mainInfo = document.querySelector('.main-info');
+var startPos = mainNav.offsetTop;
+
+if (window.innerWidth < 760) {
+  window.addEventListener('scroll', function () {
+    console.log(startPos + 120);
+    if (window.scrollY > mainNav.offsetTop && !mainNav.classList.contains('sticky')) {
+      mainInfo.style.marginBottom = mainNav.clientHeight + 20 + 'px';
+      mainNav.classList.add('sticky');
+    } else if (window.scrollY < startPos && mainNav.classList.contains('sticky')) {
+      mainInfo.style.marginBottom = '0px';
+      mainNav.classList.remove('sticky');
+    }
+  })
+}
+

@@ -35,6 +35,15 @@
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 999;
+}
+
 .main-nav__logo {
   display: none;
   text-decoration: none;
@@ -102,10 +111,27 @@
   box-shadow:
     0 3px 27px 0 rgba(0, 0, 0, 0.31);
 
-  & svg {
+  & button {
     position: absolute;
-    right: 44px;
+    right: 24px;
     bottom: 14px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  & svg {
     width: 20px;
     height: 20px;
     color: #3199c7;

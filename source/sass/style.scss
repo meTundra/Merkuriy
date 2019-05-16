@@ -25,5 +25,18 @@
 @import "blocks/popup-city";
 @import "blocks/popup-callback";
 @import "blocks/popup-auth";
-@import "blocks/popup-quick-view.scss";
+@import "blocks/popup-quick-view";
+
+@import "blocks/breadcrumbs";
+@import "blocks/catalog";
+@import "blocks/category-switchers";
+@import "blocks/catalog-category";
+@import "blocks/catalog-main";
+@import "blocks/catalog-aside";
+@import "blocks/catalog-nav";
+@import "blocks/catalog-categories";
+@import "blocks/catalog-filter";
+@import "blocks/catalog-cards";
+@import "blocks/catalog-card";
+
 @import "helpers";

@@ -131,6 +131,18 @@
   margin-bottom: 22px;
   padding-right: 54px;
 
+  color: #000000;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   & svg {
     position: absolute;
     right: 0;
@@ -147,6 +159,18 @@
   margin: 0;
   margin-bottom: 22px;
   padding-right: 54px;
+
+  color: #000000;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   & svg {
     position: absolute;

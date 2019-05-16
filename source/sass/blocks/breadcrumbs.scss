@@ -1,0 +1,62 @@
+.breadcrumbs__content {
+  @include mobile-content;
+  margin-bottom: 14px;
+  padding-top: 9px;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 760px) {
+    @include tablet-content;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
+
+  @media (min-width: 1170px) {
+    @include desktop-content;
+    position: relative;
+    justify-content: flex-start;
+    &::after {
+      content: "Меркурий-Интер-Лаб";
+      position: absolute;
+      top: 140px;
+      left: -180px;
+      width: 1643px;
+      height: 141px;
+      opacity: 0.1;
+      font-size: 163px;
+      line-height: 37.6px;
+      color: #0a5a7e;
+      letter-spacing: 2px;
+      z-index: 0;
+    }
+  }
+}
+
+.breadcrumbs__link {
+  position: relative;
+  font-size: 13px;
+  line-height: 13px;
+
+  &:not(:last-child) {
+    margin-right: 34px;
+    &::after {
+      content: "";
+      position: absolute;
+      right: -26px;
+      top: 6px;
+      width: 19px;
+      height: 1px;
+      background-color: #000000;
+    }
+  }
+
+  @media (min-width: 760px) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.breadcrumbs__link--active {
+  font-weight: bold;
+}

@@ -1,0 +1,260 @@
+.catalog-card {
+  width: 290px;
+  box-shadow:
+    7px 11px 59px 0 rgba(99, 99, 99, 0.2);
+
+  &.mobile-hidden {
+    display: none;
+  }
+
+  @media (min-width: 760px) {
+    position: relative;
+    display: block;
+    width: 418px;
+
+    &:hover .catalog-card__overlay {
+      padding-top: 19px;
+      height: 109px;
+    }
+  }
+
+  @media (min-width: 1170px) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 99%;
+      height: 99%;
+      border: 1px solid #3392bc;
+      transition-duration: 0.2s;
+    }
+
+    &:hover {
+      &::before {
+        top: 54px;
+        left: 22px;
+        width: 411px;
+        height: 597px;
+      }
+    }
+  }
+}
+
+.catalog-card__image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background-color: #c9dfeb;
+  background-image: url("../img/popular-card-bg.png");
+
+  @media (min-width: 760px) {
+    height: 508px;
+    background-image: url("../img/catalog-card-bg-desktop.png");
+  }
+}
+
+.catalog-card__sticker {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 61px;
+  height: 18px;
+
+  font-size: 8px;
+  font-weight: bold;
+  line-height: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  @media (min-width: 760px) {
+    right: 14px;
+    width: 76px;
+    height: 22px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.catalog-card__sticker--new {
+  top: 17px;
+  background-color: #419fc9;
+
+  @media (min-width: 760px) {
+    top: 22px;
+  }
+}
+
+.catalog-card__sticker--sale {
+  top: 45px;
+  background-color: #ff0101;
+
+  @media (min-width: 760px) {
+    top: 56px;
+  }
+}
+
+.catalog-card__sticker--hit {
+  top: 71px;
+  background-color: #0a5a7e;
+
+  @media (min-width: 760px) {
+    top: 89px;
+  }
+}
+
+.catalog-card__overlay {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0px;
+  width: 418px;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 0 73px 0 rgba(0, 0, 0, 0.18);
+  transition-duration: 0.3s;
+
+  &:hover {
+    display: flex;
+  }
+
+  @media (min-width: 760px) {
+    display: flex;
+  }
+}
+
+.catalog-card__overlay-heading {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #525252;
+}
+
+.catalog-card__measurements-list {
+  @include list-reset;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.catalog-card__measurements-item {
+  font-size: 19px;
+  line-height: 20px;
+  color: #525252;
+}
+
+.catalog-card__quick-view {
+  position: relative;
+  margin-bottom: 18px;
+  padding-left: 30px;
+  font-size: 19px;
+  line-height: 20px;
+  color: #0a5a7e;
+  text-decoration-color: rgba(10, 90, 126, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  & svg {
+    position: absolute;
+    top: -4px;
+    left: -10px;
+    width: 34px;
+    height: 24px;
+    color: #0a5a7e;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.catalog-card__info {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 9px;
+  padding-left: 20px;
+  background-color: #ffffff;
+
+  @media (min-width: 760px) {
+  }
+}
+
+.catalog-card__heading {
+  margin: 0;
+  margin-bottom: 10px;
+  width: 150px;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 17px;
+
+  @media (min-width: 760px) {
+    margin-bottom: 12px;
+    width: 210px;
+    font-size: 21px;
+    line-height: 24px;
+  }
+}
+
+.catalog-card__price {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #0a5a7e;
+  @media (min-width: 760px) {
+    margin-bottom: 14px;
+    font-size: 27px;
+    line-height: 26px;
+  }
+}
+
+.catalog-card__watch {
+  position: absolute;
+  right: 23px;
+  bottom: 50%;
+  transform: translateY(50%);
+  padding: 0;
+  background: none;
+  border: none;
+  width: 23px;
+  height: 14px;
+
+  & svg {
+    color: #43809c;
+    width: 34px;
+    height: 24px;
+  }
+
+  @media (min-width: 760px) {
+    right: 15px;
+    bottom: 50px;
+    width: 70px;
+    height: 50px;
+
+    & svg {
+      width: 70px;
+      height: 50px;
+    }
+  }
+}

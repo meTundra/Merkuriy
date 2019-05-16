@@ -1,0 +1,23 @@
+.category-switchers__button {
+  margin: 0 auto;
+  margin-bottom: 7px;
+  width: 290px;
+  height: 48px;
+  font-size: 25px;
+  line-height: 23px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  @media (min-width: 760px) {
+    display: none;
+  }
+}
+
+.category-switchers__button--active {
+  width: 100%;
+  background-color: #ffffff;
+  color: #0a5a7e;
+  border: none;
+  box-shadow:
+    0 0 68px 0 rgba(104, 104, 104, 0.23);
+}
