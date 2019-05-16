@@ -1,0 +1,1 @@
+var catalogLinks=document.querySelectorAll(".catalog-categories__nested-link"),catalogLists=document.querySelectorAll(".catalog-categories__deep-list");catalogLinks.forEach(function(t,e){t.addEventListener("click",function(t){t.preventDefault(),catalogLists[e].classList.toggle("js-active")})});
