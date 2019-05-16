@@ -7,3 +7,15 @@ catalogLinks.forEach(function (item, index) {
     catalogLists[index].classList.toggle('js-active');
   })
 });
+
+var filterOpen = document.querySelector('.category-switchers__button');
+var filter = document.querySelector('.catalog-filter');
+var filterClose = document.querySelector('.catalog-filter__close');
+
+filterOpen.addEventListener('click', function () {
+  filter.classList.toggle('js-show');
+});
+
+filterClose.addEventListener('click', function () {
+  filter.classList.toggle('js-show');
+});

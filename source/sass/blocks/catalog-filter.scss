@@ -1,4 +1,5 @@
 .catalog-filter {
+  display: none;
   position: absolute;
   top: 0;
   width: 290px;
@@ -6,7 +7,12 @@
   background-color: #ffffff;
   z-index: 99;
 
+  &.js-show {
+    display: block;
+  }
+
   @media (min-width: 1170px) {
+    display: block;
     position: relative;
     width: auto;
     background-color: transparent;
