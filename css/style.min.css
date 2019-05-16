@@ -3392,14 +3392,18 @@ template {
     color: #419fc9; }
 
 .catalog-filter {
+  display: none;
   position: absolute;
   top: 0;
   width: 290px;
   border: 1px solid #3299c7;
   background-color: #ffffff;
   z-index: 99; }
+  .catalog-filter.js-show {
+    display: block; }
   @media (min-width: 1170px) {
     .catalog-filter {
+      display: block;
       position: relative;
       width: auto;
       background-color: transparent; }
