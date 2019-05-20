@@ -17,7 +17,6 @@
 
   @media (min-width: 1170px) {
     @include desktop-content;
-    @include bg-lines;
     position: relative;
     padding-top: 20px;
     padding-right: 15px;
@@ -26,7 +25,10 @@
     background-repeat: no-repeat;
     background-clip: border-box;
     background-position: right bottom;
-    //z-index: 1;
+
+    &--main {
+      @include bg-lines;
+    }
   }
 }
 
@@ -62,8 +64,6 @@
     background-color: rgba(255, 255, 255, 0.4);
     z-index: 0;
   }
-  //box-shadow:
-  //  17px 17px 0 0 rgba(255, 255, 255, 0.4);
 }
 
 .representatives__list {

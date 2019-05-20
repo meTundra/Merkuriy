@@ -1,3 +1,5 @@
+'use strict';
+
 var catalogLinks = document.querySelectorAll('.catalog-categories__nested-link');
 var catalogLists = document.querySelectorAll('.catalog-categories__deep-list');
 
@@ -19,3 +21,28 @@ filterOpen.addEventListener('click', function () {
 filterClose.addEventListener('click', function () {
   filter.classList.toggle('js-show');
 });
+
+
+//Липкий фильтр
+
+var filterButton = document.querySelector('.js-filter');
+var startPos = filterButton.clientTop;
+console.dir(filterButton);
+
+function stickyNav () {
+  window.addEventListener('scroll', function () {
+    if (window.innerWidth < 760) {
+      if (window.scrollY > filterButton.clientTop && !filterButton.classList.contains('sticky')) {
+        filterButton.classList.add('sticky');
+      } else if (window.scrollY < startPos && filterButton.classList.contains('sticky')) {
+        filterButton.classList.remove('sticky');
+      }
+    }
+  });
+
+  if (window.innerWidth > 760 && filterButton.classList.contains('sticky')) {
+    filterButton.classList.remove('sticky');
+  }
+}
+
+stickyNav();

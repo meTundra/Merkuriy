@@ -26,6 +26,10 @@
     background-color: #ffffff;
     box-shadow:
       0 4px 68px 0 rgba(0, 0, 0, 0.2);
+
+    &--catalog {
+      display: none;
+    }
   }
 
   @media (min-width: 1170px) {
@@ -188,6 +192,7 @@
   font-size: 16px;
   line-height: 46px;
   color: #000000;
+  text-transform: uppercase;
   text-decoration: none;
 
   @media (min-width: 760px) {
@@ -203,7 +208,6 @@
 }
 
 .nav-categories__nested-link--heading {
-  text-transform: uppercase;
   @media (min-width: 760px) {
     &::before {
       content: "";

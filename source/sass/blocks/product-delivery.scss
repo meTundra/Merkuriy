@@ -1,0 +1,163 @@
+.product-delivery {
+  display: none;
+
+  @media (min-width: 760px) {
+    display: block;
+    background-color: #ffffff;
+  }
+}
+
+.product-delivery__content {
+  @include desktop-content;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 34px;
+}
+
+.product-delivery__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 570px;
+}
+
+.product-delivery__button {
+  padding: 21px 36px;
+
+  border: none;
+  background: none;
+
+  font-size: 16px;
+  line-height: 17px;
+  text-transform: uppercase;
+  letter-spacing: 4.16px;
+
+  &:hover,
+  &:focus {
+    color: #0a5a7e;
+    outline: 1px solid #095273;
+  }
+
+  &:active {
+    font-weight: bold;
+  }
+}
+
+.product-delivery__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.product-delivery__item {
+  position: relative;
+  padding-top: 26px;
+  padding-left: 58px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11px;
+    height: 220px;
+    background-color: #085172;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    width: 11px;
+    height: 220px;
+    border: 1px solid #085172;
+  }
+}
+
+.product-delivery__item-heading {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+}
+
+.product-delivery__nested-list {
+  @include list-reset;
+  margin-bottom: 28px;
+  width: 440px;
+
+  &--pay li {
+    &:nth-child(1)::before {
+      background-image: url("../img/pay-cash.png");
+    }
+
+    &:nth-child(2)::before {
+      background-image: url("../img/pay-card.png");
+    }
+
+    &:nth-child(3)::before {
+      background-image: url("../img/pay-account.png");
+    }
+
+    &:nth-child(4)::before {
+      background-image: url("../img/pay-ecoins.png");
+    }
+  }
+
+  &--del li {
+    padding-left: 70px;
+
+    &::before {
+      width: 50px;
+    }
+
+    &:nth-child(1)::before {
+      background-image: url("../img/del-sdek.png");
+    }
+
+    &:nth-child(2)::before {
+      background-image: url("../img/del-rupost.png");
+    }
+
+    &:nth-child(3)::before {
+      background-image: url("../img/del-ontime.png");
+    }
+
+    &:nth-child(4)::before {
+      background-image: url("../img/del-dpd.png");
+    }
+  }
+}
+
+.product-delivery__nested-item {
+  position: relative;
+  padding-left: 42px;
+
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 1px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+
+    background-repeat: no-repeat;
+  }
+}

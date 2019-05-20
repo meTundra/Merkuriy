@@ -10,13 +10,17 @@
     margin-bottom: 20px;
     justify-content: flex-start;
     padding-top: 40px;
+
+    &--product {
+      padding-top: 15px;
+    }
   }
 
   @media (min-width: 1170px) {
     @include desktop-content;
     position: relative;
     justify-content: flex-start;
-    &::after {
+    &--catalog::after {
       content: "Меркурий-Интер-Лаб";
       position: absolute;
       top: 140px;

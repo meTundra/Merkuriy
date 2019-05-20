@@ -4,4 +4,11 @@
   font-size: 12px;
   counter-reset: quick-legend;
   overflow-x: hidden;
+
+  &__product {
+    @media (min-width: 1800px) {
+      background-image: url("../img/product-page-bg.png");
+      background-position: 30% 0;
+    }
+  }
 }

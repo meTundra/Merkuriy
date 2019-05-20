@@ -16,6 +16,8 @@
     position: relative;
     width: auto;
     background-color: transparent;
+    z-index: 0;
+    
     &::before {
       content: "Меркурий-Интер-Лаб";
       position: absolute;
