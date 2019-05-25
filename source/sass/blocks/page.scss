@@ -8,7 +8,20 @@
   &__product {
     @media (min-width: 1800px) {
       background-image: url("../img/product-page-bg.png");
+      background-repeat: no-repeat;
       background-position: 30% 0;
     }
+  }
+
+  &__choose-color,
+  &__choose-cloth,
+  &__sizes-help,
+  &__services,
+  &__checkout,
+  &__reviews,
+  &__text {
+    position: relative;
+    background-image: url("../img/choose-color-bg.png");
+    background-position: 30% 0;
   }
 }

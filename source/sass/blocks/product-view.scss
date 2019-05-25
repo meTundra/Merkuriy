@@ -279,6 +279,7 @@
 }
 
 .product-view__cloth {
+  cursor: pointer;
   & span {
     box-sizing: border-box;
     display: inline-block;
@@ -321,6 +322,7 @@
     width: 19px;
     height: 19px;
     background-color: darkorange;
+    cursor: pointer;
 
     @media (min-width: 760px) {
       margin-right: 9px;
@@ -450,6 +452,7 @@
   line-height: 9px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  cursor: pointer;
 
   @media (min-width: 760px) {
     width: 210px;

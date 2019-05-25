@@ -1,0 +1,211 @@
+.sizes-tables__content {
+  @include desktop-content;
+  margin: 0 auto;
+}
+
+.sizes-tables__heading {
+  margin: 0;
+  margin-bottom: 55px;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 34px;
+  color: #3199c7;
+  text-transform: uppercase;
+  text-shadow:
+    23px 8px 0 rgba(49, 153, 199, 0.2);
+}
+
+.sizes-tables__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  background: none;
+}
+
+.sizes-tables__item {
+  position: relative;
+  margin-bottom: 34px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 64px;
+    right: 40px;
+    width: 180px;
+    height: 317px;
+    background-image: url("../img/sizes-help-woman.png");
+  }
+
+  &:last-child::before {
+    right: -15px;
+    width: 226px;
+    height: 228px;
+    background-image: url("../img/sizes-help-man.png");
+  }
+}
+
+.sizes-tables__description {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.sizes-tables__tables {
+  display: flex;
+  flex-direction: column;
+}
+
+.sizes-tables__table-girth {
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 35px;
+  width: 848px;
+  background-color: #f3f3f3;
+
+  & tbody {
+    display: flex;
+  }
+
+  & tr {
+    display: flex;
+    flex-direction: column;
+    margin-right: 22px;
+
+    &:first-child {
+      margin-right: 50px;
+    }
+
+    &:nth-child(2) td {
+      font-weight: bold;
+      color: #0a5a7e;
+    }
+  }
+
+  & th,
+  & td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+
+  & th {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    &:first-child {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 18px;
+      color: #0a5a7e;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+
+  & td {
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    &:first-child {
+      font-size: 18px;
+      font-weight: bold;
+      color: #0a5a7e;
+    }
+  }
+}
+
+.sizes-tables__table-growth {
+  box-sizing: border-box;
+  padding-top: 22px;
+  padding-left: 25px;
+  width: 848px;
+  background-color: #f3f3f3;
+
+  & tbody {
+    display: flex;
+  }
+  & tr {
+    display: flex;
+    flex-direction: column;
+    margin-right: 14px;
+
+    &:first-child {
+      margin-right: 34px;
+    }
+  }
+
+  & th,
+  & td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+
+  & th {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    &:first-child {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 18px;
+      color: #0a5a7e;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+
+  & td {
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    &:first-child {
+      font-size: 18px;
+      font-weight: bold;
+      color: #0a5a7e;
+    }
+  }
+}
+
+.sizes-tables__close {
+  position: absolute;
+  top: 27px;
+  right: 34px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    width: 24px;
+    height: 2px;
+    transform: rotate(45deg);
+    background-color: #0a5a7e;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    width: 24px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background-color: #0a5a7e;
+  }
+}

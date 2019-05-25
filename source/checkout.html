@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Меркурий-Интер-Лаб: Контакты</title>
+    <title>Меркурий-Интер-Лаб: Оформление заказа</title>
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
     <link href="img/favicon.png" rel="icon">
   </head>
@@ -284,274 +284,46 @@
       </section>
     </header>
 
-    <main class="page__contacts contacts-page">
-      <div class="contacts-page__breadcrumbs  breadcrumbs">
+    <main class="page__checkout page-checkout">
+      <div class="page-checkout__breadcrumbs  breadcrumbs">
         <div class="breadcrumbs__content">
           <a class="breadcrumbs__link">Главная</a>
-          <a class="breadcrumbs__link  breadcrumbs__link--active">Контакты</a>
+          <a class="breadcrumbs__link  breadcrumbs__link--active">Оформление заказа</a>
         </div>
       </div>
 
-      <section class="contacts-page__contacts  contacts-table">
-        <div class="contacts-table__content">
-          <h2 class="contacts-table__heading">Наши контакты</h2>
-          <table>
-            <tbody class="contacts-table__body">
-              <tr>
-                <td>Юр. адрес</td>
-                <td>45769845768937698574089</td>
-              </tr>
-              <tr>
-                <td>Почтовый адрес</td>
-                <td>45645756756765756</td>
-              </tr>
-              <tr>
-                <td>ИНН</td>
-                <td>45769845768937698574089</td>
-              </tr>
-              <tr>
-                <td>КПП</td>
-                <td>45645756756765756</td>
-              </tr>
-              <tr>
-                <td>ОГРН</td>
-                <td>45769845768937698574089</td>
-              </tr>
-              <tr>
-                <td>Р/C</td>
-                <td>45645756756765756</td>
-              </tr>
-              <tr>
-                <td>Банк</td>
-                <td>45769845768937698574089</td>
-              </tr>
-              <tr>
-                <td>К/С</td>
-                <td>45645756756765756</td>
-              </tr>
-              <tr>
-                <td>БИК</td>
-                <td>45769845768937698574089</td>
-              </tr>
-              <tr>
-                <td>Телефон</td>
-                <td>45645756756765756</td>
-              </tr>
-              <tr>
-                <td>e-mail</td>
-                <td>email@email.com</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <section class="page-checkout__form  checkout">
+        <form class="checkout__form">
+          <h2 class="checkout__heading">Оформление заказа</h2>
+          <fieldset class="checkout__fieldset">
+            <legend class="checkout__legend">Личные данные</legend>
+            <p class="checkout__description">
+              Эта информация никогда не
+              будет передана третьим лицам.</p>
+            <div class="checkout__fields">
+              <input class="checkout__input" type="text" placeholder="Фамилия" name="last-name">
+              <input class="checkout__input" type="text" placeholder="Имя" name="first-name">
+              <input class="checkout__input" type="text" placeholder="Отчество" name="fathers-name">
+              <input class="checkout__input" type="number" placeholder="ИНН" name="inn">
+              <input class="checkout__input" type="email" placeholder="e-mail" name="email">
+              <input class="checkout__input" type="tel" placeholder="Мобильный телефон" name="phone">
+            </div>
+          </fieldset>
+          <fieldset class="checkout__fieldset">
+            <legend class="checkout__legend">Адрес доставки</legend>
+            <div class="checkout__fields">
+              <input class="checkout__input" type="text" placeholder="Регион доставки" name="region">
+              <input class="checkout__input" type="text" placeholder="Город" name="city">
+              <input class="checkout__input" type="text" placeholder="Улица" name="street">
+              <input class="checkout__input" type="number" placeholder="Дом" name="house">
+            </div>
+          </fieldset>
+          <button class="checkout__submit  button" type="submit">Оформить предварительный заказ</button>
+        </form>
       </section>
-
-      <section class="contacts-page__representatives  representatives">
-        <div class="representatives__content">
-          <h2 class="representatives__heading">
-            Наши представители
-          </h2>
-          <div class="representatives__cards-container">
-            <ul class="representatives__list">
-              <li class="representatives__item  company-card">
-                <h3 class="company-card__heading">
-                  Название компании
-                </h3>
-                <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
-                </p>
-                <table>
-                  <tbody class="company-card__table">
-                    <tr>
-                      <td>Город</td>
-                      <td>Тюмень</td>
-                    </tr>
-                    <tr>
-                      <td>Адрес</td>
-                      <td>пр.Ленина, 1</td>
-                    </tr>
-                    <tr>
-                      <td>Телефон</td>
-                      <td>8-921-588-55-21</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li class="representatives__item  company-card">
-                <h3 class="company-card__heading">
-                  Название компании
-                </h3>
-                <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
-                </p>
-                <table>
-                  <tbody class="company-card__table">
-                    <tr>
-                      <td>Город</td>
-                      <td>Тюмень</td>
-                    </tr>
-                    <tr>
-                      <td>Адрес</td>
-                      <td>пр.Ленина, 1</td>
-                    </tr>
-                    <tr>
-                      <td>Телефон</td>
-                      <td>8-921-588-55-21</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li class="representatives__item  company-card">
-                <h3 class="company-card__heading">
-                  Название компании
-                </h3>
-                <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
-                </p>
-                <table>
-                  <tbody class="company-card__table">
-                    <tr>
-                      <td>Город</td>
-                      <td>Тюмень</td>
-                    </tr>
-                    <tr>
-                      <td>Адрес</td>
-                      <td>пр.Ленина, 1</td>
-                    </tr>
-                    <tr>
-                      <td>Телефон</td>
-                      <td>8-921-588-55-21</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li class="representatives__item  company-card">
-                <h3 class="company-card__heading">
-                  Название компании
-                </h3>
-                <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
-                </p>
-                <table>
-                  <tbody class="company-card__table">
-                    <tr>
-                      <td>Город</td>
-                      <td>Тюмень</td>
-                    </tr>
-                    <tr>
-                      <td>Адрес</td>
-                      <td>пр.Ленина, 1</td>
-                    </tr>
-                    <tr>
-                      <td>Телефон</td>
-                      <td>8-921-588-55-21</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li class="representatives__item  company-card">
-                <h3 class="company-card__heading">
-                  Название компании
-                </h3>
-                <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
-                </p>
-                <table>
-                  <tbody class="company-card__table">
-                    <tr>
-                      <td>Город</td>
-                      <td>Тюмень</td>
-                    </tr>
-                    <tr>
-                      <td>Адрес</td>
-                      <td>пр.Ленина, 1</td>
-                    </tr>
-                    <tr>
-                      <td>Телефон</td>
-                      <td>8-921-588-55-21</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li class="representatives__item  company-card">
-                <h3 class="company-card__heading">
-                  Название компании
-                </h3>
-                <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
-                </p>
-                <table>
-                  <tbody class="company-card__table">
-                    <tr>
-                      <td>Город</td>
-                      <td>Тюмень</td>
-                    </tr>
-                    <tr>
-                      <td>Адрес</td>
-                      <td>пр.Ленина, 1</td>
-                    </tr>
-                    <tr>
-                      <td>Телефон</td>
-                      <td>8-921-588-55-21</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-            </ul>
-            <a class="representatives__link  button" href="#">
-              Хочешь стать нашим партнером?
-            </a>
-          </div>
-        </div>
-      </section>
-
     </main>
 
     <footer class="page__footer main-footer">
-      <address class="main-footer__contacts contacts">
-        <div class="contacts__content">
-          <div class="contacts__wrapper">
-            <p class="contacts__company-name">
-              «Меркурий-Интер-Лаб»
-            </p>
-            <a class="contacts__company-phone" href="tel:88002005843">
-              8-800-200-58-43
-            </a>
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <p class="contacts__address">
-                  <svg>
-                    <use xlink:href="#spr-map"></use>
-                  </svg>
-                  г. Нижний Новгород <br>
-                  603006, пер.Ткачева, д.5 (в р-не пл. "Свободы"). <a class="contacts__link" href="#">Показать на карте</a>
-                </p>
-                <a class="contacts__phone" href="tel:+78314196106">
-                  <svg>
-                    <use xlink:href="#spr-phone"></use>
-                  </svg>
-                  +7 (831) 419-61-06</a>
-              </li>
-              <li class="contacts__item">
-                <p class="contacts__address">
-                  <svg>
-                    <use xlink:href="#spr-map"></use>
-                  </svg>
-                  г. Нижний Новгород <br>
-                  603006, пер.Ткачева, д.5 (в р-не пл. "Свободы"). <a class="contacts__link" href="#">Показать на карте</a>
-                </p>
-                <a class="contacts__phone" href="tel:+78314196106">
-                  <svg>
-                    <use xlink:href="#spr-phone"></use>
-                  </svg>
-                  +7 (831) 419-61-06
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </address>
-
       <section class="main-footer__categories  footer-categories">
         <div class="footer-categories__content">
           <ul class="footer-categories__list">

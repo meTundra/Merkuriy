@@ -1,0 +1,110 @@
+.cloth-card {
+  padding-top: 26px;
+  padding-left: 39px;
+
+  background-color: #ffffff;
+  box-shadow: -3px 0 81px rgba(0, 0, 0, 0.1);
+
+  &:not(:last-child) {
+    margin-bottom: 36px;
+  }
+}
+
+.cloth-card__general-description {
+  display: flex;
+  margin-right: 27px;
+  margin-bottom: 32px;
+}
+
+.cloth-card__image {
+  margin: 0;
+  margin-right: 32px;
+  box-shadow: 0 0 90px rgba(7, 7, 7, 0.23);
+
+  & img {
+    height: 100%;
+  }
+}
+
+.cloth-card__heading {
+  margin: 0;
+  margin-bottom: 29px;
+  padding-top: 8px;
+
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #3199c7;
+  text-transform: uppercase;
+}
+
+.cloth-card__table {
+  width: 290px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+
+  & tr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  & td:last-child {
+    width: 160px;
+  }
+}
+
+.cloth-card__description {
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.cloth-card__colors {
+  margin-right: 27px;
+}
+
+.cloth-card__colors-heading {
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.cloth-card__colors-list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cloth-card__colors-item {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin-right: 30px;
+  margin-bottom: 28px;
+  width: 100px;
+}
+
+.cloth-card__color-article {
+  margin: 0;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cloth-card__color {
+  margin-bottom: 12px;
+  width: 100px;
+  height: 70px;
+  background-color: #8783c0;
+}

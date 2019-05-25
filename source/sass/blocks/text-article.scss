@@ -1,0 +1,38 @@
+.text-article {
+  @include desktop-content;
+  margin: 0 auto;
+}
+
+.text-article__heading {
+  margin: 0;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #0a5a7e;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.text-article__description {
+  margin: 0;
+  margin-bottom: 36px;
+
+  font-size: 14px;
+  line-height: 26px;
+  color: #020202;
+  letter-spacing: 1.12px;
+
+  &:last-of-type {
+    margin-bottom: 108px;
+  }
+}
+
+.text-article__images {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Меркурий-Интер-Лаб: Контакты</title>
+    <title>Меркурий-Интер-Лаб: Выбор по цвету и принту</title>
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
     <link href="img/favicon.png" rel="icon">
   </head>
@@ -284,228 +284,290 @@
       </section>
     </header>
 
-    <main class="page__contacts contacts-page">
-      <div class="contacts-page__breadcrumbs  breadcrumbs">
+    <main class="page__choose-cloth  choose-cloth">
+      <div class="choose-cloth__breadcrumbs  breadcrumbs">
         <div class="breadcrumbs__content">
           <a class="breadcrumbs__link">Главная</a>
-          <a class="breadcrumbs__link  breadcrumbs__link--active">Контакты</a>
+          <a class="breadcrumbs__link  breadcrumbs__link--active">Выбор по тканям</a>
         </div>
       </div>
 
-      <section class="contacts-page__contacts  contacts-table">
-        <div class="contacts-table__content">
-          <h2 class="contacts-table__heading">Наши контакты</h2>
-          <table>
-            <tbody class="contacts-table__body">
-              <tr>
-                <td>Юр. адрес</td>
-                <td>45769845768937698574089</td>
-              </tr>
-              <tr>
-                <td>Почтовый адрес</td>
-                <td>45645756756765756</td>
-              </tr>
-              <tr>
-                <td>ИНН</td>
-                <td>45769845768937698574089</td>
-              </tr>
-              <tr>
-                <td>КПП</td>
-                <td>45645756756765756</td>
-              </tr>
-              <tr>
-                <td>ОГРН</td>
-                <td>45769845768937698574089</td>
-              </tr>
-              <tr>
-                <td>Р/C</td>
-                <td>45645756756765756</td>
-              </tr>
-              <tr>
-                <td>Банк</td>
-                <td>45769845768937698574089</td>
-              </tr>
-              <tr>
-                <td>К/С</td>
-                <td>45645756756765756</td>
-              </tr>
-              <tr>
-                <td>БИК</td>
-                <td>45769845768937698574089</td>
-              </tr>
-              <tr>
-                <td>Телефон</td>
-                <td>45645756756765756</td>
-              </tr>
-              <tr>
-                <td>e-mail</td>
-                <td>email@email.com</td>
-              </tr>
-            </tbody>
-          </table>
+      <h1 class="choose-cloth__heading">
+        Выбор по тканям
+      </h1>
+
+      <section class="choose-cloth__cloths  cloth-selection">
+        <div class="cloth-selection__content">
+          <h2 class="cloth-selection__heading">Выберите нужную ткань</h2>
+          <ul class="cloth-selection__filter">
+            <li>
+              <button class="cloth-selection__filter-button  js-active">Все ткани</button>
+            </li>
+            <li>
+              <button class="cloth-selection__filter-button">Медея</button>
+            </li>
+            <li>
+              <button class="cloth-selection__filter-button">Бостон</button>
+            </li>
+            <li>
+              <button class="cloth-selection__filter-button">Галактика</button>
+            </li>
+            <li>
+              <button class="cloth-selection__filter-button">Грета</button>
+            </li>
+            <li>
+              <button class="cloth-selection__filter-button">Блеск</button>
+            </li>
+            <li>
+              <button class="cloth-selection__filter-button">Бостон</button>
+            </li>
+            <li>
+              <button class="cloth-selection__filter-button">Ткань 2</button>
+            </li>
+            <li>
+              <button class="cloth-selection__filter-button">Ткань 2</button>
+            </li>
+            <li>
+              <button class="cloth-selection__filter-button">Медея</button>
+            </li>
+            <li>
+              <button class="cloth-selection__filter-button">Бостон</button>
+            </li>
+            <li>
+              <button class="cloth-selection__filter-button">Галактика</button>
+            </li>
+            <li>
+              <button class="cloth-selection__filter-button">Грета</button>
+            </li>
+            <li>
+              <button class="cloth-selection__filter-button">Блеск</button>
+            </li>
+            <li>
+              <button class="cloth-selection__filter-button">Бостон</button>
+            </li>
+            <li>
+              <button class="cloth-selection__filter-button">Ткань 2</button>
+            </li>
+          </ul>
+
+
+          <ul class="cloth-selection__cards">
+            <li class="cloth-selection__cards-item  cloth-card">
+              <div class="cloth-card__general-description">
+                <p class="cloth-card__image">
+                  <img src="img/cloth-card.png" width="390" height="234" alt="Образец ткани">
+                </p>
+                <div class="cloth-card__description-wrapper">
+                  <h3 class="cloth-card__heading">Название ткани</h3>
+                  <table class="cloth-card__table">
+                    <tbody>
+                      <tr>
+                        <td>Тип ткани</td>
+                        <td>Ткань сорочечная</td>
+                      </tr>
+                      <tr>
+                        <td>Плотность</td>
+                        <td>180 г/м</td>
+                      </tr>
+                      <tr>
+                        <td>Состав</td>
+                        <td>35% хлопок, 65%&nbsp;полиэстер</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="cloth-card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  </p>
+                </div>
+              </div>
+              <div class="cloth-card__colors">
+                <h4 class="cloth-card__colors-heading">Доступные расцветки</h4>
+                <ul class="cloth-card__colors-list">
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="cloth-selection__cards-item  cloth-card">
+              <div class="cloth-card__general-description">
+                <p class="cloth-card__image">
+                  <img src="img/cloth-card.png" width="390" height="234" alt="Образец ткани">
+                </p>
+                <div class="cloth-card__description-wrapper">
+                  <h3 class="cloth-card__heading">Название ткани</h3>
+                  <table class="cloth-card__table">
+                    <tbody>
+                      <tr>
+                        <td>Тип ткани</td>
+                        <td>Ткань сорочечная</td>
+                      </tr>
+                      <tr>
+                        <td>Плотность</td>
+                        <td>180 г/м</td>
+                      </tr>
+                      <tr>
+                        <td>Состав</td>
+                        <td>35% хлопок, 65%&nbsp;полиэстер</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="cloth-card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  </p>
+                </div>
+              </div>
+              <div class="cloth-card__colors">
+                <h4 class="cloth-card__colors-heading">Доступные расцветки</h4>
+                <ul class="cloth-card__colors-list">
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="cloth-selection__cards-item  cloth-card">
+              <div class="cloth-card__general-description">
+                <p class="cloth-card__image">
+                  <img src="img/cloth-card.png" width="390" height="234" alt="Образец ткани">
+                </p>
+                <div class="cloth-card__description-wrapper">
+                  <h3 class="cloth-card__heading">Название ткани</h3>
+                  <table class="cloth-card__table">
+                    <tbody>
+                      <tr>
+                        <td>Тип ткани</td>
+                        <td>Ткань сорочечная</td>
+                      </tr>
+                      <tr>
+                        <td>Плотность</td>
+                        <td>180 г/м</td>
+                      </tr>
+                      <tr>
+                        <td>Состав</td>
+                        <td>35% хлопок, 65%&nbsp;полиэстер</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="cloth-card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  </p>
+                </div>
+              </div>
+              <div class="cloth-card__colors">
+                <h4 class="cloth-card__colors-heading">Доступные расцветки</h4>
+                <ul class="cloth-card__colors-list">
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                  <li class="cloth-card__colors-item">
+                    <h5 class="cloth-card__color-article">артикул цвета 2/21</h5>
+                    <div class="cloth-card__color"></div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
-
-      <section class="contacts-page__representatives  representatives">
-        <div class="representatives__content">
-          <h2 class="representatives__heading">
-            Наши представители
-          </h2>
-          <div class="representatives__cards-container">
-            <ul class="representatives__list">
-              <li class="representatives__item  company-card">
-                <h3 class="company-card__heading">
-                  Название компании
-                </h3>
-                <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
-                </p>
-                <table>
-                  <tbody class="company-card__table">
-                    <tr>
-                      <td>Город</td>
-                      <td>Тюмень</td>
-                    </tr>
-                    <tr>
-                      <td>Адрес</td>
-                      <td>пр.Ленина, 1</td>
-                    </tr>
-                    <tr>
-                      <td>Телефон</td>
-                      <td>8-921-588-55-21</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li class="representatives__item  company-card">
-                <h3 class="company-card__heading">
-                  Название компании
-                </h3>
-                <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
-                </p>
-                <table>
-                  <tbody class="company-card__table">
-                    <tr>
-                      <td>Город</td>
-                      <td>Тюмень</td>
-                    </tr>
-                    <tr>
-                      <td>Адрес</td>
-                      <td>пр.Ленина, 1</td>
-                    </tr>
-                    <tr>
-                      <td>Телефон</td>
-                      <td>8-921-588-55-21</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li class="representatives__item  company-card">
-                <h3 class="company-card__heading">
-                  Название компании
-                </h3>
-                <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
-                </p>
-                <table>
-                  <tbody class="company-card__table">
-                    <tr>
-                      <td>Город</td>
-                      <td>Тюмень</td>
-                    </tr>
-                    <tr>
-                      <td>Адрес</td>
-                      <td>пр.Ленина, 1</td>
-                    </tr>
-                    <tr>
-                      <td>Телефон</td>
-                      <td>8-921-588-55-21</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li class="representatives__item  company-card">
-                <h3 class="company-card__heading">
-                  Название компании
-                </h3>
-                <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
-                </p>
-                <table>
-                  <tbody class="company-card__table">
-                    <tr>
-                      <td>Город</td>
-                      <td>Тюмень</td>
-                    </tr>
-                    <tr>
-                      <td>Адрес</td>
-                      <td>пр.Ленина, 1</td>
-                    </tr>
-                    <tr>
-                      <td>Телефон</td>
-                      <td>8-921-588-55-21</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li class="representatives__item  company-card">
-                <h3 class="company-card__heading">
-                  Название компании
-                </h3>
-                <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
-                </p>
-                <table>
-                  <tbody class="company-card__table">
-                    <tr>
-                      <td>Город</td>
-                      <td>Тюмень</td>
-                    </tr>
-                    <tr>
-                      <td>Адрес</td>
-                      <td>пр.Ленина, 1</td>
-                    </tr>
-                    <tr>
-                      <td>Телефон</td>
-                      <td>8-921-588-55-21</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li class="representatives__item  company-card">
-                <h3 class="company-card__heading">
-                  Название компании
-                </h3>
-                <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
-                </p>
-                <table>
-                  <tbody class="company-card__table">
-                    <tr>
-                      <td>Город</td>
-                      <td>Тюмень</td>
-                    </tr>
-                    <tr>
-                      <td>Адрес</td>
-                      <td>пр.Ленина, 1</td>
-                    </tr>
-                    <tr>
-                      <td>Телефон</td>
-                      <td>8-921-588-55-21</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-            </ul>
-            <a class="representatives__link  button" href="#">
-              Хочешь стать нашим партнером?
-            </a>
-          </div>
-        </div>
-      </section>
-
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer class="page__footer main-footer">
       <address class="main-footer__contacts contacts">

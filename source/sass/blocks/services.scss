@@ -1,0 +1,129 @@
+.services__content {
+  @include mobile-content;
+  @media (min-width: 1170px) {
+    @include desktop-content;
+  }
+}
+
+.services__description {
+  display: none;
+
+  @media (min-width: 1170px) {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 960px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    &--afterword {
+      margin-bottom: 50px;
+      font-style: italic;
+    }
+  }
+}
+
+.services__list {
+  @include list-reset;
+
+  @media (min-width: 1170px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 71px;
+  }
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 22px;
+  padding-top: 100px;
+  transition-duration: 0.4s;
+  background-image: url("../img/service-bg.jpg");
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 101%;
+    height: 101%;
+    border: 1px solid #0a5a7e;
+    transition-duration: 0.2s;
+    z-index: -1;
+  }
+
+  &:hover,
+  &:focus-within {
+    background-image: url("../img/service-bg-hover.jpg");
+    &::before {
+      width: 90%;
+      height: 90%;
+    }
+  }
+
+  @media (min-width: 1170px) {
+    padding-top: 130px;
+    width: 365px;
+
+    background-image: url("../img/service-bg-desktop.jpg");
+
+    &:hover,
+    &:focus-within {
+      background-image: url("../img/service-bg-hover-desktop.jpg");
+    }
+  }
+}
+
+.services__item-name {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @media (min-width: 1170px) {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.services__item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 150px;
+  min-height: 32px;
+
+  border: 1px solid #0a5a7e;
+
+  color: #0a5a7e;
+  font-size: 11px;
+  text-decoration: none;
+  transition-duration: 0.2s;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #0a5a7e;
+  }
+
+  @media (min-width: 1170px) {
+    margin-bottom: 37px;
+    width: 185px;
+    min-height: 39px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

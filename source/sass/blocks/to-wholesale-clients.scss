@@ -1,0 +1,26 @@
+.to-wholesale-clients {
+  @include mobile-content;
+}
+
+.to-wholesale-clients__heading {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 26px;
+  color: #0a5a7e;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.to-wholesale-clients__description {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.to-wholesale-clients__image {
+  margin: 0;
+
+  box-shadow: 2px 3px 90px rgba(0, 0, 0, 0.2);
+}
