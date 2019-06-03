@@ -18,7 +18,7 @@
     @include tablet-content;
     justify-content: space-between;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 40px;
   }
 
   @media (min-width: 1170px) {
@@ -124,6 +124,10 @@
 .banner__text {
   @media (min-width: 760px) {
     margin-right: auto;
+    padding-left: 10px;
+  }
+
+  @media (min-width: 1170px) {
     padding-left: 34px;
   }
 }

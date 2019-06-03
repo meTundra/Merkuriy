@@ -1,110 +1,214 @@
 .cloth-card {
-  padding-top: 26px;
-  padding-left: 39px;
+  @media (min-width: 760px) {
+    padding-top: 18px;
+    padding-left: 20px;
 
-  background-color: #ffffff;
-  box-shadow: -3px 0 81px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    box-shadow: -3px 0 81px rgba(0, 0, 0, 0.1);
 
-  &:not(:last-child) {
-    margin-bottom: 36px;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (min-width: 1170px) {
+    padding-top: 26px;
+    padding-left: 39px;
+
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
   }
 }
 
 .cloth-card__general-description {
-  display: flex;
-  margin-right: 27px;
-  margin-bottom: 32px;
+  @media (min-width: 760px) {
+    display: flex;
+    margin-right: 26px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 1170px) {
+    margin-right: 27px;
+    margin-bottom: 32px;
+  }
 }
 
 .cloth-card__image {
-  margin: 0;
-  margin-right: 32px;
-  box-shadow: 0 0 90px rgba(7, 7, 7, 0.23);
+  @media (min-width: 760px) {
+    margin: 0;
+    margin-right: 15px;
+    box-shadow: 0 0 90px rgba(7, 7, 7, 0.23);
 
-  & img {
-    height: 100%;
+    & img {
+      height: 100%;
+    }
+  }
+
+  @media (min-width: 1170px) {
+    margin-right: 32px;
   }
 }
 
 .cloth-card__heading {
-  margin: 0;
-  margin-bottom: 29px;
-  padding-top: 8px;
+  @media (min-width: 760px) {
+    margin: 0;
+    margin-bottom: 16px;
+    padding-top: 4px;
 
-  font-size: 22px;
-  font-weight: normal;
-  line-height: 16px;
-  color: #3199c7;
-  text-transform: uppercase;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 11px;
+    color: #3199c7;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: 1170px) {
+    margin-bottom: 29px;
+    padding-top: 8px;
+
+    font-size: 22px;
+    line-height: 16px;
+  }
 }
 
 .cloth-card__table {
-  width: 290px;
+  @media (min-width: 760px) {
+    width: 200px;
 
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px;
 
-  & tr {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+    & tr {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 7px;
+    }
+
+    & td:last-child {
+      width: 110px;
+    }
   }
 
-  & td:last-child {
-    width: 160px;
+  @media (min-width: 1170px) {
+    width: 290px;
+
+    font-size: 18px;
+    line-height: 18px;
+
+    & tr {
+      margin-bottom: 10px;
+    }
+
+    & td:last-child {
+      width: 160px;
+    }
   }
 }
 
 .cloth-card__description {
-  margin: 0;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 21px;
-  text-transform: uppercase;
+  @media (min-width: 760px) {
+    margin: 0;
+    font-size: 8px;
+    font-weight: bold;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: 1170px) {
+    font-size: 12px;
+    line-height: 21px;
+  }
 }
 
 .cloth-card__colors {
-  margin-right: 27px;
+  @media (min-width: 760px) {
+    margin-right: 26px;
+  }
+
+  @media (min-width: 1170px) {
+    margin-right: 27px;
+  }
+
 }
 
 .cloth-card__colors-heading {
-  margin: 0;
-  margin-bottom: 28px;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
+  @media (min-width: 760px) {
+    margin: 0;
+    margin-bottom: 18px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+
+  @media (min-width: 1170px) {
+    margin-bottom: 28px;
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+  }
 }
 
 .cloth-card__colors-list {
   @include list-reset;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .cloth-card__colors-item {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  margin-right: 30px;
-  margin-bottom: 28px;
-  width: 100px;
+  @media (min-width: 760px) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    margin-bottom: 19px;
+    width: 68px;
+
+    &:not(:last-of-type) {
+      margin-right: 24px;
+    }
+  }
+
+  @media (min-width: 1170px) {
+    margin-bottom: 28px;
+    width: 100px;
+
+    &:not(:last-of-type) {
+      margin-right: 38px;
+    }
+  }
 }
 
 .cloth-card__color-article {
-  margin: 0;
-  font-size: 12px;
-  line-height: 19px;
-  text-align: center;
-  text-transform: uppercase;
+  @media (min-width: 760px) {
+    margin: 0;
+    font-size: 8px;
+    line-height: 13px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: 1170px) {
+    font-size: 12px;
+    line-height: 19px;
+  }
 }
 
 .cloth-card__color {
-  margin-bottom: 12px;
-  width: 100px;
-  height: 70px;
-  background-color: #8783c0;
+  @media (min-width: 760px) {
+    margin-bottom: 8px;
+    width: 68px;
+    height: 48px;
+    background-color: #8783c0;
+  }
+
+  @media (min-width: 1170px) {
+    margin-bottom: 12px;
+    width: 100px;
+    height: 70px;
+  }
 }

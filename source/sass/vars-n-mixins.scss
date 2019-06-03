@@ -1,5 +1,5 @@
 $mobile-width: 290px;
-$tablet-width: 735px;
+$tablet-width: 760px;
 $desktop-width: 1145px;
 
 @mixin mobile-content {
@@ -11,12 +11,13 @@ $desktop-width: 1145px;
 
 @mixin tablet-content {
   margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 10px;
+  padding: 0;
   width: $tablet-width;
 }
 
 @mixin desktop-content {
+  padding-left: 10px;
+  padding-right: 15px;
   width: $desktop-width;
 }
 

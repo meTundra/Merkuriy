@@ -10,6 +10,14 @@
 
   @media (min-width: 760px) {
     display: flex;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 40px;
+    width: 760px;
+  }
+
+  @media (min-width: 1170px) {
+    display: flex;
     padding-top: 30px;
     padding-bottom: 40px;
     padding-left: 60px;
@@ -25,6 +33,11 @@
 
   @media (min-width: 760px) {
     position: static;
+    margin-right: 20px;
+    width: 115px;
+  }
+
+  @media (min-width: 1170px) {
     margin-right: 40px;
     width: 200px;
   }
@@ -56,6 +69,17 @@
   text-align: right;
 
   @media (min-width: 760px) {
+    margin-bottom: 48px;
+    padding-top: 16px;
+    width: 275px;
+
+    font-size: 12px;
+    line-height: 17px;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+
+  @media (min-width: 1170px) {
     margin-bottom: 70px;
     padding-top: 25px;
     width: 420px;
@@ -104,15 +128,15 @@
 
   @media (min-width: 760px) {
     position: relative;
-    margin-right: 94px;
+    margin-right: 63px;
     margin-bottom: 0;
-    width: 261px;
+    width: 175px;
 
-    font-size: 18px;
-    letter-spacing: 1.8px;
+    font-size: 12px;
+    letter-spacing: 1px;
 
     &--history {
-      margin-right: 171px;
+      margin-right: 112px;
     }
 
     & tr {
@@ -121,11 +145,11 @@
       align-items: center;
 
       &:not(:last-child) {
-        margin-bottom: 14px;
+        margin-bottom: 2px;
       }
 
       &:first-child {
-        margin-bottom: 14px;
+        margin-bottom: 2px;
       }
 
       &:not(:first-child):not(:last-child) {
@@ -138,6 +162,32 @@
       &:first-child {
         margin-bottom: 0;
       }
+    }
+  }
+
+  @media (min-width: 1170px) {
+    margin-right: 94px;
+    width: 261px;
+
+    font-size: 18px;
+    letter-spacing: 1.8px;
+
+    &--history {
+      margin-right: 171px;
+    }
+
+    & tr {
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+
+      &:first-child {
+        margin-bottom: 14px;
+      }
+    }
+
+    & td {
+      min-width: 100px;
     }
   }
 }
@@ -156,6 +206,24 @@
 
   &:first-child {
     margin-right: 10px;
+  }
+
+  @media (min-width: 760px) {
+    width: 17px;
+    height: 17px;
+
+    &:first-child {
+      margin-right: 2px;
+    }
+  }
+
+  @media (min-width: 1170px) {
+    width: 22px;
+    height: 22px;
+
+    &:first-child {
+      margin-right: 10px;
+    }
   }
 }
 
@@ -176,21 +244,30 @@
   }
 
   @media (min-width: 760px) {
+    margin-right: 2px;
+    font-size: 12px;
+    line-height: 11px;
+  }
 
+  @media (min-width: 1170px) {
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
 .order-card__total-wrapper {
   @media (min-width: 760px) {
     position: relative;
-    margin-right: 52px;
+    margin-right: 34px;
+
     &::before {
       content: "";
       position: absolute;
-      top: -35px;
+      top: -20px;
       left: 0;
       width: 2px;
-      height: 131px;
+      height: 87px;
       background-color: #0a5a7e;
       opacity: 0.25;
     }
@@ -198,12 +275,36 @@
     &::after {
       content: "";
       position: absolute;
-      top: -35px;
+      top: -20px;
       right: 0;
       width: 2px;
-      height: 131px;
+      height: 87px;
       background-color: #0a5a7e;
       opacity: 0.25;
+    }
+
+    &--history {
+      &::after {
+        display: none;
+      }
+
+      & .order-card__total {
+        padding-right: 0;
+        padding-left: 70px;
+      }
+    }
+  }
+
+  @media (min-width: 1170px) {
+    margin-right: 52px;
+    &::before {
+      top: -35px;
+      height: 131px;
+    }
+
+    &::after {
+      top: -35px;
+      height: 131px;
     }
 
     &--history {
@@ -239,8 +340,20 @@
 
   @media (min-width: 760px) {
     margin-bottom: 0;
+    padding: 0 30px;
+    width: 170px;
+    font-size: 34px;
+    line-height: 11px;
+    letter-spacing: 4px;
+  }
+
+  @media (min-width: 1170px) {
+    margin-bottom: 0;
     width: 255px;
     padding: 0 50px;
+    font-size: 53px;
+    line-height: 53px;
+    letter-spacing: 5px;
   }
 }
 
@@ -277,6 +390,17 @@
     position: relative;
     top: 0;
     right: 0;
+    width: 19px;
+    height: 19px;
+
+    &::before,
+    &::after {
+      width: 22px;
+      top: 8px;
+    }
+  }
+
+  @media (min-width: 1170px) {;
     width: 31px;
     height: 31px;
 

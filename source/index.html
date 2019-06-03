@@ -12,13 +12,13 @@
         position: fixed;
         top: 0;
         width: 100%;
+        z-index: 99999;
       }
 
       .main-header {
         padding-top: 47px
       }
       </style>
-
     </noscript>
   </head>
   <body class="page">
@@ -94,7 +94,10 @@
       <nav class="main-header__nav main-nav">
         <div class="main-nav__content">
           <a class="main-nav__logo" href="#">
-            <img src="img/logo-desktop.png" width="318" height="50" alt="логотип компании &laquo;Меркурий-Интер-Лаб&raquo;">
+            <picture>
+              <source srcset="img/logo-desktop.png" media="(min-width: 1170px)">
+              <img src="img/logo-tablet.png" alt="логотип компании &laquo;Меркурий-Интер-Лаб&raquo;">
+            </picture>
             <p class="main-nav__logo-description">Медицинская одежда, спецодежда и униформа</p>
           </a>
           <a class="main-nav__open-nav" href="#">
@@ -301,6 +304,7 @@
     <main class="page__main-content main-content">
       <section class="main-content__banner  banner">
         <div class="banner__content">
+          <div></div>
           <button class="banner__button  banner__button--left"></button>
           <ul class="banner__list">
             <li class="banner__item">
@@ -439,7 +443,7 @@
           <ul class="categories__list">
             <li class="categories__item">
               <picture>
-                <source srcset="img/w1test.png" media="(min-width: 1170px)">
+                <source srcset="img/w1test.png" media="(min-width: 760px)">
                 <img class="categories__img" src="img/woman-1.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
               </picture>
               <a class="categories__link" href="catalog.html">
@@ -449,7 +453,7 @@
             </li>
             <li class="categories__item">
               <picture>
-                <source srcset="img/w2test.png" media="(min-width: 1170px)">
+                <source srcset="img/w2test.png" media="(min-width: 760px)">
                 <img class="categories__img" src="img/woman-2.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
               </picture>
               <a class="categories__link" href="#">
@@ -459,7 +463,7 @@
             </li>
             <li class="categories__item">
               <picture>
-                <source srcset="img/w3test.png" media="(min-width: 1170px)">
+                <source srcset="img/w3test.png" media="(min-width: 760px)">
                 <img class="categories__img" src="img/woman-3.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
               </picture>
               <a class="categories__link" href="#">
@@ -469,7 +473,7 @@
             </li>
             <li class="categories__item" >
               <picture>
-                <source srcset="img/w4test.png" media="(min-width: 1170px)">
+                <source srcset="img/w4test.png" media="(min-width: 760px)">
                 <img class="categories__img" src="img/woman-4.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
               </picture>
               <a class="categories__link" href="#">
@@ -479,7 +483,7 @@
             </li>
             <li class="categories__item">
               <picture>
-                <source srcset="img/w5test.png" media="(min-width: 1170px)">
+                <source srcset="img/w5test.png" media="(min-width: 760px)">
                 <img class="categories__img" src="img/woman-5.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
               </picture>
               <a class="categories__link" href="#">
@@ -489,7 +493,7 @@
             </li>
             <li class="categories__item">
               <picture>
-                <source srcset="img/w6test.png" media="(min-width: 1170px)">
+                <source srcset="img/w6test.png" media="(min-width: 760px)">
                 <img class="categories__img" src="img/woman-6.png" alt="Пример одежды из категории &laquo;Медицина&raquo;">
               </picture>
               <a class="categories__link" href="#">
@@ -511,7 +515,8 @@
                 <p class="popular-product__sticker  popular-product__sticker--sale">Sale</p>
                 <p class="popular-product__sticker  popular-product__sticker--hit">Хит</p>
                 <picture>
-                  <source srcset="img/popular-woman-1-desktop.png" media="(min-width: 760px)">
+                  <source srcset="img/popular-woman-1-desktop.png" media="(min-width: 1170px)">
+                  <source srcset="img/popular-woman-1-tablet.png" media="(min-width: 760px)">
                   <img src="img/popular-woman-1.png" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
                 </picture>
 
@@ -557,7 +562,8 @@
                 <p class="popular-product__sticker  popular-product__sticker--sale">Sale</p>
                 <p class="popular-product__sticker  popular-product__sticker--hit">Хит</p>
                 <picture>
-                  <source srcset="img/popular-woman-2-desktop.png" media="(min-width: 760px)">
+                  <source srcset="img/popular-woman-2-desktop.png" media="(min-width: 1170px)">
+                  <source srcset="img/popular-woman-2-tablet.png" media="(min-width: 760px)">
                   <img src="img/popular-woman-2.png" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
                 </picture>
                 <div class="popular-product__overlay">
@@ -602,7 +608,8 @@
                 <p class="popular-product__sticker  popular-product__sticker--sale">Sale</p>
                 <p class="popular-product__sticker  popular-product__sticker--hit">Хит</p>
                 <picture>
-                  <source srcset="img/popular-woman-3-desktop.png" media="(min-width: 760px)">
+                  <source srcset="img/popular-woman-3-desktop.png" media="(min-width: 1170px)">
+                  <source srcset="img/popular-woman-3-tablet.png" media="(min-width: 760px)">
                   <img src="img/popular-woman-3.png" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
                 </picture>
                 <div class="popular-product__overlay">
@@ -647,7 +654,8 @@
                 <p class="popular-product__sticker  popular-product__sticker--sale">Sale</p>
                 <p class="popular-product__sticker  popular-product__sticker--hit">Хит</p>
                 <picture>
-                  <source srcset="img/popular-woman-2-desktop.png" media="(min-width: 760px)">
+                  <source srcset="img/popular-woman-2-desktop.png" media="(min-width: 1170px)">
+                  <source srcset="img/popular-woman-2-tablet.png" media="(min-width: 760px)">
                   <img src="img/popular-woman-2.png" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
                 </picture>
                 <div class="popular-product__overlay">
@@ -692,7 +700,8 @@
                 <p class="popular-product__sticker  popular-product__sticker--sale">Sale</p>
                 <p class="popular-product__sticker  popular-product__sticker--hit">Хит</p>
                 <picture>
-                  <source srcset="img/popular-woman-3-desktop.png" media="(min-width: 760px)">
+                  <source srcset="img/popular-woman-3-desktop.png" media="(min-width: 1170px)">
+                  <source srcset="img/popular-woman-3-tablet.png" media="(min-width: 760px)">
                   <img src="img/popular-woman-3.png" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
                 </picture>
                 <div class="popular-product__overlay">
@@ -737,7 +746,8 @@
                 <p class="popular-product__sticker  popular-product__sticker--sale">Sale</p>
                 <p class="popular-product__sticker  popular-product__sticker--hit">Хит</p>
                 <picture>
-                  <source srcset="img/popular-woman-3-desktop.png" media="(min-width: 760px)">
+                  <source srcset="img/popular-woman-3-desktop.png" media="(min-width: 1170px)">
+                  <source srcset="img/popular-woman-3-tablet.png" media="(min-width: 760px)">
                   <img src="img/popular-woman-3.png" alt="Изображение костюма К-74 &laquo;Фаина&raquo;">
                 </picture>
                 <div class="popular-product__overlay">
@@ -791,7 +801,10 @@
                   Название компании
                 </h3>
                 <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
+                  <picture>
+                    <source srcset="img/company-card-logo.png" media="(min-width: 1170px)">
+                    <img src="img/company-card-logo-tablet.png" alt="Логотип компании">
+                  </picture>
                 </p>
                 <table>
                   <tbody class="company-card__table">
@@ -815,7 +828,10 @@
                   Название компании
                 </h3>
                 <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
+                  <picture>
+                    <source srcset="img/company-card-logo.png" media="(min-width: 1170px)">
+                    <img src="img/company-card-logo-tablet.png" alt="Логотип компании">
+                  </picture>
                 </p>
                 <table>
                   <tbody class="company-card__table">
@@ -839,7 +855,10 @@
                   Название компании
                 </h3>
                 <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
+                  <picture>
+                    <source srcset="img/company-card-logo.png" media="(min-width: 1170px)">
+                    <img src="img/company-card-logo-tablet.png" alt="Логотип компании">
+                  </picture>
                 </p>
                 <table>
                   <tbody class="company-card__table">
@@ -863,7 +882,10 @@
                   Название компании
                 </h3>
                 <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
+                  <picture>
+                    <source srcset="img/company-card-logo.png" media="(min-width: 1170px)">
+                    <img src="img/company-card-logo-tablet.png" alt="Логотип компании">
+                  </picture>
                 </p>
                 <table>
                   <tbody class="company-card__table">
@@ -887,7 +909,10 @@
                   Название компании
                 </h3>
                 <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
+                  <picture>
+                    <source srcset="img/company-card-logo.png" media="(min-width: 1170px)">
+                    <img src="img/company-card-logo-tablet.png" alt="Логотип компании">
+                  </picture>
                 </p>
                 <table>
                   <tbody class="company-card__table">
@@ -911,7 +936,10 @@
                   Название компании
                 </h3>
                 <p class="company-card__logo">
-                  <img src="img/company-card-logo.png" width="103" height="40" alt="Логотип компании">
+                  <picture>
+                    <source srcset="img/company-card-logo.png" media="(min-width: 1170px)">
+                    <img src="img/company-card-logo-tablet.png" alt="Логотип компании">
+                  </picture>
                 </p>
                 <table>
                   <tbody class="company-card__table">
@@ -1189,7 +1217,10 @@
 
           <div class="footer-categories__info  footer-info">
             <a class="footer-info__logo" href="#">
-              <img src="img/logo-desktop.png" width="318" height="50" alt="Логотип компании &laquo;Меркурий-Интер-Лаб&raquo;">
+              <picture>
+                <source srcset="img/logo-desktop.png" media="(min-width: 1170px)">
+                <img src="img/logo-tablet.png" alt="логотип компании &laquo;Меркурий-Интер-Лаб&raquo;">
+              </picture>
             </a>
             <ul class="footer-info__social">
               <li>
@@ -1219,13 +1250,22 @@
             </ul>
             <ul class="footer-info__pay-cards">
               <li class="footer-info__pay-cards-item">
-                <img src="img/visa.png" width="66" height="42" alt="логотип платёжной системы виза">
+                <picture>
+                  <source srcset="img/visa.png" media="(min-width: 1170px)">
+                  <img src="img/visa-tablet.png" alt="логотип платёжной системы виза">
+                </picture>
               </li>
               <li class="footer-info__pay-cards-item">
-                <img src="img/mastercard.png" width="47" height="36" alt="логотип платёжной системы мастеркард">
+                <picture>
+                  <source srcset="img/mastercard.png" media="(min-width: 1170px)">
+                  <img src="img/mastercard-tablet.png" alt="логотип платёжной системы мастеркард">
+                </picture>
               </li>
               <li class="footer-info__pay-cards-item">
-                <img src="img/maestro.png" width="66" height="41" alt="логотип платёжной системы маэстро">
+                <picture>
+                  <source srcset="img/maestro.png" media="(min-width: 1170px)">
+                  <img src="img/maestro-tablet.png" alt="логотип платёжной системы маэстро">
+                </picture>
               </li>
             </ul>
             <div class="footer-info__contacts">

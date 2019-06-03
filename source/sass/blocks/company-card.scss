@@ -1,39 +1,65 @@
 .company-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-  margin-bottom: 36px;
-  padding-top: 36px;
-  width: 218px;
+  @media (min-width: 760px) {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    width: 150px;
 
-  &:nth-child(2n + 1):not(:first-child)::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 91px;
-    width: 296px;
-    height: 1px;
-    background-color: #27598d;
+    &:nth-child(2n + 1):not(:first-child)::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 60px;
+      width: 200px;
+      height: 1px;
+      background-color: #27598d;
+    }
+
+    &:first-child::before {
+      content: "";
+      position: absolute;
+      top: 43px;
+      right: -12px;
+      width: 1px;
+      height: 354px;
+      background-color: #27598d;
+    }
   }
 
-  &:first-child::before {
-    content: "";
-    position: absolute;
-    top: 68px;
-    right: -25px;
-    width: 1px;
-    height: 486px;
-    background-color: #27598d;
+  @media (min-width: 1170px) {
+    margin-bottom: 36px;
+    padding-top: 36px;
+    width: 218px;
+
+    &:nth-child(2n + 1):not(:first-child)::before {
+      left: 91px;
+      width: 296px;
+    }
+
+    &:first-child::before {
+      top: 68px;
+      right: -25px;
+      height: 486px;
+    }
   }
 }
 
 .company-card__heading {
-  margin: 0;
-  font-size: 18px;
-  line-height: 30px;
-  color: #005a80;
+  @media (min-width: 760px) {
+    margin: 0;
+    font-size: 12px;
+    line-height: 20px;
+    color: #005a80;
+  }
+
+  @media (min-width: 1170px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .company-card__logo {
@@ -42,16 +68,29 @@
 
 .company-card__table {
   display: block;
-  width: 218px;
 
-  & tr {
-    display: flex;
-    justify-content: space-between;
+
+  @media (min-width: 760px) {
+    width: 150px;
+
+    & tr {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & td {
+      font-size: 9px;
+      line-height: 13px;
+    }
   }
 
-  & td {
-    font-size: 14px;
-    line-height: 17px;
+  @media (min-width: 1170px) {
+    width: 218px;
+
+    & td {
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 }
 

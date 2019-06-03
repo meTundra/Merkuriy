@@ -10,15 +10,14 @@
 
   @media (min-width: 760px) {
     @include tablet-content;
-    padding-top: 85px;
-    padding-bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 590px;
   }
 
   @media (min-width: 1170px) {
-    margin: 0;
-    padding: 0;
-    width: 880px;
     position: relative;
+    width: 880px;
 
     &::before {
       content: "Меркурий-Интер-Лаб";
@@ -37,19 +36,6 @@
   }
 }
 
-.catalog-cards__heading {
-  @include mobile-headings;
-  @media (min-width: 760px) {
-    @include desktop-headings;
-  }
-
-  @media (min-width: 1170px) {
-    margin-right: auto;
-    text-shadow:
-      -10px 10px 0 rgba(40, 80, 169, 0.13);
-  }
-}
-
 .catalog-cards__list {
   @include list-reset;
 
@@ -57,10 +43,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 735px;
+    padding-left: 12px;
+    width: 590px;
   }
 
   @media (min-width: 1170px) {
+    padding: 0;
     width: 880px;
   }
 }
@@ -69,6 +57,7 @@
   margin-bottom: 29px;
 
   @media (min-width: 760px) {
+    margin-bottom: 48px;
   }
 
   @media (min-width: 1170px) {

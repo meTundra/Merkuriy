@@ -3,8 +3,12 @@
 
   @media (min-width: 760px) {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
     width: 100%;
     border: 1px solid #a9cfe3;
+  }
+
+  @media (min-width: 1170px) {
+    margin-bottom: 20px;
   }
 }

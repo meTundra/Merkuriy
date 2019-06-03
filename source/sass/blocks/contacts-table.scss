@@ -3,6 +3,10 @@
   position: relative;
   margin: 0 auto;
 
+  @media (min-width: 760px) {
+    @include tablet-content;
+  }
+
   @media (min-width: 1170px) {
     @include desktop-content;
     &::before {
@@ -35,6 +39,15 @@
     letter-spacing: 1.1px;
 
     @media (min-width: 760px) {
+      margin-bottom: 75px;
+      padding-top: 15px;
+      width: 616px;
+
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    @media (min-width: 1170px) {
       margin-bottom: 90px;
       padding-top: 20px;
       width: 780px;
@@ -56,15 +69,21 @@
   letter-spacing: 2.4px;
 
   @media (min-width: 760px) {
+    margin-bottom: 70px;
+    font-size: 19px;
+    line-height: 19px;
+    text-shadow: -10px 10px 0 rgba(40, 80, 169, 0.13);
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: 1170px) {
     margin-bottom: 40px;
     padding-left: 40px;
     font-size: 46px;
     line-height: 46px;
-    text-shadow: -10px 10px 0 rgba(40, 80, 169, 0.13);
     text-transform: none;
     letter-spacing: 4.7px;
   }
-
 }
 
 .contacts-table__body {
@@ -75,10 +94,15 @@
   border: 1px solid #0a5a7e;
 
   @media (min-width: 760px) {
+    margin-bottom: 19px;
+    padding: 28px 27px;
+    width: 578px;
+  }
+
+  @media (min-width: 1170px) {
     margin-bottom: 25px;
     padding: 20px 38px;
     width: 730px;
-
   }
 
 

@@ -2,10 +2,15 @@
   @include mobile-content;
 
   @media (min-width: 760px) {
-    padding: 0 15px;
-    width: 1140px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0;
+    width: 760px;
+  }
+
+  @media (min-width: 1170px) {
+    padding: 0 15px;
+    width: 1140px;
   }
 }

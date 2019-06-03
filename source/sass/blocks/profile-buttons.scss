@@ -10,6 +10,15 @@
   z-index: 0;
 
   @media (min-width: 760px) {
+    @include tablet-content;
+    margin-bottom: 41px;
+
+    & li:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  @media (min-width: 1170px) {
     @include desktop-content;
     margin-bottom: 30px;
 
@@ -63,6 +72,18 @@
   }
 
   @media (min-width: 760px) {
+    padding: 15px 22px;
+
+    font-size: 13px;
+    line-height: 18px;
+
+    &::before {
+      top: 14px;
+      height: 20px;
+    }
+  }
+
+  @media (min-width: 1170px) {
     padding: 20px 32px;
 
     font-size: 18px;

@@ -1,91 +1,161 @@
 .reviews__heading {
-  @include desktop-content;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  padding-top: 22px;
+  @media (min-width: 760px) {
+    @include tablet-content;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding-top: 10px;
 
-  font-size: 24px;
-  line-height: 16px;
-  color: #0a5a7e;
-  text-transform: uppercase;
-  text-shadow:
-    14px 4px 0 rgba(10, 90, 126, 0.2);
-  letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 11px;
+    color: #0a5a7e;
+    text-transform: uppercase;
+    text-shadow:
+      14px 4px 0 rgba(10, 90, 126, 0.2);
+    letter-spacing: 1px;
+  }
+
+  @media (min-width: 1170px) {
+    @include desktop-content;
+    margin-bottom: 40px;
+    padding-top: 22px;
+
+    font-size: 24px;
+    line-height: 16px;
+    letter-spacing: 2px;
+  }
 }
 
 .reviews__list {
-  @include desktop-content;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+  @media (min-width: 760px) {
+    @include tablet-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1170px) {
+    @include desktop-content;
+  }
 }
 
 .reviews__item {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 37px;
-  padding-top: 38px;
-  padding-bottom: 48px;
-  padding-left: 49px;
-  background-color: #ffffff;
+  @media (min-width: 760px) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+    padding-top: 25px;
+    padding-bottom: 32px;
+    padding-left: 33px;
+    background-color: #ffffff;
 
-  &::before {
-    box-sizing: border-box;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1100px;
-    height: 290px;
-    border: 1px solid #0a5a7e;
+    &::before {
+      box-sizing: border-box;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 732px;
+      height: 194px;
+      border: 1px solid #0a5a7e;
+    }
+
+    &:last-child {
+      margin-bottom: 62px;
+    }
   }
 
-  &:last-child {
-    margin-bottom: 72px;
+  @media (min-width: 1170px) {
+    margin-bottom: 37px;
+    padding-top: 38px;
+    padding-bottom: 48px;
+    padding-left: 49px;
+
+    &::before {
+      width: 1100px;
+      height: 290px;
+    }
+
+    &:last-child {
+      margin-bottom: 72px;
+    }
   }
 }
 
 .reviews__image {
   box-shadow: 0 0 16px rgba(108, 108, 108, 0.35);
   border: 1px solid #0a5a7e;
+  margin-right: 20px;
 }
 
 .reviews__info {
-  margin-right: 90px;
+  @media (min-width: 760px) {
+    margin-right: 60px;
+  }
+
+  @media (min-width: 1170px) {
+    margin-right: 90px;
+  }
 }
 
 .reviews__item-heading {
-  position: relative;
-  margin: 0;
-  margin-bottom: 32px;
-  font-size: 18px;
-  line-height: 26px;
-  color: #0a5a7e;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  @media (min-width: 760px) {
+    position: relative;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #0a5a7e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    width: 150px;
-    height: 1px;
-    background-color: #0a5a7e;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 100px;
+      height: 1px;
+      background-color: #0a5a7e;
+    }
+  }
+
+  @media (min-width: 1170px) {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 26px;
+
+    &::before {
+      bottom: -15px;
+      width: 150px;
+    }
   }
 }
 
 .reviews__description {
-  margin: 0;
-  width: 760px;
+  @media (min-width: 760px) {
+    margin: 0;
+    width: 520px;
 
-  font-size: 14px;
-  line-height: 26px;
-  color: #020202;
-  letter-spacing: 1px;
+    font-size: 10px;
+    line-height: 17px;
+    color: #020202;
+    letter-spacing: 0.5px;
 
-  &:first-of-type {
-    margin-bottom: 30px;
+    &:first-of-type {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (min-width: 1170px) {
+    width: 760px;
+
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 1px;
+
+    &:first-of-type {
+      margin-bottom: 30px;
+    }
   }
 }

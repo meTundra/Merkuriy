@@ -5,6 +5,10 @@
   align-items: center;
 
   @media (min-width: 760px) {
+    @include tablet-content;
+  }
+
+  @media (min-width: 1170px) {
     @include desktop-content;
   }
 }
@@ -31,6 +35,13 @@
   text-transform: uppercase;
 
   @media (min-width: 760px) {
+    margin-bottom: 25px;
+    width: 230px;
+
+    font-size: 9px;
+  }
+
+  @media (min-width: 1170px) {
     margin-bottom: 40px;
     width: 470px;
 
@@ -55,6 +66,14 @@
   &:disabled {
     color: #0a5a7e;
   }
+
+  @media (min-width: 760px) {
+    font-size: 26px;
+  }
+
+  @media (min-width: 1170px) {
+    font-size: 52px;
+  }
 }
 
 .order-section__button {
@@ -68,8 +87,17 @@
   letter-spacing: 1px;
 
   @media (min-width: 760px) {
+    margin-bottom: 26px;
+    width: 200px;
+    height: 32px;
+
+    font-size: 9px;
+  }
+
+  @media (min-width: 1170px) {
     margin-bottom: 52px;
     width: 360px;
+    height: 54px;
 
     font-size: 16px;
   }

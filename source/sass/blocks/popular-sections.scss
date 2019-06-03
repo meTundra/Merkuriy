@@ -19,14 +19,16 @@
     @include tablet-content;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 16px;
     height: auto;
-    min-height: 56px;
+    min-height: 38px;
+    font-size: 11px;
   }
 
   @media (min-width: 1170px) {
     @include desktop-content;
     width: 1145px;
+    min-height: 56px;
+    font-size: 16px;
   }
 }
 
@@ -36,6 +38,10 @@
     position: relative;
     display: flex;
 
+    min-height: 38px;
+  }
+
+  @media (min-width: 1170px) {
     min-height: 56px;
   }
 }
@@ -55,7 +61,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding: 0 11px;
+    padding: 0 22px;
     width: 100%;
     color: #3199c7;
     z-index: 1;

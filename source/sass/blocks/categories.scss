@@ -11,16 +11,16 @@
 
   @media (min-width: 1170px) {
     position: relative;
-    &::after {
-      position: absolute;
-      bottom: -10px;
-      right: -930px;
-      content: "Меркурий-Интер-Лаб";
-      font-size: 160px;
-      line-height: 37px;
-      color: #0a5a7e;
-      opacity: 0.1;
-    }
+    //&::after {
+    //  position: absolute;
+    //  bottom: -10px;
+    //  right: -930px;
+    //  content: "Меркурий-Интер-Лаб";
+    //  font-size: 160px;
+    //  line-height: 37px;
+    //  color: #0a5a7e;
+    //  opacity: 0.1;
+    //}
   }
 }
 
@@ -34,12 +34,13 @@
 
   @media (min-width: 760px) {
     @include tablet-content;
-    padding-top: 70px;
+    padding-top: 42px;
   }
 
   @media (min-width: 1170px) {
     @include desktop-content;
     @include bg-lines;
+    padding-top: 70px;
     z-index: 2;
   }
 }
@@ -47,14 +48,16 @@
 .categories__heading {
   @include mobile-headings;
   @media (min-width: 760px) {
-    @include desktop-headings;
+    margin-right: auto;
     padding-left: 40px;
+    font-size: 32px;
+    line-height: 15px;
+    text-shadow:
+      -10px 10px 0 rgba(40, 80, 169, 0.13);
   }
 
   @media (min-width: 1170px) {
-    margin-right: auto;
-    text-shadow:
-      -10px 10px 0 rgba(40, 80, 169, 0.13);
+    @include desktop-headings;
   }
 }
 
@@ -64,15 +67,14 @@
 
   @media (min-width: 760px) {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 92px;
+    margin-bottom: 38px;
   }
 
   @media (min-width: 1170px) {
-
+    margin-bottom: 92px;
   }
 }
 
@@ -91,206 +93,36 @@
   transition-duration: 0.3s;
   transition-property: background-color, color;
 
-  @media (min-width: 1170px) {
-    &:hover .categories__to-catalog,
-    &:focus-within .categories__to-catalog {
-      right: 15px;
-      bottom: 30px;
-    }
-  }
-
   &:nth-child(1) {
     background-image: url(../img/woman-1-bg.png);
-
-    @media (min-width: 1170px) {
-      background-image: url(../img/woman-1-desktop-bg.png);
-
-      & picture {
-        padding-left: 76px;
-        width: 154px;
-        height: 384px;
-      }
-
-      & img {
-        width: 154px;
-      }
-
-      &:hover picture,
-      &:focus-within picture{
-        padding-left: 86px;
-        width: 282px;
-        height: 520px;
-      }
-
-      &:hover img,
-      &:focus-within img {
-        width: 200px;
-      }
-    }
   }
 
   &:nth-child(2) {
     background-image: url(../img/woman-2-bg.png);
-
-    @media (min-width: 1170px) {
-      background-image: url(../img/woman-2-desktop-bg.png);
-
-      & picture {
-        padding-left: 58px;
-        width: 162px;
-        height: 390px;
-      }
-
-      & img {
-        width: 162px;
-      }
-
-      &:hover picture,
-      &:focus-within picture{
-        padding-left: 20px;
-        width: 246px;
-        height: 535px;
-      }
-
-      &:hover img,
-      &:focus-within img {
-        width: 246px;
-      }
-    }
   }
 
   &:nth-child(3) {
     background-image: url(../img/woman-3-bg.png);
-
-    @media (min-width: 1170px) {
-      background-image: url(../img/woman-3-desktop-bg.png);
-
-      & picture {
-        padding-left: 15px;
-        width: 146px;
-        height: 192px;
-      }
-
-      & img {
-        width: 146px;
-      }
-
-      &:hover picture,
-      &:focus-within picture{
-        padding-left: 22px;
-        width: 172px;
-        height: 284px;
-      }
-
-      &:hover img,
-      &:focus-within img {
-        width: 172px;
-      }
-    }
   }
 
   &:nth-child(4) {
     background-image: url(../img/woman-4-bg.png);
-
-    @media (min-width: 1170px) {
-      background-image: url(../img/woman-4-desktop-bg.png);
-
-      & picture {
-        padding-left: 15px;
-        width: 113px;
-        height: 206px;
-      }
-
-      & img {
-        width: 113px;
-      }
-
-      &:hover picture,
-      &:focus-within picture{
-        padding-left: 15px;
-        width: 136px;
-        height: 281px;
-      }
-
-      &:hover img,
-      &:focus-within img {
-        width: 136px;
-      }
-    }
   }
 
   &:nth-child(5) {
     background-image: url(../img/woman-5-bg.png);
-
-    @media (min-width: 1170px) {
-      background-image: url(../img/woman-5-desktop-bg.png);
-
-      & picture {
-        padding-left: 2px;
-        width: 160px;
-        height: 200px;
-      }
-
-      & img {
-        width: 160px;
-      }
-
-      &:hover picture,
-      &:focus-within picture{
-        margin-left: -30px;
-        padding-left: 0;
-        width: 190px;
-        height: 280px;
-      }
-
-      &:hover img,
-      &:focus-within img {
-        width: 190px;
-      }
-    }
   }
 
   &:nth-child(6) {
     background-image: url(../img/woman-6-bg.png);
-
-    @media (min-width: 1170px) {
-      background-image: url(../img/woman-6-desktop-bg.png);
-
-      & picture {
-        padding-left: 86px;
-        width: 180px;
-        height: 202px;
-      }
-
-      & img {
-        width: 180px;
-      }
-
-      &:hover picture,
-      &:focus-within picture{
-        padding-left: 102px;
-        width: 223px;
-        height: 358px;
-      }
-
-      &:hover img,
-      &:focus-within img {
-        width: 223px;
-      }
-    }
   }
 
   @media (min-width: 760px) {
     margin-bottom: 20px;
-    width: 358px;
-    height: 300px;
-  }
-
-  @media (min-width: 1170px) {
-    margin-bottom: 20px;
     padding-right: 14px;
-    width: 365px;
-    height: 215px;
+    width: 245px;
+    height: 144px;
+
 
     &:hover,
     &:focus-within {
@@ -307,6 +139,212 @@
     &:focus-within .categories__to-catalog {
       display: flex;
     }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      padding-right: 34px;
+      width: 374px;
+      height: 270px;
+
+      &:hover .categories__to-catalog,
+      &:focus-within .categories__to-catalog {
+        right: 31px;
+        bottom: 48px;
+      }
+
+      & .categories__to-catalog {
+        width: 131px;
+        height: 33px;
+      }
+    }
+
+    &:last-child {
+      width: 760px;
+
+      &:hover .categories__to-catalog,
+      &:focus-within .categories__to-catalog {
+        right: 7px;
+        bottom: 22px;
+      }
+    }
+
+    & picture {
+      overflow: hidden;
+      transition: 0.2s;
+    }
+
+    & img {
+      transition: 0.2s;
+    }
+
+    &:hover .categories__to-catalog,
+    &:focus-within .categories__to-catalog {
+      right: 16px;
+      bottom: 20px;
+    }
+
+    &:nth-child(1) {
+      background-image: url(../img/woman-1-tablet-bg.png);
+
+      & picture {
+        padding-left: 50px;
+        width: 104px;
+        height: 255px;
+      }
+
+      & img {
+        width: 104px;
+      }
+
+      &:hover picture,
+      &:focus-within picture{
+        padding-left: 58px;
+        width: 128px;
+        height: 354px;
+      }
+
+      &:hover img,
+      &:focus-within img {
+        width: 128px;
+      }
+    }
+
+    &:nth-child(2) {
+      background-image: url(../img/woman-2-tablet-bg.png);
+
+      & picture {
+        padding-left: 38px;
+        width: 107px;
+        height: 257px;
+      }
+
+      & img {
+        width: 107px;
+      }
+
+      &:hover picture,
+      &:focus-within picture{
+        padding-left: 11px;
+        width: 166px;
+        height: 352px;
+      }
+
+      &:hover img,
+      &:focus-within img {
+        width: 166px;
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: url(../img/woman-3-tablet-bg.png);
+
+      & picture {
+        padding-left: 10px;
+        width: 96px;
+        height: 127px;
+      }
+
+      & img {
+        width: 96px;
+      }
+
+      &:hover picture,
+      &:focus-within picture{
+        padding-left: 15px;
+        width: 115px;
+        height: 188px;
+      }
+
+      &:hover img,
+      &:focus-within img {
+        width: 115px;
+      }
+    }
+
+    &:nth-child(4) {
+      background-image: url(../img/woman-4-tablet-bg.png);
+
+      & picture {
+        padding-left: 11px;
+        width: 75px;
+        height: 137px;
+      }
+
+      & img {
+        width: 75px;
+      }
+
+      &:hover picture,
+      &:focus-within picture{
+        width: 91px;
+        height: 188px;
+      }
+
+      &:hover img,
+      &:focus-within img {
+        width: 91px;
+      }
+    }
+
+    &:nth-child(5) {
+      background-image: url(../img/woman-5-tablet-bg.png);
+
+      & picture {
+        padding-left: 1px;
+        width: 106px;
+        height: 133px;
+      }
+
+      & img {
+        width: 106px;
+      }
+
+      &:hover picture,
+      &:focus-within picture{
+        margin-left: -21px;
+        padding-left: 0;
+        width: 126px;
+        height: 186px;
+      }
+
+      &:hover img,
+      &:focus-within img {
+        width: 126px;
+      }
+    }
+
+    &:nth-child(6) {
+      background-image: url(../img/woman-6-tablet-bg.png);
+
+      & picture {
+        padding-left: 71px;
+        width: 120px;
+        height: 134px;
+      }
+
+      & img {
+        width: 120px;
+      }
+
+      &:hover picture,
+      &:focus-within picture{
+        padding-left: 71px;
+        width: 134px;
+        height: 238px;
+      }
+
+      &:hover img,
+      &:focus-within img {
+        width: 134px;
+      }
+    }
+  }
+
+  @media (min-width: 1170px) {
+    margin-bottom: 20px;
+    padding-right: 14px;
+    width: 365px;
+    height: 215px;
 
     &:nth-child(1),
     &:nth-child(2) {
@@ -335,13 +373,167 @@
       }
     }
 
-    & picture {
-      overflow: hidden;
-      transition: 0.2s;
+    &:hover .categories__to-catalog,
+    &:focus-within .categories__to-catalog {
+      right: 15px;
+      bottom: 30px;
     }
 
-    & img {
-      transition: 0.2s;
+    &:nth-child(1) {
+      background-image: url(../img/woman-1-desktop-bg.png);
+
+      & picture {
+        padding-left: 76px;
+        width: 154px;
+        height: 384px;
+      }
+
+      & img {
+        width: 154px;
+      }
+
+      &:hover picture,
+      &:focus-within picture{
+        padding-left: 86px;
+        width: 282px;
+        height: 520px;
+      }
+
+      &:hover img,
+      &:focus-within img {
+        width: 200px;
+      }
+    }
+
+    &:nth-child(2) {
+      background-image: url(../img/woman-2-desktop-bg.png);
+
+      & picture {
+        padding-left: 58px;
+        width: 162px;
+        height: 390px;
+      }
+
+      & img {
+        width: 162px;
+      }
+
+      &:hover picture,
+      &:focus-within picture{
+        padding-left: 20px;
+        width: 246px;
+        height: 535px;
+      }
+
+      &:hover img,
+      &:focus-within img {
+        width: 246px;
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: url(../img/woman-3-desktop-bg.png);
+
+      & picture {
+        padding-left: 15px;
+        width: 146px;
+        height: 192px;
+      }
+
+      & img {
+        width: 146px;
+      }
+
+      &:hover picture,
+      &:focus-within picture{
+        padding-left: 22px;
+        width: 172px;
+        height: 284px;
+      }
+
+      &:hover img,
+      &:focus-within img {
+        width: 172px;
+      }
+    }
+
+    &:nth-child(4) {
+      background-image: url(../img/woman-4-desktop-bg.png);
+
+      & picture {
+        padding-left: 15px;
+        width: 113px;
+        height: 206px;
+      }
+
+      & img {
+        width: 113px;
+      }
+
+      &:hover picture,
+      &:focus-within picture{
+        padding-left: 15px;
+        width: 136px;
+        height: 281px;
+      }
+
+      &:hover img,
+      &:focus-within img {
+        width: 136px;
+      }
+    }
+
+    &:nth-child(5) {
+      background-image: url(../img/woman-5-desktop-bg.png);
+
+      & picture {
+        padding-left: 2px;
+        width: 160px;
+        height: 200px;
+      }
+
+      & img {
+        width: 160px;
+      }
+
+      &:hover picture,
+      &:focus-within picture{
+        margin-left: -30px;
+        padding-left: 0;
+        width: 190px;
+        height: 280px;
+      }
+
+      &:hover img,
+      &:focus-within img {
+        width: 190px;
+      }
+    }
+
+    &:nth-child(6) {
+      background-image: url(../img/woman-6-desktop-bg.png);
+
+      & picture {
+        padding-left: 86px;
+        width: 180px;
+        height: 202px;
+      }
+
+      & img {
+        width: 180px;
+      }
+
+      &:hover picture,
+      &:focus-within picture{
+        padding-left: 102px;
+        width: 223px;
+        height: 358px;
+      }
+
+      &:hover img,
+      &:focus-within img {
+        width: 223px;
+      }
     }
   }
 }
@@ -353,9 +545,10 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  @media (min-width: 1170px) {
+  @media (min-width: 760px) {
     margin-left: auto;
-    font-size: 24px;
+    font-size: 17px;
+    font-weight: bold;
 
     &:hover,
     &:focus {
@@ -365,6 +558,10 @@
     &:active {
       opacity: 0.3;
     }
+  }
+
+  @media (min-width: 1170px) {
+    font-size: 24px;
   }
 }
 
@@ -381,7 +578,11 @@
   text-transform: uppercase;
   letter-spacing: 3px;
 
-  @media (min-width: 1170px) {
+  @media (min-width: 760px) {
+    width: 112px;
+    height: 27px;
+    letter-spacing: 1px;
+
     &:hover,
     &:focus {
       opacity: 0.6;
@@ -390,6 +591,13 @@
     &:active {
       opacity: 0.3;
     }
+  }
+
+
+  @media (min-width: 1170px) {
+    width: 168px;
+    height: 46px;
+    letter-spacing: 3px;
   }
 }
 

@@ -17,7 +17,7 @@
 
   @media (min-width: 760px) {
     @include tablet-content;
-    padding-top: 85px;
+    padding-top: 42px;
     padding-bottom: 0;
   }
 
@@ -25,6 +25,8 @@
     @include desktop-content;
     @include bg-lines;
     position: relative;
+    padding-top: 85px;
+
     @media (min-width: 1800px) {
       z-index: 2;
       &::after {
@@ -45,13 +47,15 @@
 .popular-products__heading {
   @include mobile-headings;
   @media (min-width: 760px) {
-    @include desktop-headings;
+    margin-right: auto;
+    font-size: 32px;
+    line-height: 15px;
+    text-shadow:
+      -10px 10px 0 rgba(40, 80, 169, 0.13);
   }
 
   @media (min-width: 1170px) {
-    margin-right: auto;
-    text-shadow:
-      -10px 10px 0 rgba(40, 80, 169, 0.13);
+    @include desktop-headings;
   }
 }
 
@@ -62,7 +66,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 735px;
+    width: 760px;
   }
 
   @media (min-width: 1170px) {

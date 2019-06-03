@@ -1,10 +1,11 @@
-.catalog-aside {
-}
-
 .catalog-aside__content {
   width: 280px;
 
   @media (min-width: 760px) {
+    width: 160px;
+  }
+
+  @media (min-width: 1170px) {
     width: 240px;
   }
 }

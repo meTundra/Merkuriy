@@ -1,7 +1,5 @@
 .same-product {
-
   width: 290px;
-
   box-shadow:
     7px 11px 59px 0 rgba(99, 99, 99, 0.2);
 
@@ -12,15 +10,22 @@
   @media (min-width: 760px) {
     position: relative;
     display: block;
+    width: 240px;
+
+    &:hover .same-product__overlay {
+      padding-top: 16px;
+      height: 84px;
+    }
+  }
+
+  @media (min-width: 1170px) {
     width: 358px;
 
     &:hover .same-product__overlay {
       padding-top: 19px;
       height: 109px;
     }
-  }
 
-  @media (min-width: 1170px) {
     &::before {
       content: "";
       position: absolute;
@@ -53,6 +58,11 @@
   background-image: url("../img/popular-card-bg.png");
 
   @media (min-width: 760px) {
+    height: 295px;
+    background-image: url("../img/popular-card-bg-desktop.png");
+  }
+
+  @media (min-width: 1170px) {
     height: 435px;
     background-image: url("../img/popular-card-bg-desktop.png");
   }
@@ -76,6 +86,14 @@
 
   @media (min-width: 760px) {
     right: 14px;
+    width: 52px;
+    height: 16px;
+    font-size: 7px;
+    line-height: 16px;
+  }
+
+  @media (min-width: 1170px) {
+    right: 14px;
     width: 76px;
     height: 22px;
     font-size: 10px;
@@ -87,7 +105,7 @@
   top: 17px;
   background-color: #419fc9;
 
-  @media (min-width: 760px) {
+  @media (min-width: 1170px) {
     top: 22px;
   }
 }
@@ -96,7 +114,7 @@
   top: 45px;
   background-color: #ff0101;
 
-  @media (min-width: 760px) {
+  @media (min-width: 1170px) {
     top: 56px;
   }
 }
@@ -105,86 +123,129 @@
   top: 71px;
   background-color: #0a5a7e;
 
-  @media (min-width: 760px) {
+  @media (min-width: 1170px) {
     top: 89px;
   }
 }
 
 .same-product__overlay {
-  position: absolute;
-  bottom: 0;
   display: none;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 0px;
-  width: 358px;
-  height: 0;
-  background-color: rgba(255, 255, 255, 0.6);
-  box-shadow:
-    0 0 73px 0 rgba(0, 0, 0, 0.18);
-  transition-duration: 0.3s;
-
-  &:hover {
-    display: flex;
-  }
 
   @media (min-width: 760px) {
     display: flex;
+
+    position: absolute;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    width: 240px;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow:
+      0 0 73px 0 rgba(0, 0, 0, 0.18);
+    transition-duration: 0.3s;
+
+    &:hover {
+      display: flex;
+    }
+  }
+
+  @media (min-width: 1170px) {
+    width: 358px;
   }
 }
 
 .same-product__overlay-heading {
-  margin: 0;
-  margin-bottom: 14px;
-  font-size: 19px;
-  font-weight: bold;
-  line-height: 20px;
-  color: #525252;
+  @media (min-width: 760px) {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 16px;
+    color: #525252;
+  }
+
+  @media (min-width: 1170px) {
+    margin-bottom: 14px;
+    font-size: 19px;
+    line-height: 20px;
+  }
 }
 
 .same-product__measurements-list {
-  @include list-reset;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 17px;
-  padding: 0 24px;
-  width: 100%;
+  @media (min-width: 760px) {
+    @include list-reset;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding: 0 18px;
+    width: 100%;
+  }
+
+  @media (min-width: 1170px) {
+    margin-bottom: 17px;
+    padding: 0 24px;
+  }
 }
 
 .same-product__measurements-item {
-  font-size: 19px;
-  line-height: 20px;
-  color: #525252;
+  @media (min-width: 760px) {
+    font-size: 15px;
+    line-height: 16px;
+    color: #525252;
+  }
+
+  @media (min-width: 1170px) {
+    font-size: 19px;
+    line-height: 20px;
+  }
 }
 
 .same-product__quick-view {
-  position: relative;
-  margin-bottom: 18px;
-  padding-left: 30px;
-  font-size: 19px;
-  line-height: 20px;
-  color: #0a5a7e;
-  text-decoration-color: rgba(10, 90, 126, 0.4);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-
-  & svg {
-    position: absolute;
-    top: -4px;
-    left: -10px;
-    width: 34px;
-    height: 24px;
+  @media (min-width: 760px) {
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 15px;
     color: #0a5a7e;
+    text-decoration-color: rgba(10, 90, 126, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+
+    & svg {
+      position: absolute;
+      top: -2px;
+      left: -5px;
+      width: 30px;
+      height: 20px;
+      color: #0a5a7e;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
+  @media (min-width: 1170px) {
+    margin-bottom: 18px;
+    font-size: 19px;
+    line-height: 20px;
+    letter-spacing: 2px;
 
-  &:active {
-    opacity: 0.3;
+    & svg {
+      top: -4px;
+      left: -10px;
+      width: 34px;
+      height: 24px;
+    }
   }
 }
 
@@ -197,7 +258,13 @@
   padding-left: 20px;
   background-color: #ffffff;
 
+
   @media (min-width: 760px) {
+    padding-left: 16px;
+  }
+
+  @media (min-width: 1170px) {
+    padding-left: 20px;
   }
 }
 
@@ -210,9 +277,17 @@
   line-height: 17px;
 
   @media (min-width: 760px) {
-    width: 185px;
-    font-size: 18px;
-    line-height: 21px;
+    margin-bottom: 10px;
+    width: 145px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media (min-width: 1170px) {
+    margin-bottom: 12px;
+    width: 210px;
+    font-size: 21px;
+    line-height: 24px;
   }
 }
 
@@ -223,7 +298,15 @@
   line-height: 20px;
   font-weight: bold;
   color: #0a5a7e;
+
   @media (min-width: 760px) {
+    margin-bottom: 10px;
+    font-size: 21px;
+    line-height: 20px;
+  }
+
+  @media (min-width: 1170px) {
+    margin-bottom: 14px;
     font-size: 27px;
     line-height: 26px;
   }
@@ -240,15 +323,6 @@
   width: 23px;
   height: 14px;
 
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
   & svg {
     color: #43809c;
     width: 34px;
@@ -256,13 +330,26 @@
   }
 
   @media (min-width: 760px) {
-    right: 30px;
-    width: 29px;
-    height: 17px;
+    right: 10px;
+    bottom: 35px;
+    width: 53px;
+    height: 33px;
 
     & svg {
-      width: 50px;
-      height: 30px;
+      width: 53px;
+      height: 33px;
+    }
+  }
+
+  @media (min-width: 1170px) {
+    right: 15px;
+    bottom: 50px;
+    width: 70px;
+    height: 50px;
+
+    & svg {
+      width: 70px;
+      height: 50px;
     }
   }
 }
