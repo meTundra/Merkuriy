@@ -197,12 +197,19 @@
 }
 
 .order-card__count-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
   width: 22px;
   height: 22px;
 
   background: none;
   border: 1px solid #000000;
   border-radius: 50%;
+
+  font-weight: bold;
+  line-height: 0;
 
   &:first-child {
     margin-right: 10px;
@@ -369,7 +376,7 @@
     position: absolute;
     top: 5px;
     left: -1px;
-    width: 34px;
+    width: 14px;
     height: 2px;
     transform: rotate(45deg);
     background-color: #0a5a7e;
@@ -380,7 +387,7 @@
     position: absolute;
     top: 5px;
     left: -1px;
-    width: 34px;
+    width: 14px;
     height: 2px;
     transform: rotate(-45deg);
     background-color: #0a5a7e;

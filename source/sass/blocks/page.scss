@@ -13,15 +13,33 @@
     }
   }
 
-  &__choose-color,
-  &__choose-cloth,
-  &__sizes-help,
-  &__services,
-  &__checkout,
-  &__reviews,
-  &__text {
+  @media (min-width: 760px) and (max-width: 1169px) {
     position: relative;
-    background-image: url("../img/choose-color-bg.png");
-    background-position: 30% 0;
+    background-image: url("../img/page-background-tablet.png");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 1170px) {
+    &__choose-color,
+    &__choose-cloth,
+    &__sizes-help,
+    &__services,
+    &__checkout,
+    &__reviews,
+    &__text,
+    &__news,
+    &__orders-history,
+    &__order-retail {
+      position: relative;
+      background-image: url("../img/choose-color-bg.png");
+      background-position: 30% 0;
+    }
   }
 }
+
+//& .page-bg {
+//  position: relative;
+//  background-image: url("../img/choose-color-bg.png");
+//  background-position: 30% 0;
+//}

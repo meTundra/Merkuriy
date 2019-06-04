@@ -363,6 +363,21 @@
       text-transform: uppercase;
       letter-spacing: 0.7px;
     }
+
+    &::before {
+      box-sizing: border-box;
+      content: "?";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      padding-top: 1px;
+      padding-left: 2px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 1px solid #a0a0a0;
+      font-size: 9px;
+    }
   }
 
   @media (min-width: 1170px) {
@@ -375,6 +390,16 @@
       font-size: 11px;
       line-height: 11px;
       letter-spacing: 0.7px;
+    }
+
+    &::before {
+      top: 7px;
+      left: 8px;
+      padding-top: 1px;
+      padding-left: 4px;
+      width: 16px;
+      height: 16px;
+      font-size: 12px;
     }
   }
 }
@@ -498,12 +523,14 @@
 
   @media (min-width: 760px) {
     margin-bottom: 58px;
+    padding-top: 9px;
     width: 366px;
     box-shadow: 0 -3px 139px rgba(0, 0, 0, 0.14);
   }
 
   @media (min-width: 1170px) {
     margin-bottom: 70px;
+    padding-top: 15px;
     width: 545px;
   }
 }

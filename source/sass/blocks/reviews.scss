@@ -1,4 +1,6 @@
 .reviews__heading {
+  @include mobile-content;
+
   @media (min-width: 760px) {
     @include tablet-content;
     margin: 0 auto;
@@ -26,6 +28,8 @@
 }
 
 .reviews__list {
+  @include mobile-content;
+
   @media (min-width: 760px) {
     @include tablet-content;
     display: flex;

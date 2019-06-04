@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Меркурий-Интер-Лаб: Выбор по цвету и принту</title>
+    <title>Меркурий-Интер-Лаб: Мои заказы - розница</title>
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
     <link href="img/favicon.png" rel="icon">
   </head>
@@ -288,7 +288,8 @@
       <div class="order-retail__breadcrumbs  breadcrumbs">
         <div class="breadcrumbs__content">
           <a class="breadcrumbs__link">Главная</a>
-          <a class="breadcrumbs__link  breadcrumbs__link--active">Выбор по тканям</a>
+          <a class="breadcrumbs__link">Мои заказы</a>
+          <a class="breadcrumbs__link  breadcrumbs__link--active">Розница</a>
         </div>
       </div>
 
@@ -334,9 +335,9 @@
                       <tr>
                         <td>Количество</td>
                         <td class="order-card__count-buttons">
-                          <button class="order-card__count-button" type="button"></button>
+                          <button class="order-card__count-button" type="button">-</button>
                           <input class="order-card__count-value" type="text" value="2" disabled>
-                          <button class="order-card__count-button" type="button"></button>
+                          <button class="order-card__count-button" type="button">+</button>
                         </td>
                       </tr>
                     </tbody>
@@ -351,10 +352,12 @@
             </li>
 
             <li class="order-section__item  order-card">
-              <picture>
-                <source srcset="img/order-woman-1.png" media="(min-width: 1170px)">
-                <img src="img/order-woman-1-tablet.png" alt="Изображение костюма">
-              </picture>
+              <p class="order-card__image">
+                <picture>
+                  <source srcset="img/order-woman-1.png" media="(min-width: 1170px)">
+                  <img src="img/order-woman-1-tablet.png" alt="Изображение костюма">
+                </picture>
+              </p>
               <div class="order-card__info-wrapper">
                 <h3 class="order-card__heading">Костюм медицинский к-74 «Фаина»</h3>
                 <div class="order-card__info">
@@ -375,9 +378,9 @@
                       <tr>
                         <td>Количество</td>
                         <td class="order-card__count-buttons">
-                          <button class="order-card__count-button" type="button"></button>
+                          <button class="order-card__count-button" type="button">-</button>
                           <input class="order-card__count-value" type="text" value="2" disabled>
-                          <button class="order-card__count-button" type="button"></button>
+                          <button class="order-card__count-button" type="button">+</button>
                         </td>
                       </tr>
                     </tbody>
@@ -393,7 +396,7 @@
           </ul>
 
           <label class="order-section__total">
-            Итоговая цена
+            Итоговая цена с доставкой
             <input class="order-section__total-value" type="text" value="18 000 ₽" disabled>
           </label>
 
@@ -800,13 +803,13 @@
           <form class="popup-auth__form  js-form-login  js-show">
             <input class="popup-auth__input" type="email" placeholder="Почта*">
             <input class="popup-auth__input" type="password" placeholder="Пароль*">
-            <button class="popup-auth__submit" type="submit">Оставить заявку</button>
+            <button class="popup-auth__submit" type="submit">Войти</button>
           </form>
 
           <form class="popup-auth__form  js-form-signup">
             <input class="popup-auth__input" type="email" placeholder="Почта*">
             <input class="popup-auth__input" type="number" placeholder="ИНН*">
-            <button class="popup-auth__submit" type="submit">Оставить заявку</button>
+            <button class="popup-auth__submit" type="submit">Регистрация</button>
           </form>
 
           <p class="popup-auth__hint">Для юридических лиц*</p>

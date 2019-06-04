@@ -1,4 +1,6 @@
 .choose-cloth__breadcrumbs {
+  @include mobile-content;
+
   @media (min-width: 760px) {
     margin-bottom: 27px;
   }
@@ -9,6 +11,8 @@
 }
 
 .choose-cloth__heading {
+  @include mobile-content;
+
   @media (min-width: 760px) {
     @include tablet-content;
     margin: 0 auto;

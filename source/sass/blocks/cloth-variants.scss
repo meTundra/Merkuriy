@@ -1,4 +1,6 @@
 .cloth-variants__content {
+  @include mobile-content;
+
   @media (min-width: 760px) {
     @include tablet-content;
     margin: 0 auto;
@@ -135,8 +137,13 @@
 }
 
 .cloth-variants__link {
+  & svg {
+    display: none;
+  }
+
   @media (min-width: 760px) {
     box-sizing: border-box;
+    position: relative;
     display: flex;
     padding: 14px 33px;
     width: 100%;
@@ -151,6 +158,14 @@
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1.8px;
+
+    & svg {
+      position: absolute;
+      top: 12px;
+      right: 15px;
+      width: 30px;
+      height: 20px;
+    }
   }
 
   @media (min-width: 1170px) {
@@ -159,5 +174,12 @@
     font-size: 22px;
     line-height: 22px;
     letter-spacing: 1.8px;
+
+    & svg {
+      top: 13px;
+      right: 25px;
+      width: 45px;
+      height: 35px;
+    }
   }
 }

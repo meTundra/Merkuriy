@@ -56,6 +56,7 @@
 
   @media (min-width: 1170px) {
     @include desktop-headings;
+    margin-right: auto;
   }
 }
 

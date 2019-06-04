@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Меркурий-Интер-Лаб: Выбор по цвету и принту</title>
+    <title>Меркурий-Интер-Лаб: История заказов</title>
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
     <link href="img/favicon.png" rel="icon">
   </head>
@@ -284,15 +284,15 @@
       </section>
     </header>
 
-    <main class="page__order-retail  order-retail">
-      <div class="order-retail__breadcrumbs  breadcrumbs">
+    <main class="page__orders-history  orders-history">
+      <div class="orders-history__breadcrumbs  breadcrumbs">
         <div class="breadcrumbs__content">
           <a class="breadcrumbs__link">Главная</a>
-          <a class="breadcrumbs__link  breadcrumbs__link--active">Выбор по тканям</a>
+          <a class="breadcrumbs__link  breadcrumbs__link--active">История заказов</a>
         </div>
       </div>
 
-      <ul class="order-retail__buttons  profile-buttons">
+      <ul class="orders-history__buttons  profile-buttons">
         <li>
           <button class="profile-buttons__item  js-active">Мои заказы</button>
         </li>
@@ -304,7 +304,7 @@
         </li>
       </ul>
 
-      <section class="order-retail__products  order-section">
+      <section class="orders-history__products  order-section">
         <form class="order-section__form">
           <ul class="order-section__list">
             <li class="order-section__item  order-card">
@@ -334,9 +334,9 @@
                       <tr>
                         <td>Количество</td>
                         <td class="order-card__count-buttons">
-                          <button class="order-card__count-button" type="button"></button>
+                          <button class="order-card__count-button" type="button">-</button>
                           <input class="order-card__count-value" type="text" value="2" disabled>
-                          <button class="order-card__count-button" type="button"></button>
+                          <button class="order-card__count-button" type="button">+</button>
                         </td>
                       </tr>
                     </tbody>
@@ -375,9 +375,9 @@
                       <tr>
                         <td>Количество</td>
                         <td class="order-card__count-buttons">
-                          <button class="order-card__count-button" type="button"></button>
+                          <button class="order-card__count-button" type="button">-</button>
                           <input class="order-card__count-value" type="text" value="2" disabled>
-                          <button class="order-card__count-button" type="button"></button>
+                          <button class="order-card__count-button" type="button">+</button>
                         </td>
                       </tr>
                     </tbody>
@@ -776,13 +776,13 @@
           <form class="popup-auth__form  js-form-login  js-show">
             <input class="popup-auth__input" type="email" placeholder="Почта*">
             <input class="popup-auth__input" type="password" placeholder="Пароль*">
-            <button class="popup-auth__submit" type="submit">Оставить заявку</button>
+            <button class="popup-auth__submit" type="submit">Войти</button>
           </form>
 
           <form class="popup-auth__form  js-form-signup">
             <input class="popup-auth__input" type="email" placeholder="Почта*">
             <input class="popup-auth__input" type="number" placeholder="ИНН*">
-            <button class="popup-auth__submit" type="submit">Оставить заявку</button>
+            <button class="popup-auth__submit" type="submit">Регистрация</button>
           </form>
 
           <p class="popup-auth__hint">Для юридических лиц*</p>

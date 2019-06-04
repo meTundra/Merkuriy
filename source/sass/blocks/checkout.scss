@@ -193,10 +193,11 @@
   position: absolute;
   top: 10px;
   right: 16px;
+  padding: 0;
   width: 14px;
   height: 14px;
   background: none;
-  background-image: url("../img/profile-edit.png");
+  background-image: url("../img/svg/edit.svg");
   border: none;
   cursor: pointer;
 
@@ -206,11 +207,15 @@
   }
 
   @media (min-width: 760px) {
-    width: 9px;
-    height: 9px;
+    top: 6px;
+    right: 13px;
+    width: 12px;
+    height: 12px;
   }
 
   @media (min-width: 1170px) {
+    top: 10px;
+    right: 16px;
     width: 14px;
     height: 14px;
   }

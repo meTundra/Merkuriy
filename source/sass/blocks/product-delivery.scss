@@ -180,7 +180,7 @@
   @media (min-width: 760px) {
     @include list-reset;
     margin-bottom: 23px;
-    width: 360px;
+    width: 300px;
 
     &--pay li {
       &:nth-child(1)::before {

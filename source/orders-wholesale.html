@@ -105,7 +105,7 @@
             </svg>
             <span class="visually-hidden">Вход или регистрация</span>
           </a>
-          <a class="main-nav__orders-wholesale" href="#">
+          <a class="main-nav__cart" href="#">
             <svg>
               <use xlink:href="#spr-supermarket"></use>
             </svg>
@@ -333,9 +333,9 @@
                       <tr>
                         <td>Количество</td>
                         <td class="order-card__count-buttons">
-                          <button class="order-card__count-button" type="button"></button>
+                          <button class="order-card__count-button" type="button">-</button>
                           <input class="order-card__count-value" type="text" value="2" disabled>
-                          <button class="order-card__count-button" type="button"></button>
+                          <button class="order-card__count-button" type="button">+</button>
                         </td>
                       </tr>
                     </tbody>
@@ -373,9 +373,9 @@
                       <tr>
                         <td>Количество</td>
                         <td class="order-card__count-buttons">
-                          <button class="order-card__count-button" type="button"></button>
+                          <button class="order-card__count-button" type="button">-</button>
                           <input class="order-card__count-value" type="text" value="2" disabled>
-                          <button class="order-card__count-button" type="button"></button>
+                          <button class="order-card__count-button" type="button">+</button>
                         </td>
                       </tr>
                     </tbody>
@@ -778,13 +778,13 @@
           <form class="popup-auth__form  js-form-login  js-show">
             <input class="popup-auth__input" type="email" placeholder="Почта*">
             <input class="popup-auth__input" type="password" placeholder="Пароль*">
-            <button class="popup-auth__submit" type="submit">Оставить заявку</button>
+            <button class="popup-auth__submit" type="submit">Войти</button>
           </form>
 
           <form class="popup-auth__form  js-form-signup">
             <input class="popup-auth__input" type="email" placeholder="Почта*">
             <input class="popup-auth__input" type="number" placeholder="ИНН*">
-            <button class="popup-auth__submit" type="submit">Оставить заявку</button>
+            <button class="popup-auth__submit" type="submit">Регистрация</button>
           </form>
 
           <p class="popup-auth__hint">Для юридических лиц*</p>

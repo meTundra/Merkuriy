@@ -1,15 +1,17 @@
 .news__list {
+  @include mobile-content;
+
   @media (min-width: 760px) {
     @include tablet-content;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
   }
 
   @media (min-width: 1170px) {
     @include desktop-content;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 }
 

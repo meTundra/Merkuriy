@@ -15,6 +15,7 @@ var cityButton = document.querySelector('.main-info__different-city');
 var cityPopup = document.querySelector('.city__overlay');
 
 var callbackButton = document.querySelector('.main-info__order-callback');
+var serviceButtons = document.querySelectorAll('.js-order-callback');
 var callbackPopup = document.querySelector('.callback__overlay');
 
 var authButton = document.querySelectorAll('.sign-in');
@@ -49,6 +50,13 @@ cityButton.addEventListener('click', function (evt) {
 callbackButton.addEventListener('click', function (evt) {
   evt.preventDefault();
   callbackPopup.classList.add('js-show');
+});
+
+serviceButtons.forEach(function (item) {
+  item.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    callbackPopup.classList.add('js-show');
+  });
 });
 
 authButton.forEach(function (item) {
