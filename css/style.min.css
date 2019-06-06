@@ -5110,6 +5110,12 @@ template {
       height: 722px; } }
   .product-view__zoom.js-show {
     display: block; }
+  .product-view__zoom:nth-of-type(1) {
+    background-image: url("../img/product-view-main-2x.jpg"); }
+  .product-view__zoom:nth-of-type(2) {
+    background-image: url("../img/product-view-main-2-2x.jpg"); }
+  .product-view__zoom:nth-of-type(3) {
+    background-image: url("../img/product-view-main-3-2x.jpg"); }
 
 .product-view__main-img {
   width: 290px;
