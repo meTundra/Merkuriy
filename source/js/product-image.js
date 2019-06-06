@@ -23,8 +23,4 @@ minImgs.forEach(function (item, index) {
 
 zoomContainers.forEach(function (item) {
   item.addEventListener('mousemove', zoom);
-  item.addEventListener('mouseenter', function(evt) {
-    var image = evt.currentTarget.querySelector('img');
-    evt.currentTarget.style.backgroundImage = 'url("../' + image.currentSrc.slice(image.currentSrc.search('img')).replace('.jpg', '-2x.jpg') + '")';
-  })
 });
