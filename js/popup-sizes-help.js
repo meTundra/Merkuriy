@@ -1,0 +1,1 @@
+var sizesButton=document.querySelectorAll(".js-sizes-help"),sizesPopup=document.querySelector(".popup-sizes__overlay");sizesButton.forEach(function(e){e.addEventListener("click",function(e){e.preventDefault(),sizesPopup.classList.add("js-show")})});
