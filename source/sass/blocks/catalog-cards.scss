@@ -64,3 +64,42 @@
     margin-bottom: 45px;
   }
 }
+
+.catalog-cards__pagination {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+.catalog-cards__pagination-item {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  z-index: 1;
+
+  & a {
+    font-size: 16px;
+    line-height: 23px;
+    color: #373737;
+    text-decoration: none;
+  }
+
+
+  &.js-active {
+    & a {
+      color: #0a5a7e;
+      font-weight: bold;
+    }
+
+    background-image: url(../img/pagination-active.png);
+    background-repeat: no-repeat;
+  }
+}
+
+

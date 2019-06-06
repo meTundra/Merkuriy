@@ -1,6 +1,12 @@
-.choose-color__breadcrumbs {
-  @include mobile-content;
+.choose-color {
+  @media (min-width: 1024px) and (max-width: 1169px) {
+    background-image: url("../img/catalog-bg-1024.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+}
 
+.choose-color__breadcrumbs {
   @media (min-width: 760px) {
     margin-bottom: 18px;
   }

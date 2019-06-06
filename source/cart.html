@@ -80,7 +80,10 @@
       <nav class="main-header__nav main-nav">
         <div class="main-nav__content">
           <a class="main-nav__logo" href="#">
-            <img src="img/logo-desktop.png" width="318" height="50" alt="логотип компании &laquo;Меркурий-Интер-Лаб&raquo;">
+            <picture>
+              <source srcset="img/logo-desktop.png" media="(min-width: 1170px)">
+              <img src="img/logo-tablet.png" alt="логотип компании &laquo;Меркурий-Интер-Лаб&raquo;">
+            </picture>
             <p class="main-nav__logo-description">Медицинская одежда, спецодежда и униформа</p>
           </a>
           <a class="main-nav__open-nav" href="#">
@@ -292,14 +295,9 @@
         </div>
       </div>
 
-      <ul class="cart__buttons  profile-buttons">
-        <li>
-          <button class="profile-buttons__item  js-active">Мои заказы</button>
-        </li>
-      </ul>
-
       <section class="cart__products  order-section">
         <form class="order-section__form">
+          <h2 class="order-section__heading">Ваш заказ</h2>
           <ul class="order-section__list">
             <li class="order-section__item  order-card">
               <p class="order-card__image">
@@ -813,13 +811,22 @@
             </ul>
             <ul class="footer-info__pay-cards">
               <li class="footer-info__pay-cards-item">
-                <img src="img/visa.png" width="66" height="42" alt="логотип платёжной системы виза">
+                <picture>
+                  <source srcset="img/visa.png" media="(min-width: 1170px)">
+                  <img src="img/visa-tablet.png" alt="логотип платёжной системы виза">
+                </picture>
               </li>
               <li class="footer-info__pay-cards-item">
-                <img src="img/mastercard.png" width="47" height="36" alt="логотип платёжной системы мастеркард">
+                <picture>
+                  <source srcset="img/mastercard.png" media="(min-width: 1170px)">
+                  <img src="img/mastercard-tablet.png" alt="логотип платёжной системы мастеркард">
+                </picture>
               </li>
               <li class="footer-info__pay-cards-item">
-                <img src="img/maestro.png" width="66" height="41" alt="логотип платёжной системы маэстро">
+                <picture>
+                  <source srcset="img/maestro.png" media="(min-width: 1170px)">
+                  <img src="img/maestro-tablet.png" alt="логотип платёжной системы маэстро">
+                </picture>
               </li>
             </ul>
             <div class="footer-info__contacts">

@@ -2,12 +2,16 @@
   position: relative;
   overflow: hidden;
 
+  @media (min-width: 1024px) {
+    background-image: url("../img/catalog-bg-1024.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+
   @media (min-width: 1170px) {
+    background-image: url("../img/catalog-bg-desktop.png");
     background-color: #fafafa;
   }
   @media (min-width: 1800px) {
-    background-image: url("../img/catalog-bg-desktop.png");
-    background-repeat: no-repeat;
-    background-position: 36%;
   }
 }

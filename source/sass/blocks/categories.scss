@@ -11,16 +11,16 @@
 
   @media (min-width: 1170px) {
     position: relative;
-    //&::after {
-    //  position: absolute;
-    //  bottom: -10px;
-    //  right: -930px;
-    //  content: "Меркурий-Интер-Лаб";
-    //  font-size: 160px;
-    //  line-height: 37px;
-    //  color: #0a5a7e;
-    //  opacity: 0.1;
-    //}
+    &::after {
+      position: absolute;
+      bottom: -10px;
+      right: -930px;
+      content: "Меркурий-Интер-Лаб";
+      font-size: 160px;
+      line-height: 37px;
+      color: #0a5a7e;
+      opacity: 0.1;
+    }
   }
 }
 
@@ -171,11 +171,11 @@
 
     & picture {
       overflow: hidden;
-      transition: 0.2s;
+      transition: 0.3s;
     }
 
     & img {
-      transition: 0.2s;
+      transition: 0.3s;
     }
 
     &:hover .categories__to-catalog,

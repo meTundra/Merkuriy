@@ -80,7 +80,10 @@
       <nav class="main-header__nav main-nav">
         <div class="main-nav__content">
           <a class="main-nav__logo" href="#">
-            <img src="img/logo-desktop.png" width="318" height="50" alt="логотип компании &laquo;Меркурий-Интер-Лаб&raquo;">
+            <picture>
+              <source srcset="img/logo-desktop.png" media="(min-width: 1170px)">
+              <img src="img/logo-tablet.png" alt="логотип компании &laquo;Меркурий-Интер-Лаб&raquo;">
+            </picture>
             <p class="main-nav__logo-description">Медицинская одежда, спецодежда и униформа</p>
           </a>
           <a class="main-nav__open-nav" href="#">
@@ -288,19 +291,20 @@
       <div class="orders-history__breadcrumbs  breadcrumbs">
         <div class="breadcrumbs__content">
           <a class="breadcrumbs__link">Главная</a>
+          <a class="breadcrumbs__link">Личный кабинет</a>
           <a class="breadcrumbs__link  breadcrumbs__link--active">История заказов</a>
         </div>
       </div>
 
       <ul class="orders-history__buttons  profile-buttons">
         <li>
-          <button class="profile-buttons__item  js-active">Мои заказы</button>
+          <button class="profile-buttons__item">Мои заказы</button>
         </li>
         <li>
           <button class="profile-buttons__item">Мой профиль</button>
         </li>
         <li>
-          <button class="profile-buttons__item">История заказов</button>
+          <button class="profile-buttons__item  js-active">История заказов</button>
         </li>
       </ul>
 
@@ -673,13 +677,22 @@
             </ul>
             <ul class="footer-info__pay-cards">
               <li class="footer-info__pay-cards-item">
-                <img src="img/visa.png" width="66" height="42" alt="логотип платёжной системы виза">
+                <picture>
+                  <source srcset="img/visa.png" media="(min-width: 1170px)">
+                  <img src="img/visa-tablet.png" alt="логотип платёжной системы виза">
+                </picture>
               </li>
               <li class="footer-info__pay-cards-item">
-                <img src="img/mastercard.png" width="47" height="36" alt="логотип платёжной системы мастеркард">
+                <picture>
+                  <source srcset="img/mastercard.png" media="(min-width: 1170px)">
+                  <img src="img/mastercard-tablet.png" alt="логотип платёжной системы мастеркард">
+                </picture>
               </li>
               <li class="footer-info__pay-cards-item">
-                <img src="img/maestro.png" width="66" height="41" alt="логотип платёжной системы маэстро">
+                <picture>
+                  <source srcset="img/maestro.png" media="(min-width: 1170px)">
+                  <img src="img/maestro-tablet.png" alt="логотип платёжной системы маэстро">
+                </picture>
               </li>
             </ul>
             <div class="footer-info__contacts">
@@ -1018,292 +1031,6 @@
             </div>
           </form>
           <button class="popup-quick-view__close  closeButton" type="button">
-            <span class="visually-hidden">Закрыть окно</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="popups__popup-overlay  popup-sizes__overlay">
-        <div class="popups__popup  popup-sizes">
-          <ul class="popup-sizes__list">
-            <li class="popup-sizes__item">
-              <div class="popup-sizes__descriptions">
-                <p class="popup-sizes__description">Как определить свой размер</p>
-                <p class="popup-sizes__title">Женщины</p>
-              </div>
-              <div class="popup-sizes__tables">
-                <table class="popup-sizes__table-growth">
-                  <tbody>
-                    <tr>
-                      <th>Рост</th>
-                      <th>Размер показателей</th>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>143 - 148</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>149 - 154</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>155 - 160</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>161 - 166</td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>167 - 172</td>
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>173 - 178</td>
-                    </tr>
-                    <tr>
-                      <td>7</td>
-                      <td>179 - 184</td>
-                    </tr>
-                    <tr>
-                      <td>8</td>
-                      <td>185 - 190</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <table class="popup-sizes__table-girth">
-                  <tbody>
-                    <tr>
-                      <th>Размер</th>
-                      <th>Обх. груди</th>
-                      <th>Обх. бедер</th>
-                    </tr>
-                    <tr>
-                      <td>40</td>
-                      <td>80,0</td>
-                      <td>86,0</td>
-                    </tr>
-                    <tr>
-                      <td>42</td>
-                      <td>84,0</td>
-                      <td>90,0</td>
-                    </tr>
-                    <tr>
-                      <td>44</td>
-                      <td>88,0</td>
-                      <td>94,0</td>
-                    </tr>
-                    <tr>
-                      <td>46</td>
-                      <td>92,0</td>
-                      <td>98,0</td>
-                    </tr>
-                    <tr>
-                      <td>48</td>
-                      <td>96,0</td>
-                      <td>102,0</td>
-                    </tr>
-                    <tr>
-                      <td>50</td>
-                      <td>100,0</td>
-                      <td>106,0</td>
-                    </tr>
-                    <tr>
-                      <td>52</td>
-                      <td>104,0</td>
-                      <td>110,0</td>
-                    </tr>
-                    <tr>
-                      <td>54</td>
-                      <td>108,0</td>
-                      <td>114,0</td>
-                    </tr>
-                    <tr>
-                      <td>56</td>
-                      <td>112,0</td>
-                      <td>118,0</td>
-                    </tr>
-                    <tr>
-                      <td>58</td>
-                      <td>116,0</td>
-                      <td>122,0</td>
-                    </tr>
-                    <tr>
-                      <td>60</td>
-                      <td>120,0</td>
-                      <td>126,0</td>
-                    </tr>
-                    <tr>
-                      <td>62</td>
-                      <td>124,0</td>
-                      <td>130,0</td>
-                    </tr>
-                    <tr>
-                      <td>64</td>
-                      <td>128,0</td>
-                      <td>134,0</td>
-                    </tr>
-                    <tr>
-                      <td>66</td>
-                      <td>132,0</td>
-                      <td>138,0</td>
-                    </tr>
-                    <tr>
-                      <td>68</td>
-                      <td>136,0</td>
-                      <td>142,0</td>
-                    </tr>
-                    <tr>
-                      <td>70</td>
-                      <td>140,0</td>
-                      <td>146,0</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </li>
-            <li class="popup-sizes__item">
-              <div class="popup-sizes__descriptions">
-                <p class="popup-sizes__description">Как определить свой размер</p>
-                <p class="popup-sizes__title">Мужчины</p>
-              </div>
-              <div class="popup-sizes__tables">
-                <table class="popup-sizes__table-growth">
-                  <tbody>
-                    <tr>
-                      <th>Рост</th>
-                      <th>Размер показателей</th>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>143 - 148</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>149 - 154</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>155 - 160</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>161 - 166</td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>167 - 172</td>
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>173 - 178</td>
-                    </tr>
-                    <tr>
-                      <td>7</td>
-                      <td>179 - 184</td>
-                    </tr>
-                    <tr>
-                      <td>8</td>
-                      <td>185 - 190</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <table class="popup-sizes__table-girth">
-                  <tbody>
-                    <tr>
-                      <th>Размер</th>
-                      <th>Обх. груди</th>
-                      <th>Обх. бедер</th>
-                    </tr>
-                    <tr>
-                      <td>44</td>
-                      <td>88,0</td>
-                      <td>86,0</td>
-                    </tr>
-                    <tr>
-                      <td>46</td>
-                      <td>92,0</td>
-                      <td>90,0</td>
-                    </tr>
-                    <tr>
-                      <td>48</td>
-                      <td>96,0</td>
-                      <td>94,0</td>
-                    </tr>
-                    <tr>
-                      <td>50</td>
-                      <td>100,0</td>
-                      <td>98,0</td>
-                    </tr>
-                    <tr>
-                      <td>52</td>
-                      <td>104,0</td>
-                      <td>102,0</td>
-                    </tr>
-                    <tr>
-                      <td>54</td>
-                      <td>108,0</td>
-                      <td>106,0</td>
-                    </tr>
-                    <tr>
-                      <td>56</td>
-                      <td>112,0</td>
-                      <td>110,0</td>
-                    </tr>
-                    <tr>
-                      <td>58</td>
-                      <td>116,0</td>
-                      <td>114,0</td>
-                    </tr>
-                    <tr>
-                      <td>60</td>
-                      <td>120,0</td>
-                      <td>118,0</td>
-                    </tr>
-                    <tr>
-                      <td>62</td>
-                      <td>124,0</td>
-                      <td>122,0</td>
-                    </tr>
-                    <tr>
-                      <td>64</td>
-                      <td>128,0</td>
-                      <td>126,0</td>
-                    </tr>
-                    <tr>
-                      <td>66</td>
-                      <td>132,0</td>
-                      <td>130,0</td>
-                    </tr>
-                    <tr>
-                      <td>68</td>
-                      <td>136,0</td>
-                      <td>134,0</td>
-                    </tr>
-                    <tr>
-                      <td>70</td>
-                      <td>140,0</td>
-                      <td>138,0</td>
-                    </tr>
-                    <tr>
-                      <td>72</td>
-                      <td>144,0</td>
-                      <td>142,0</td>
-                    </tr>
-                    <tr>
-                      <td>74</td>
-                      <td>148,0</td>
-                      <td>146,0</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </li>
-          </ul>
-          <button class="popup-sizes__close  closeButton" type="button">
             <span class="visually-hidden">Закрыть окно</span>
           </button>
         </div>
