@@ -2437,7 +2437,12 @@ template {
   background: none;
   border: none;
   width: 23px;
-  height: 14px; }
+  height: 14px;
+  cursor: pointer; }
+  .popular-product__watch:hover, .popular-product__watch:focus {
+    opacity: 0.6; }
+  .popular-product__watch:active {
+    opacity: 0.3; }
   .popular-product__watch svg {
     color: #43809c;
     width: 34px;
@@ -2777,7 +2782,7 @@ template {
   padding-left: 30px;
   width: 280px;
   line-height: 17px; }
-  .contacts__item:last-child {
+  .contacts__item:last-child:not(:first-child) {
     border-top: 1px solid #04235d; }
   @media (min-width: 760px) {
     .contacts__item {
@@ -5507,13 +5512,13 @@ template {
   @media (min-width: 760px) {
     .product-view__total-container {
       margin-bottom: 58px;
-      padding-top: 9px;
+      padding-top: 22px;
       width: 366px;
       box-shadow: 0 -3px 139px rgba(0, 0, 0, 0.14); } }
   @media (min-width: 1170px) {
     .product-view__total-container {
       margin-bottom: 70px;
-      padding-top: 15px;
+      padding-top: 30px;
       width: 545px; } }
 
 .product-view__table {
@@ -7449,6 +7454,9 @@ template {
   display: flex;
   flex-direction: column;
   background: none; }
+  @media (min-width: 1170px) {
+    .sizes-tables__list {
+      padding-bottom: 76px; } }
 
 @media (min-width: 760px) {
   .sizes-tables__item {
@@ -7482,7 +7490,7 @@ template {
     .sizes-tables__item:last-child::before {
       right: -15px;
       width: 226px;
-      height: 228px;
+      height: 360px;
       background-image: url("../img/sizes-help-man.png"); } }
 
 @media (min-width: 760px) {
