@@ -55,11 +55,10 @@
   align-items: center;
   height: 350px;
   background-color: #c9dfeb;
-  background-image: url("../img/popular-card-bg.png");
+  background-image: url("../img/catalog-card-bg.png");
 
   @media (min-width: 760px) {
     height: 340px;
-    //background-image: url("../img/catalog-card-bg-desktop.png");
   }
 
   @media (min-width: 1170px) {

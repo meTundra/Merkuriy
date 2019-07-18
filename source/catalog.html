@@ -287,10 +287,21 @@
               SALE
             </a>
           </li>
-          <li class="popular-sections__item  popular-sections__item--desktop">
+          <li class="popular-sections__item  popular-sections__item--desktop  popular-sections__item--nested">
             <a class="popular-sections__link" href="#">
               Цвета и размеры
             </a>
+            <ul class="popular-sections__nested-list">
+              <li class="popular-sections__nested-item">
+                <a class="popular-sections__nested-link" href="#">Цвета</a>
+              </li>
+              <li class="popular-sections__nested-item">
+                <a class="popular-sections__nested-link" href="#">Размеры</a>
+              </li>
+              <li class="popular-sections__nested-item">
+                <a class="popular-sections__nested-link" href="#">Ткани</a>
+              </li>
+            </ul>
           </li>
           <li class="popular-sections__item">
             <a class="popular-sections__link" href="#">
@@ -1658,6 +1669,10 @@
           <form class="popup-callback__form">
             <input class="popup-callback__input" type="text" placeholder="Ваше имя*">
             <input class="popup-callback__input" type="tel" placeholder="Ваш телефон*">
+            <label class="popup-callback__personal">
+              <input class="popup-callback__checkbox  visually-hidden" type="checkbox" value="true">
+              <span>Согласие на обработку персональных данных</span>
+            </label>
             <button class="popup-callback__submit" type="submit">Оставить заявку</button>
           </form>
           <button class="popup-callback__close  closeButton" type="button">
@@ -1681,7 +1696,7 @@
 
           <form class="popup-auth__form  js-form-signup">
             <input class="popup-auth__input" type="email" placeholder="Почта*">
-            <input class="popup-auth__input" type="number" placeholder="ИНН*">
+            <input class="popup-auth__input" type="text" placeholder="ИНН*">
             <button class="popup-auth__submit" type="submit">Регистрация</button>
           </form>
 

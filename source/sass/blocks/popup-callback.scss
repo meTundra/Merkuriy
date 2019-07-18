@@ -79,6 +79,54 @@
   }
 }
 
+.popup-callback__personal {
+  margin-bottom: 16px;
+  position: relative;
+  padding-left: 18px;
+
+  & span {
+    font-size: 14px;
+    line-height: 26px;
+    color: #525252;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &::before {
+      box-sizing: border-box;
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #000000;
+    }
+  }
+
+  & input:hover + span::before {
+    opacity: 0.6;
+  }
+
+  & input:focus + span::before {
+    outline: 1px solid #3199c7;
+  }
+
+  & input:checked + span {
+    &::before {
+      background-color: #3199c7;
+      border: none;
+    }
+  }
+
+  @media (min-width: 760px) {
+    width: auto;
+  }
+}
+
+.popup-callback__checkbox {
+
+}
+
 .popup-callback__submit {
   width: 228px;
   height: 51px;

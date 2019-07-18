@@ -43,18 +43,33 @@
 }
 
 .representatives__heading {
-  @include desktop-headings;
+  @include mobile-content;
+
   @media (min-width: 760px) {
-    margin-right: auto;
+    @include tablet-content;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding-top: 10px;
+
+    font-size: 16px;
+    line-height: 11px;
+    color: #0a5a7e;
+    text-transform: uppercase;
     text-shadow:
-      -10px 10px 0 rgba(40, 80, 169, 0.13);
-    font-size: 32px;
-    line-height: 15px;
-  }
-  @media (min-width: 1170px) {
-    font-size: 46px;
+      14px 4px 0 rgba(10, 90, 126, 0.2);
+    letter-spacing: 1px;
   }
 
+  @media (min-width: 1170px) {
+    @include desktop-content;
+    margin-bottom: 40px;
+    padding-top: 22px;
+
+    font-size: 24px;
+    line-height: 16px;
+    letter-spacing: 2px;
+  }
 }
 
 .representatives__cards-container {

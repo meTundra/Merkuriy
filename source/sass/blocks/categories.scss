@@ -91,7 +91,7 @@
   background-color: #e9f3fd;
   background-position: right;
   background-repeat: no-repeat;
-  transition-duration: 0.3s;
+  transition-duration: 0.6s;
   transition-property: background-color, color;
 
   &:nth-child(1) {
@@ -171,11 +171,11 @@
 
     & picture {
       overflow: hidden;
-      transition: 0.3s;
+      transition: 0.6s;
     }
 
     & img {
-      transition: 0.3s;
+      transition: 0.6s;
     }
 
     &:hover .categories__to-catalog,

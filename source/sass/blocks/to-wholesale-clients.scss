@@ -11,21 +11,41 @@
 }
 
 .to-wholesale-clients__heading {
-  margin: 0;
+  //margin: 0;
+  //
+  //font-size: 18px;
+  //line-height: 26px;
+  //color: #0a5a7e;
+  //text-transform: uppercase;
+  //text-align: center;
+  //letter-spacing: 1px;
 
-  font-size: 18px;
-  line-height: 26px;
-  color: #0a5a7e;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1px;
+  @include mobile-content;
 
   @media (min-width: 760px) {
-    font-size: 23px;
+    @include tablet-content;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding-top: 10px;
+
+    font-size: 16px;
+    line-height: 11px;
+    color: #0a5a7e;
+    text-transform: uppercase;
+    text-shadow:
+      14px 4px 0 rgba(10, 90, 126, 0.2);
+    letter-spacing: 1px;
   }
 
   @media (min-width: 1170px) {
-    font-size: 28px;
+    @include desktop-content;
+    margin-bottom: 40px;
+    padding-top: 22px;
+
+    font-size: 24px;
+    line-height: 16px;
+    letter-spacing: 2px;
   }
 }
 

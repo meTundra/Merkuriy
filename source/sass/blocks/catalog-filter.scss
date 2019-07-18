@@ -17,7 +17,7 @@
     width: auto;
     background-color: transparent;
     z-index: 0;
-    
+
     &::before {
       content: "Меркурий-Интер-Лаб";
       position: absolute;
@@ -106,7 +106,6 @@
 }
 
 .catalog-filter__label-checkbox {
-
   position: relative;
   padding-left: 18px;
 

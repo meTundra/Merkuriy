@@ -68,21 +68,32 @@
   text-transform: uppercase;
   letter-spacing: 2.4px;
 
+  @include mobile-content;
+
   @media (min-width: 760px) {
-    margin-bottom: 70px;
-    font-size: 19px;
-    line-height: 19px;
-    text-shadow: -10px 10px 0 rgba(40, 80, 169, 0.13);
-    letter-spacing: 2px;
+    @include tablet-content;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding-top: 10px;
+
+    font-size: 16px;
+    line-height: 11px;
+    color: #0a5a7e;
+    text-transform: uppercase;
+    text-shadow:
+      14px 4px 0 rgba(10, 90, 126, 0.2);
+    letter-spacing: 1px;
   }
 
   @media (min-width: 1170px) {
+    @include desktop-content;
     margin-bottom: 40px;
-    padding-left: 40px;
-    font-size: 46px;
-    line-height: 46px;
-    text-transform: none;
-    letter-spacing: 4.7px;
+    padding-top: 22px;
+
+    font-size: 24px;
+    line-height: 16px;
+    letter-spacing: 2px;
   }
 }
 

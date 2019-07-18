@@ -17,24 +17,26 @@
   display: none;
 
   @media (min-width: 760px) {
+    @include tablet-content;
     display: block;
-    margin: 0;
-    margin-bottom: 32px;
+    margin: 0 auto;
+    margin-bottom: 25px;
     padding-top: 10px;
-    width: 100%;
 
-    color: #0a5a7e;
     font-size: 16px;
     line-height: 11px;
+    color: #0a5a7e;
     text-transform: uppercase;
     text-shadow:
-      4px 5px 0 rgba(10, 90, 126, 0.2);
+      14px 4px 0 rgba(10, 90, 126, 0.2);
     letter-spacing: 1px;
   }
 
   @media (min-width: 1170px) {
-    margin-bottom: 55px;
-    padding-top: 30px;
+    @include desktop-content;
+    margin-bottom: 40px;
+    padding-top: 22px;
+
     font-size: 24px;
     line-height: 16px;
     letter-spacing: 2px;

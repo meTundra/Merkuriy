@@ -17,28 +17,31 @@
 }
 
 .choose-color__heading {
-  @include mobile-content;
+  display: none;
 
   @media (min-width: 760px) {
     @include tablet-content;
+    display: block;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    padding-top: 10px;
 
-    font-size: 22px;
-    line-height: 22px;
-    color: #3199c7;
-    text-shadow:
-      20px 9px 0 rgba(49, 153, 199, 0.15);
+    font-size: 16px;
+    line-height: 11px;
+    color: #0a5a7e;
     text-transform: uppercase;
+    text-shadow:
+      14px 4px 0 rgba(10, 90, 126, 0.2);
     letter-spacing: 1px;
   }
 
   @media (min-width: 1170px) {
     @include desktop-content;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    padding-top: 22px;
 
-    font-size: 34px;
-    line-height: 34px;
+    font-size: 24px;
+    line-height: 16px;
     letter-spacing: 2px;
   }
 }

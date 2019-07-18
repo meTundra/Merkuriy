@@ -62,7 +62,6 @@
   align-items: center;
   position: relative;
   margin-bottom: 22px;
-  padding-top: 100px;
   transition-duration: 0.4s;
   background-image: url("../img/service-bg.jpg");
   overflow: hidden;
@@ -92,12 +91,10 @@
 
   @media (min-width: 760px) {
     margin-bottom: 16px;
-    padding-top: 88px;
     width: 245px;
   }
 
   @media (min-width: 1170px) {
-    padding-top: 130px;
     width: 365px;
 
     background-image: url("../img/service-bg-desktop.jpg");
@@ -110,22 +107,31 @@
 }
 
 .services__item-name {
+  display: flex;
+  align-items: flex-end;
   margin: 0;
   margin-bottom: 24px;
+  max-width: 240px;
+  height: 121px;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
 
   @media (min-width: 760px) {
     margin-bottom: 20px;
+    max-width: 200px;
+    height: 105px;
     font-size: 12px;
     line-height: 17px;
   }
 
   @media (min-width: 1170px) {
     margin-bottom: 32px;
+    max-width: 300px;
+    height: 148px;
     font-size: 18px;
     line-height: 18px;
   }
