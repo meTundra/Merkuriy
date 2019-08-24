@@ -1,17 +1,19 @@
 .contacts {
+  position: relative;
   border-top: 1px solid #04235d;
   background-color: lightgray;
-  background-image: url("../img/contacts-map.png");
+  //background-image: url("../img/contacts-map.png");
   background-position: center;
 
   @media (min-width: 760px) {
-    background-image: url("../img/contacts-map-desktop.png");
+    //background-image: url("../img/contacts-map-desktop.png");
     background-position: center;
     background-color: #2850a9;
   }
 }
 
 .contacts__content {
+  position: relative;
   @include mobile-content;
   padding-top: 52px;
   padding-bottom: 61px;
@@ -32,11 +34,13 @@
 }
 
 .contacts__wrapper {
+  position: relative;
   margin: 0 auto;
   padding-top: 25px;
   width: 280px;
   background-color: #ffffff;
   box-shadow: 13px 17px 0 0 rgba(255, 255, 255, 0.4);
+  z-index: 1;
 
   @media (min-width: 760px) {
     margin: 0;

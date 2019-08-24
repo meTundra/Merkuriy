@@ -127,6 +127,16 @@
 
   @media (min-width: 1170px) {
     margin-right: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 135px;
+      right: 272px;
+      width: 1px;
+      height: calc(55%);
+      background-color: #27598d;
+    }
   }
 }
 

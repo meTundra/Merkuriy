@@ -315,71 +315,61 @@
     <main class="page__main-content main-content">
       <section class="main-content__banner  banner">
         <div class="banner__content">
-          <div></div>
           <button class="banner__button  banner__button--left"></button>
           <ul class="banner__list">
-            <li class="banner__item">
-              <div class="banner__text">
-                <h3 class="banner__heading">
-                  Модельная одежда
+            <li class="banner__item  first-slide">
+              <div class="first-slide__text">
+                <h3 class="first-slide__heading">
+                  Медицинская одежда
+                  <span class="first-slide__heading-name">"Меркурий-интер-лаб"</span>
                 </h3>
-                <p class="banner__lead">
-                  для медицинских учереждений на заказ!
+                <p class="first-slide__lead">
+                  19 лет с&nbsp;вами!
                 </p>
-                <p class="banner__description">
-                  Более 12 лет мы создаем модельную медицинскую одежду, которая учитывает современные тенденции в моде.
+                <p class="first-slide__description">
+                  Занимайтесь главным!
+                  <span class="first-slide__description-big">Об остальном мы позаботимся!</span>
                 </p>
-                <a class="banner__link" href="catalog.html">
-                  В каталог
+                <a class="first-slide__link" href="catalog.html">
+                  Каталог
                 </a>
               </div>
               <picture>
-                <source srcset="img/banner-1-bg-desktop.png" media="(min-width: 1170px)">
-                <source srcset="img/banner-1-bg-tablet.png" media="(min-width: 760px)">
-                <img class="banner__image" src="img/banner-1-bg.png" alt="Пример медицинской одежды">
+                <source srcset="img/banner-1-squares.png" media="(min-width: 760px)">
+                <img class="first-slide__image" src="img/banner-1-squares-mobile.png" alt="Пример медицинской одежды">
               </picture>
             </li>
-            <li class="banner__item">
-              <div class="banner__text">
-                <h3 class="banner__heading">
-                  Модельная одежда
+            <li class="banner__item  second-slide">
+              <img class="second-slide__image  second-slide__image--left" src="img/w2test.png" alt="Пример медицинской одежды">
+              <div class="second-slide__content">
+                <h3 class="second-slide__heading">
+                  Оденем вашу клинику под ключ
                 </h3>
-                <p class="banner__lead">
-                  для медицинских учереждений на заказ!
+                <p class="second-slide__description">
+                  Заполняющий текст - это текст, который имеет некоторые характеристики реального письменного текста, но является случайным или генерируемым иным образом. Он может использоваться для отображения
                 </p>
-                <p class="banner__description">
-                  Более 12 лет мы создаем модельную медицинскую одежду, которая учитывает современные тенденции в моде.
-                </p>
-                <a class="banner__link" href="catalog.html">
-                  В каталог
+                <a class="second-slide__link" href="catalog.html">
+                  Бесплатный вызов менеджера для замера
                 </a>
               </div>
-              <picture>
-                <source srcset="img/banner-1-bg-desktop.png" media="(min-width: 1170px)">
-                <source srcset="img/banner-1-bg-tablet.png" media="(min-width: 760px)">
-                <img class="banner__image" src="img/banner-1-bg.png" alt="Пример медицинской одежды">
-              </picture>
+              <img class="second-slide__image  second-slide__image--right" src="img/w1test.png" alt="Пример медицинской одежды">
             </li>
-            <li class="banner__item">
-              <div class="banner__text">
-                <h3 class="banner__heading">
-                  Модельная одежда
+            <li class="banner__item  third-slide">
+              <div class="third-slide__text">
+                <h3 class="third-slide__heading">
+                  Первый призывной заголовок
                 </h3>
-                <p class="banner__lead">
-                  для медицинских учереждений на заказ!
+                <p class="third-slide__lead">
+                  Текст которого может быть длинным
                 </p>
-                <p class="banner__description">
-                  Более 12 лет мы создаем модельную медицинскую одежду, которая учитывает современные тенденции в моде.
+                <p class="third-slide__description">
+                  Текст детальным описанием акции Текст детальным описанием акции Текст детальным описанием акции Текст детальным описанием акции
                 </p>
-                <a class="banner__link" href="catalog.html">
+                <a class="third-slide__link" href="catalog.html">
                   В каталог
                 </a>
               </div>
-              <picture>
-                <source srcset="img/banner-1-bg-desktop.png" media="(min-width: 1170px)">
-                <source srcset="img/banner-1-bg-tablet.png" media="(min-width: 760px)">
-                <img class="banner__image" src="img/banner-1-bg.png" alt="Пример медицинской одежды">
-              </picture>
+              <img class="third-slide__image" src="img/w6test.png" alt="Пример медицинской одежды">
             </li>
           </ul>
 
@@ -1021,6 +1011,7 @@
             </ul>
           </div>
         </div>
+        <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1wXMkXZD6m61xTJylW7Ksvx34DeGoSAeA"></iframe>
       </address>
 
       <section class="main-footer__categories  footer-categories">
@@ -1628,5 +1619,9 @@
     <script src="js/header.js"></script>
     <script src="js/banner.js"></script>
     <script src="js/popups.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=5166957b-21a4-4af4-95e4-fef3d81870bf&lang=ru_RU"
+            type="text/javascript">
+    </script>
+    <script src="js/map.js"></script>
   </body>
 </html>
