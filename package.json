@@ -4,7 +4,8 @@
   "description": "Лендинг сайта по пилатесу",
   "main": "index.js",
   "dependencies": {
-    "gulp-htmlmin": "^5.0.1"
+    "gulp-htmlmin": "^5.0.1",
+    "swipejs": "^2.2.14"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.7",

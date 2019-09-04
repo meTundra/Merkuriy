@@ -1,45 +1,61 @@
 .second-slide__content {
-  display: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
 
   @media (min-width: 760px) {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-top: 80px;
   }
 
   @media (min-width: 1170px) {
     padding-top: 120px;
-
-    //&::before {
-    //  content: "";
-    //  position: absolute;
-    //}
-    //
-    //&::after {
-    //  content: "";
-    //  position: absolute;
-    //  bottom: -150px;
-    //  left: -100px;
-    //  width: 280px;
-    //  height: 393px;
-    //  background-image: url("../img/banner-2-left-bg.png");
-    //  background-repeat: no-repeat;
-    //  background-size: auto 393px;
-    //  z-index: -1;
-    //}
   }
 }
 
 .second-slide__heading {
   position: relative;
   margin: 0;
+  margin-bottom: 8px;
+  width: 160px;
   color: #0a5a7e;
+  font-size: 19px;
   font-weight: bold;
+  line-height: 25px;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 1px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    height: 355px;
+    width: 92px;
+    opacity: 0.3;
+    background-image: url("../img/w1test.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: auto 355px;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -55px;
+    height: 376px;
+    width: 110px;
+    opacity: 0.3;
+    background-image: url("../img/w2test.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: auto 376px;
+  }
 
   @media (min-width: 760px) {
     margin-bottom: 16px;
@@ -48,30 +64,20 @@
     line-height: 37px;
 
     &::before {
-      content: "";
-      position: absolute;
       right: -60px;
       top: -40px;
       width: 500px;
       height: 520px;
-      opacity: 0.3;
-      background-image: url("../img/w1test.png");
-      background-repeat: no-repeat;
-      background-position: 100%;
       background-size: auto 520px;
     }
 
     &::after {
-      content: "";
-      position: absolute;
       left: -220px;
       top: -40px;
       width: 300px;
       height: 520px;
-      opacity: 0.3;
-      background-image: url("../img/w2test.png");
-      background-repeat: no-repeat;
-      background-position: 100%;
+
+
       background-size: auto 520px;
     }
   }
@@ -99,14 +105,25 @@
 }
 
 .second-slide__description {
-  margin: 0;
   position: relative;
+  margin: 0;
+  margin-bottom: 22px;
+  width: 140px;
+  font-size: 11px;
+  line-height: 16px;
   text-align: center;
+
+  & span {
+    display: none;
+  }
 
   &::before {
     content: "";
     position: absolute;
     left: 50%;
+    bottom: -10px;
+    width: 44px;
+    height: 3px;
     transform: translateX(-50%);
     background-color: #bac8dc;
   }
@@ -118,6 +135,10 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.6px;
+
+    & span {
+      display: inline;
+    }
 
     &::before {
       width: 82px;
@@ -146,9 +167,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 23px;
+  padding-right: 23px;
+  width: 253px;
+  height: 46px;
   border: 1px solid #0a5a7e;
   font-weight: bold;
   color: #0a5a7e;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -172,33 +198,54 @@
 .second-slide__image {
   position: absolute;
 
-  &::before {
-
-  }
-
   &--left {
+    left: 0;
+    bottom: -50px;
+
     @media (min-width: 760px) {
-      left: 0;
       bottom: -120px;
-      height: 422px;
     }
 
     @media (min-width: 1170px) {
       bottom: -200px;
-      height: 626px;
+    }
+
+    & img {
+      height: 268px;
+
+      @media (min-width: 760px) {
+        height: 422px;
+      }
+
+      @media (min-width: 1170px) {
+        height: 626px;
+      }
     }
   }
 
   &--right {
+    right: 0;
+    bottom: -60px;
+    z-index: -1;
+
     @media (min-width: 760px) {
-      right: 0;
       bottom: -120px;
-      height: 422px;
     }
 
     @media (min-width: 1170px) {
       bottom: -200px;
-      height: 608px;
+    }
+
+    & img {
+      height: 274px;
+
+      @media (min-width: 760px) {
+        height: 422px;
+      }
+
+      @media (min-width: 1170px) {
+        height: 608px;
+      }
     }
   }
 }

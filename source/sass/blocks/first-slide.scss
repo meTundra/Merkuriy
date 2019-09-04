@@ -1,3 +1,9 @@
+//.first-slide {
+//  @media (min-width: 760px) {
+//    background-image: url('../img/banner-bg-tablet.png');
+//  }
+//}
+
 .first-slide__text {
   position: relative;
   @media (min-width: 760px) {
@@ -134,18 +140,30 @@
 .first-slide__link {
   box-sizing: border-box;
   position: absolute;
+  top: 117px;
+  right: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 143px;
   height: 34px;
-  font-size: 11px;
+  font-size: 8px;
   font-weight: bold;
+  line-height: 12px;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
-  letter-spacing: 4px;
   z-index: 2;
+
+  &:hover,
+  &:focus {
+    text-shadow:
+      0 0 8px rgba(0, 0, 0, 0.23);
+  }
+
+  &:active {
+    border-width: 2px;
+  }
 
   @media (min-width: 760px) {
     right: -10px;
@@ -154,21 +172,12 @@
     width: 130px;
     height: 30px;
     border-color: #0a5a7e;
-
-    &:hover,
-    &:focus {
-      text-shadow:
-        0 0 8px rgba(0, 0, 0, 0.23);
-    }
-
-    &:active {
-      border-width: 2px;
-    }
+    letter-spacing: 4px;
   }
 
   @media (min-width: 1170px) {
     right: -25px;
-    top: 310px;
+    top: 305px;
     width: 217px;
     height: 51px;
     font-size: 16px;
