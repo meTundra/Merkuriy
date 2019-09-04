@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7dd1707-048b-4199-b7b7-6b8cad56637b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/banner-bg-mobile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/mobile-banner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/banner-bg-tablet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/banner-bg-tablet.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -74,9 +69,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="132" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="62" />
+    <option name="y" value="27" />
     <option name="width" value="1400" />
     <option name="height" value="981" />
   </component>
@@ -84,22 +79,26 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <showMembers Scope="false" />
+      <showExcludedFiles Scope="true" ProjectPane="true" />
+      <compactDirectories Scope="false" />
+      <autoscrollToSource Scope="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
-              <item name="Merkuriy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Merkuriy" type="462c0819:PsiDirectoryNode" />
+              <item name="Merkuriy" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -152,6 +151,7 @@
       <workItem from="1557048227105" duration="44499000" />
       <workItem from="1557115688653" duration="5715000" />
       <workItem from="1557306821250" duration="498000" />
+      <workItem from="1567588375326" duration="352000" />
     </task>
     <task id="LOCAL-00001" summary="Подготовлена основа">
       <created>1556615583187</created>
@@ -188,17 +188,24 @@
       <option name="project" value="LOCAL" />
       <updated>1557123090843</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Вырезан блок из изображения">
+      <created>1567588414688</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567588414688</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162160000" />
+    <option name="totallyTimeSpent" value="162456000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="62" y="27" width="1400" height="981" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09799789" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49948186" visible="true" weight="0.13656388" />
+      <window_info id="Structure" order="1" sideWeight="0.50051814" side_tool="true" weight="0.09799789" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -209,7 +216,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49935815" visible="true" weight="0.21658032" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49935815" visible="true" weight="0.45294118" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006418" side_tool="true" weight="0.34818652" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32953367" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -227,11 +234,10 @@
     <MESSAGE value="Сделаны планшетная и дестопная версии главной" />
     <MESSAGE value="Почти завершена работа над главной" />
     <MESSAGE value="Доделана главная (1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Доделана главная (1)" />
+    <MESSAGE value="Вырезан блок из изображения" />
+    <option name="LAST_COMMIT_MESSAGE" value="Вырезан блок из изображения" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/sass/normalize.scss" />
-    <entry file="file://$PROJECT_DIR$/source/sass/blocks/header.scss" />
     <entry file="file://$PROJECT_DIR$/source/sass/blocks/page.scss" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
       <provider selected="true" editor-type-id="text-editor">
@@ -262,7 +268,6 @@
         <state relative-caret-position="-36" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/img/svg/sprite.svg" />
     <entry file="file://$PROJECT_DIR$/../574519-cat-energy/source/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -308,5 +313,20 @@
     <entry file="file://$PROJECT_DIR$/source/sass/blocks/main-info.scss" />
     <entry file="file://$PROJECT_DIR$/source/sass/blocks/nav-categories.scss" />
     <entry file="file://$PROJECT_DIR$/source/js/script.js" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
   </component>
 </project>
