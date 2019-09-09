@@ -1287,6 +1287,7 @@ template {
     .banner__button {
       position: relative;
       display: block;
+      flex-shrink: 0;
       width: 30px;
       height: 30px;
       border: none;
@@ -1324,11 +1325,6 @@ template {
   position: relative;
   overflow: hidden;
   visibility: hidden; }
-  @media (min-width: 760px) {
-    .banner__list-wrapper {
-      position: static;
-      overflow: visible;
-      visibility: visible; } }
 
 .banner__list {
   list-style: none;
@@ -1336,15 +1332,9 @@ template {
   margin: 0;
   position: relative;
   display: flex;
-  width: 320px;
   overflow: hidden; }
-  @media (min-width: 760px) {
-    .banner__list {
-      position: static;
-      width: 675px; } }
   @media (min-width: 1170px) {
     .banner__list {
-      width: 1005px;
       min-height: 455px; } }
 
 .banner__item {
@@ -1357,14 +1347,10 @@ template {
           transform: translateX(0); }
   @media (min-width: 760px) {
     .banner__item {
-      position: static;
-      width: 675px;
-      transition-duration: 1s;
-      float: none; } }
+      transition-duration: 1s; } }
   @media (min-width: 1170px) {
     .banner__item {
-      padding-bottom: 70px;
-      width: 1005px; } }
+      padding-bottom: 70px; } }
 
 .first-slide__text {
   position: relative; }
