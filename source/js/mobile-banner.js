@@ -1,4 +1,3 @@
-if (window.innerWidth < 760) {
 /*!
  * Swipe 2.2.14
  *
@@ -828,8 +827,12 @@ if (window.innerWidth < 760) {
 
 
 var element = document.querySelector('.banner__list-wrapper');
-window.mySwipe = new Swipe(element, {
+var leftButton = document.querySelector('.banner__button--left');
+var rightButton = document.querySelector('.banner__button--right');
+
+var mySwipe = new Swipe(element, {
   startSlide: 0,
+  auto: 3000,
   draggable: false,
   autoRestart: false,
   continuous: true,
@@ -838,4 +841,6 @@ window.mySwipe = new Swipe(element, {
   callback: function(index, element) {},
   transitionEnd: function(index, element) {}
 });
-}
+
+leftButton.addEventListener('click', mySwipe.prev);
+rightButton.addEventListener('click', mySwipe.next);

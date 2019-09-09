@@ -39,6 +39,7 @@
   @media (min-width: 760px) {
     position: relative;
     display: block;
+    flex-shrink: 0;
     //margin-bottom: 102px;
     width: 30px;
     height: 30px;
@@ -98,28 +99,18 @@
   position: relative;
   overflow: hidden;
   visibility: hidden;
-
-  @media (min-width: 760px) {
-    position: static;
-    overflow: visible;
-    visibility: visible;
-  }
 }
 
 .banner__list {
   @include list-reset;
   position: relative;
   display: flex;
-  width: 320px;
   overflow: hidden;
 
   @media (min-width: 760px) {
-    position: static;
-    width: 675px;
   }
 
   @media (min-width: 1170px) {
-    width: 1005px;
     min-height: 455px;
   }
 }
@@ -136,14 +127,10 @@
   transform: translateX(0);
 
   @media (min-width: 760px) {
-    position: static;
-    width: 675px;
     transition-duration: 1s;
-    float: none;
   }
 
   @media (min-width: 1170px) {
     padding-bottom: 70px;
-    width: 1005px;
   }
 }
