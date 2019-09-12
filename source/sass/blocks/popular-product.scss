@@ -58,9 +58,17 @@
   background-color: #c9dfeb;
   background-image: url("../img/popular-card-bg.png");
 
+  & img {
+    height: 330px;
+  }
+
   @media (min-width: 760px) {
     height: 295px;
     background-image: url("../img/popular-card-bg-desktop.png");
+
+    & img {
+      height: auto;
+    }
   }
 
   @media (min-width: 1170px) {

@@ -93,29 +93,72 @@
   background-repeat: no-repeat;
   transition-duration: 0.6s;
   transition-property: background-color, color;
+  overflow: hidden;
 
   &:nth-child(1) {
     background-image: url(../img/woman-1-bg.png);
+
+    & img {
+      position: relative;
+      right: -20px;
+      bottom: -145px;
+      height: 340px;
+    }
   }
 
   &:nth-child(2) {
     background-image: url(../img/woman-2-bg.png);
+
+    & img {
+      position: relative;
+      right: -20px;
+      bottom: -145px;
+      height: 340px;
+    }
   }
 
   &:nth-child(3) {
     background-image: url(../img/woman-3-bg.png);
+
+    & img {
+      position: relative;
+      right: -20px;
+      bottom: -145px;
+      height: 340px;
+    }
   }
 
   &:nth-child(4) {
     background-image: url(../img/woman-4-bg.png);
+
+    & img {
+      position: relative;
+      right: -20px;
+      bottom: -145px;
+      height: 340px;
+    }
   }
 
   &:nth-child(5) {
     background-image: url(../img/woman-5-bg.png);
+
+    & img {
+      position: relative;
+      right: -20px;
+      bottom: -145px;
+      height: 340px;
+    }
   }
 
   &:nth-child(6) {
     background-image: url(../img/woman-6-bg.png);
+
+    & img {
+      position: relative;
+      right: -20px;
+      bottom: -145px;
+      height: 340px;
+    }
   }
 
   @media (min-width: 760px) {
@@ -123,7 +166,7 @@
     padding-right: 14px;
     width: 245px;
     height: 144px;
-
+    overflow: visible;
 
     &:hover,
     &:focus-within {
@@ -194,7 +237,9 @@
       }
 
       & img {
+        position: static;
         width: 104px;
+        height: auto;
       }
 
       &:hover picture,
@@ -220,7 +265,9 @@
       }
 
       & img {
+        position: static;
         width: 107px;
+        height: auto;
       }
 
       &:hover picture,
@@ -246,7 +293,9 @@
       }
 
       & img {
+        position: static;
         width: 96px;
+        height: auto;
       }
 
       &:hover picture,
@@ -272,7 +321,9 @@
       }
 
       & img {
+        position: static;
         width: 75px;
+        height: auto;
       }
 
       &:hover picture,
@@ -297,7 +348,9 @@
       }
 
       & img {
+        position: static;
         width: 106px;
+        height: auto;
       }
 
       &:hover picture,
@@ -324,7 +377,9 @@
       }
 
       & img {
+        position: static;
         width: 120px;
+        height: auto;
       }
 
       &:hover picture,
