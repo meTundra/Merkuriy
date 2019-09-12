@@ -2187,25 +2187,57 @@ template {
   background-position: right;
   background-repeat: no-repeat;
   transition-duration: 0.6s;
-  transition-property: background-color, color; }
+  transition-property: background-color, color;
+  overflow: hidden; }
   .categories__item:nth-child(1) {
     background-image: url(../img/woman-1-bg.png); }
+    .categories__item:nth-child(1) img {
+      position: relative;
+      right: -20px;
+      bottom: -145px;
+      height: 340px; }
   .categories__item:nth-child(2) {
     background-image: url(../img/woman-2-bg.png); }
+    .categories__item:nth-child(2) img {
+      position: relative;
+      right: -20px;
+      bottom: -145px;
+      height: 340px; }
   .categories__item:nth-child(3) {
     background-image: url(../img/woman-3-bg.png); }
+    .categories__item:nth-child(3) img {
+      position: relative;
+      right: -20px;
+      bottom: -145px;
+      height: 340px; }
   .categories__item:nth-child(4) {
     background-image: url(../img/woman-4-bg.png); }
+    .categories__item:nth-child(4) img {
+      position: relative;
+      right: -20px;
+      bottom: -145px;
+      height: 340px; }
   .categories__item:nth-child(5) {
     background-image: url(../img/woman-5-bg.png); }
+    .categories__item:nth-child(5) img {
+      position: relative;
+      right: -20px;
+      bottom: -145px;
+      height: 340px; }
   .categories__item:nth-child(6) {
     background-image: url(../img/woman-6-bg.png); }
+    .categories__item:nth-child(6) img {
+      position: relative;
+      right: -20px;
+      bottom: -145px;
+      height: 340px; }
   @media (min-width: 760px) {
     .categories__item {
       margin-bottom: 20px;
       padding-right: 14px;
       width: 245px;
-      height: 144px; }
+      height: 144px;
+      overflow: visible; }
       .categories__item:hover, .categories__item:focus-within {
         background-color: #0a5a7e; }
       .categories__item:hover .categories__link,
@@ -2249,7 +2281,9 @@ template {
           width: 104px;
           height: 255px; }
         .categories__item:nth-child(1) img {
-          width: 104px; }
+          position: static;
+          width: 104px;
+          height: auto; }
         .categories__item:nth-child(1):hover picture,
         .categories__item:nth-child(1):focus-within picture {
           padding-left: 58px;
@@ -2265,7 +2299,9 @@ template {
           width: 107px;
           height: 257px; }
         .categories__item:nth-child(2) img {
-          width: 107px; }
+          position: static;
+          width: 107px;
+          height: auto; }
         .categories__item:nth-child(2):hover picture,
         .categories__item:nth-child(2):focus-within picture {
           padding-left: 11px;
@@ -2281,7 +2317,9 @@ template {
           width: 96px;
           height: 127px; }
         .categories__item:nth-child(3) img {
-          width: 96px; }
+          position: static;
+          width: 96px;
+          height: auto; }
         .categories__item:nth-child(3):hover picture,
         .categories__item:nth-child(3):focus-within picture {
           padding-left: 15px;
@@ -2297,7 +2335,9 @@ template {
           width: 75px;
           height: 137px; }
         .categories__item:nth-child(4) img {
-          width: 75px; }
+          position: static;
+          width: 75px;
+          height: auto; }
         .categories__item:nth-child(4):hover picture,
         .categories__item:nth-child(4):focus-within picture {
           width: 91px;
@@ -2312,7 +2352,9 @@ template {
           width: 106px;
           height: 133px; }
         .categories__item:nth-child(5) img {
-          width: 106px; }
+          position: static;
+          width: 106px;
+          height: auto; }
         .categories__item:nth-child(5):hover picture,
         .categories__item:nth-child(5):focus-within picture {
           margin-left: -21px;
@@ -2329,7 +2371,9 @@ template {
           width: 120px;
           height: 134px; }
         .categories__item:nth-child(6) img {
-          width: 120px; }
+          position: static;
+          width: 120px;
+          height: auto; }
         .categories__item:nth-child(6):hover picture,
         .categories__item:nth-child(6):focus-within picture {
           padding-left: 71px;
@@ -2666,10 +2710,14 @@ template {
   height: 350px;
   background-color: #c9dfeb;
   background-image: url("../img/popular-card-bg.png"); }
+  .popular-product__image img {
+    height: 330px; }
   @media (min-width: 760px) {
     .popular-product__image {
       height: 295px;
-      background-image: url("../img/popular-card-bg-desktop.png"); } }
+      background-image: url("../img/popular-card-bg-desktop.png"); }
+      .popular-product__image img {
+        height: auto; } }
   @media (min-width: 1170px) {
     .popular-product__image {
       height: 435px;
