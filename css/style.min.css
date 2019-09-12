@@ -1461,8 +1461,8 @@ template {
 .first-slide__link {
   box-sizing: border-box;
   position: absolute;
-  top: 117px;
-  right: 80px;
+  top: 123px;
+  right: 93px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1499,8 +1499,8 @@ template {
 
 .first-slide__image {
   position: absolute;
-  right: -55px;
-  bottom: 0;
+  right: -35px;
+  bottom: -10px;
   height: 251px; }
   @media (min-width: 760px) {
     .first-slide__image {
